@@ -84,17 +84,16 @@ class ft_net(nn.Module):
             model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
             model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
             self.model = model_ft
-            self.classifier = ClassBlock(4096, class_num, droprate)
+            #self.classifier = ClassBlock(4096, class_num, droprate)
         elif pool=='avg':
             model_ft.avgpool = nn.AdaptiveAvgPool2d((1,1))
             self.model = model_ft
-            self.classifier = ClassBlock(2048, class_num, droprate)
+            #self.classifier = ClassBlock(2048, class_num, droprate)
 
         if init_model!=None:
             self.model = init_model.model
             self.pool = init_model.pool
-            self.classifier.add_block = init_model.classifier.add_block
-        # avg pooling to global pooling
+            #self.classifier.add_block = init_model.classifier.add_block
 
     def forward(self, x):
         x = self.model.conv1(x)
@@ -113,5 +112,39 @@ class ft_net(nn.Module):
         elif self.pool == 'avg':
             x = self.model.avgpool(x)
             x = x.view(x.size(0), x.size(1))
-        x = self.classifier(x)
+        #x = self.classifier(x)
         return x
+
+class two_view_net(nn.Module):
+    def __init__(self, class_num, droprate):
+        super(two_view_net, self).__init__()
+        self.model_1 =  ft_net(class_num)
+        self.model_2 =  ft_net(class_num)
+        self.classifier = ClassBlock(2048, class_num, droprate)
+
+    def forward(self, x1, x2):
+        x1 = self.model_1(x1)
+        y1 = self.classifier(x1)
+        x2 = self.model_2(x2)
+        y2 = self.classifier(x2)
+        return y1, y2
+
+
+class three_view_net(nn.Module):
+    def __init__(self, class_num, droprate):
+        super(three_view_net, self).__init__()
+        self.model_1 =  ft_net(class_num)
+        self.model_2 =  ft_net(class_num)
+        self.model_3 =  ft_net(class_num)
+        self.classifier = ClassBlock(2048, class_num, droprate)
+
+    def forward(self, x1, x2, x3):
+        x1 = self.model_1(x1)
+        y1 = self.classifier(x1)
+        x2 = self.model_2(x2)
+        y2 = self.classifier(x2)
+        x3 = self.model_3(x3)
+        y3 = self.classifier(x3)
+        return y1, y2, y3
+
+
