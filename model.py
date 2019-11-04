@@ -123,10 +123,16 @@ class two_view_net(nn.Module):
         self.classifier = ClassBlock(2048, class_num, droprate)
 
     def forward(self, x1, x2):
-        x1 = self.model_1(x1)
-        y1 = self.classifier(x1)
-        x2 = self.model_2(x2)
-        y2 = self.classifier(x2)
+        if x1 is None:
+            y1 = None
+        else:
+            x1 = self.model_1(x1)
+            y1 = self.classifier(x1)
+        if x2 is None:
+            y2 = None
+        else:
+            x2 = self.model_2(x2)
+            y2 = self.classifier(x2)
         return y1, y2
 
 

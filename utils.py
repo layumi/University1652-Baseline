@@ -3,7 +3,7 @@ import torch
 import yaml
 import torch.nn as nn
 import parser
-from model import ft_net, ft_net_dense, PCB
+from model import ft_net, two_view_net, three_view_net
 
 def make_weights_for_balanced_classes(images, nclasses):
     count = [0] * nclasses
@@ -83,16 +83,18 @@ def load_network(name, opt):
     opt.nclasses = config['nclasses']
     opt.erasing_p = config['erasing_p']
     opt.use_dense = config['use_dense']
-    opt.PCB = config['PCB']
     opt.fp16 = config['fp16']
+    opt.views = config['views']
 
     if opt.use_dense:
         model = ft_net_dense(opt.nclasses, opt.droprate, opt.stride, None, opt.pool)
-    else:
-        model = ft_net(opt.nclasses, opt.droprate, opt.stride, None, opt.pool)
     if opt.PCB:
         model = PCB(opt.nclasses)
 
+    if opt.views == 2:
+        model = two_view_net(opt.nclasses, opt.droprate)
+    elif opt.views == 3:
+        model = three_view_net(opt.nclasses, opt.droprate)
     # load model
     if isinstance(epoch, int):
         save_filename = 'net_%03d.pth'% epoch
