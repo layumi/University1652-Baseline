@@ -179,6 +179,7 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
             running_loss = 0.0
             running_corrects = 0.0
             running_corrects2 = 0.0
+            running_corrects3 = 0.0
             # Iterate over data.
             for data,data2,data3 in zip(dataloaders['satellite'],dataloaders['street'],dataloaders['drone']) :
                 # get the inputs
@@ -209,17 +210,15 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                     if opt.views == 2: 
                         outputs, outputs2 = model(inputs, inputs2)
                     elif opt.views == 3: 
-                        outputs, outputs2,outputs3 = model(inputs, inputs2, inputs3)
-
+                        outputs, outputs2, outputs3 = model(inputs, inputs2, inputs3)
                 _, preds = torch.max(outputs.data, 1)
                 _, preds2 = torch.max(outputs2.data, 1)
                 
                 if opt.views == 2:
                     loss = criterion(outputs, labels) + criterion(outputs2, labels2)
                 elif opt.views == 3:
+                    _, preds3 = torch.max(outputs3.data, 1)
                     loss = criterion(outputs, labels) + criterion(outputs2, labels2) + criterion(outputs3, labels3)
-                
-
                 # backward + optimize only if in training phase
                 if epoch<opt.warm_epoch and phase == 'train': 
                     warm_up = min(1.0, warm_up + 0.9 / warm_iteration)
@@ -243,12 +242,18 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                     running_loss += loss.data[0] * now_batch_size
                 running_corrects += float(torch.sum(preds == labels.data))
                 running_corrects2 += float(torch.sum(preds2 == labels2.data))
+                if opt.views == 3:
+                    running_corrects3 += float(torch.sum(preds3 == labels3.data))
 
             epoch_loss = running_loss / dataset_sizes['satellite']
             epoch_acc = running_corrects / dataset_sizes['satellite']
             epoch_acc2 = running_corrects2 / dataset_sizes['satellite']
             
-            print('{} Loss: {:.4f} Satellite_Acc: {:.4f}  Street_Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc, epoch_acc2))
+            if opt.views == 2:
+                print('{} Loss: {:.4f} Satellite_Acc: {:.4f}  Street_Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc, epoch_acc2))
+            elif opt.views == 3:
+                epoch_acc3 = running_corrects3 / dataset_sizes['satellite']
+                print('{} Loss: {:.4f} Satellite_Acc: {:.4f}  Street_Acc: {:.4f} Drone_Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc, epoch_acc2, epoch_acc3))
 
             
             y_loss[phase].append(epoch_loss)
