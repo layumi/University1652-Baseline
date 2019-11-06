@@ -32,10 +32,10 @@ except ImportError: # will be 3.x series
 parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or last')
-parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_data')
+parser.add_argument('--test_dir',default='./data/train',type=str, help='./test_data')
 parser.add_argument('--name', default='two_view', type=str, help='save model path')
 parser.add_argument('--pool', default='avg', type=str, help='avg|max')
-parser.add_argument('--batchsize', default=200, type=int, help='batchsize')
+parser.add_argument('--batchsize', default=256, type=int, help='batchsize')
 parser.add_argument('--h', default=256, type=int, help='height')
 parser.add_argument('--w', default=256, type=int, help='width')
 parser.add_argument('--views', default=2, type=int, help='views')
@@ -117,9 +117,9 @@ if opt.multi:
     dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
                                              shuffle=False, num_workers=16) for x in ['gallery','query','multi-query']}
 else:
-    image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ,data_transforms) for x in ['gallery_satellite','gallery_drone', 'gallery_street', 'query_satellite', 'query_drone', 'query_street']}
+    image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ,data_transforms) for x in ['satellite','street', 'drone']}
     dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
-                                             shuffle=False, num_workers=16) for x in ['gallery_satellite', 'gallery_drone','gallery_street', 'query_satellite', 'query_drone', 'query_street']}
+                                             shuffle=False, num_workers=16) for x in ['satellite', 'street', 'drone']}
 use_gpu = torch.cuda.is_available()
 
 ######################################################################
@@ -212,12 +212,8 @@ if use_gpu:
 # Extract feature
 since = time.time()
 
-#gallery_name = 'gallery_street' 
-#query_name = 'query_satellite' 
-
-gallery_name = 'gallery_satellite'
-query_name = 'query_street'
-
+gallery_name = 'street' #'gallery_satellite'
+query_name = 'satellite' #'query_street'
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)
 print('%d -> %d:'%(which_query, which_gallery))
@@ -231,27 +227,6 @@ with torch.no_grad():
     query_feature = extract_feature(model,dataloaders[query_name], which_query)
     gallery_feature = extract_feature(model,dataloaders[gallery_name], which_gallery)
 
-# For street-view image, we use the avg feature as the final feature.
-'''
-if which_query == 2:
-    new_query_label = np.unique(query_label)
-    new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
-    for i, query_index in enumerate(new_query_label):
-        new_query_feature[i,:] = torch.mean(query_feature[query_label == query_index, :])
-    query_feature = new_query_feature
-    fnorm = torch.norm(query_feature, p=2, dim=1, keepdim=True)
-    query_feature = query_feature.div(fnorm.expand_as(query_feature))
-    query_label   = new_query_label
-elif which_gallery == 2:
-    new_gallery_label = np.unique(gallery_label)
-    new_gallery_feature = torch.FloatTensor(len(new_gallery_label) ,512).zero_()
-    for i, gallery_index in enumerate(new_gallery_label):
-        new_gallery_feature[i,:] = torch.mean(gallery_feature[gallery_label == gallery_index, :])
-    gallery_feature = new_gallery_feature
-    fnorm = torch.norm(gallery_feature, p=2, dim=1, keepdim=True)
-    gallery_feature = gallery_feature.div(fnorm.expand_as(gallery_feature))
-    gallery_label   = new_gallery_label
-'''
 time_elapsed = time.time() - since
 print('Test complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))

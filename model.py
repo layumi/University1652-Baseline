@@ -116,10 +116,13 @@ class ft_net(nn.Module):
         return x
 
 class two_view_net(nn.Module):
-    def __init__(self, class_num, droprate):
+    def __init__(self, class_num, droprate, stride = 2, share_weight = False):
         super(two_view_net, self).__init__()
-        self.model_1 =  ft_net(class_num)
-        self.model_2 =  ft_net(class_num)
+        self.model_1 =  ft_net(class_num, stride=stride)
+        if share_weight:
+            self.model_2 = self.model_1
+        else:
+            self.model_2 =  ft_net(class_num, stride = stride)
         self.classifier = ClassBlock(2048, class_num, droprate)
 
     def forward(self, x1, x2):
@@ -128,6 +131,7 @@ class two_view_net(nn.Module):
         else:
             x1 = self.model_1(x1)
             y1 = self.classifier(x1)
+
         if x2 is None:
             y2 = None
         else:
@@ -137,20 +141,35 @@ class two_view_net(nn.Module):
 
 
 class three_view_net(nn.Module):
-    def __init__(self, class_num, droprate):
+    def __init__(self, class_num, droprate, stride = 2,share_weight = False):
         super(three_view_net, self).__init__()
-        self.model_1 =  ft_net(class_num)
-        self.model_2 =  ft_net(class_num)
-        self.model_3 =  ft_net(class_num)
+        self.model_1 =  ft_net(class_num, stride = stride)
+        self.model_2 =  ft_net(class_num, stride = stride)
+        if share_weight:
+            self.model_3 = self.model_1
+        else:
+            self.model_3 =  ft_net(class_num, stride = stride)
         self.classifier = ClassBlock(2048, class_num, droprate)
 
     def forward(self, x1, x2, x3):
-        x1 = self.model_1(x1)
-        y1 = self.classifier(x1)
-        x2 = self.model_2(x2)
-        y2 = self.classifier(x2)
-        x3 = self.model_3(x3)
-        y3 = self.classifier(x3)
+        if x1 is None:
+            y1 = None
+        else:
+            x1 = self.model_1(x1)
+            y1 = self.classifier(x1)
+
+        if x2 is None:
+            y2 = None
+        else:
+            x2 = self.model_2(x2)
+            y2 = self.classifier(x2)
+
+        if x3 is None:
+            y3 = None
+        else:
+            x3 = self.model_3(x3)
+            y3 = self.classifier(x3)
+
         return y1, y2, y3
 
 

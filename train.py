@@ -41,21 +41,22 @@ parser.add_argument('--pool',default='avg', type=str, help='pool avg')
 parser.add_argument('--data_dir',default='./data/train',type=str, help='training dir path')
 parser.add_argument('--train_all', action='store_true', help='use all training data' )
 parser.add_argument('--color_jitter', action='store_true', help='use color jitter in training' )
-parser.add_argument('--batchsize', default=32, type=int, help='batchsize')
+parser.add_argument('--batchsize', default=8, type=int, help='batchsize')
 parser.add_argument('--stride', default=2, type=int, help='stride')
 parser.add_argument('--pad', default=10, type=int, help='padding')
-parser.add_argument('--h', default=256, type=int, help='height')
-parser.add_argument('--w', default=256, type=int, help='width')
+parser.add_argument('--h', default=384, type=int, help='height')
+parser.add_argument('--w', default=384, type=int, help='width')
 parser.add_argument('--views', default=2, type=int, help='the number of views')
 parser.add_argument('--erasing_p', default=0, type=float, help='Random Erasing probability, in [0,1]')
 parser.add_argument('--use_dense', action='store_true', help='use densenet121' )
 parser.add_argument('--use_NAS', action='store_true', help='use NAS' )
 parser.add_argument('--warm_epoch', default=0, type=int, help='the first K epoch that needs warm up')
-parser.add_argument('--lr', default=0.05, type=float, help='learning rate')
+parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
 parser.add_argument('--moving_avg', default=1.0, type=float, help='moving average')
 parser.add_argument('--droprate', default=0.5, type=float, help='drop rate')
 parser.add_argument('--DA', action='store_true', help='use Color Data Augmentation' )
 parser.add_argument('--resume', action='store_true', help='use resume trainning' )
+parser.add_argument('--share', action='store_true', help='share weight between different view' )
 parser.add_argument('--fp16', action='store_true', help='use float16 instead of float32, which will save about 50% memory' )
 opt = parser.parse_args()
 
@@ -85,9 +86,19 @@ if len(gpu_ids)>0:
 #
 
 transform_train_list = [
-        #transforms.RandomResizedCrop(size=128, scale=(0.75,1.0), ratio=(0.75,1.3333), interpolation=3), #Image.BICUBIC)
+        #transforms.RandomResizedCrop(size=(opt.h, opt.w), scale=(0.75,1.0), ratio=(0.75,1.3333), interpolation=3), #Image.BICUBIC)
         transforms.Resize((opt.h, opt.w), interpolation=3),
         transforms.Pad( opt.pad, padding_mode='edge'),
+        transforms.RandomCrop((opt.h, opt.w)),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+        ]
+
+transform_satellite_list = [
+        transforms.Resize((opt.h, opt.w), interpolation=3),
+        transforms.Pad( opt.pad, padding_mode='edge'),
+        transforms.RandomAffine(90),
         transforms.RandomCrop((opt.h, opt.w)),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
@@ -105,6 +116,7 @@ if opt.erasing_p>0:
 
 if opt.color_jitter:
     transform_train_list = [transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0)] + transform_train_list
+    transform_satellite_list = [transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0)] + transform_satellite_list
 
 if opt.DA:
     transform_train_list = [ReIDPolicy()] + transform_train_list
@@ -113,7 +125,7 @@ print(transform_train_list)
 data_transforms = {
     'train': transforms.Compose( transform_train_list ),
     'val': transforms.Compose(transform_val_list),
-}
+    'satellite': transforms.Compose(transform_satellite_list) }
 
 
 train_all = ''
@@ -122,7 +134,7 @@ if opt.train_all:
 
 image_datasets = {}
 image_datasets['satellite'] = datasets.ImageFolder(os.path.join(data_dir, 'satellite'),
-                                          data_transforms['train'])
+                                          data_transforms['satellite'])
 image_datasets['street'] = datasets.ImageFolder(os.path.join(data_dir, 'street'),
                                           data_transforms['train'])
 image_datasets['drone'] = datasets.ImageFolder(os.path.join(data_dir, 'drone'),
@@ -215,10 +227,10 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                 _, preds2 = torch.max(outputs2.data, 1)
                 
                 if opt.views == 2:
-                    loss = criterion(outputs, labels) + criterion(outputs2, labels2)
+                    loss = 0.1*criterion(outputs, labels) + criterion(outputs2, labels2)
                 elif opt.views == 3:
                     _, preds3 = torch.max(outputs3.data, 1)
-                    loss = criterion(outputs, labels) + criterion(outputs2, labels2) + criterion(outputs3, labels3)
+                    loss = 0.1*criterion(outputs, labels) + criterion(outputs2, labels2) + criterion(outputs3, labels3)
                 # backward + optimize only if in training phase
                 if epoch<opt.warm_epoch and phase == 'train': 
                     warm_up = min(1.0, warm_up + 0.9 / warm_iteration)
@@ -262,7 +274,7 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
             if phase == 'train':
                 scheduler.step()
             last_model_wts = model.state_dict()
-            if epoch%10 == 9:
+            if epoch%20 == 19:
                 save_network(model, opt.name, epoch)
             #draw_curve(epoch)
 
@@ -307,9 +319,9 @@ def draw_curve(current_epoch):
 #
 
 if opt.views == 2:
-    model = two_view_net(len(class_names), droprate = opt.droprate)
+    model = two_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, share_weight = opt.share)
 elif opt.views == 3:
-    model = three_view_net(len(class_names), droprate = opt.droprate)
+    model = three_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, share_weight = opt.share)
 
 opt.nclasses = len(class_names)
 
@@ -326,7 +338,7 @@ optimizer_ft = optim.SGD([
          ], weight_decay=5e-4, momentum=0.9, nesterov=True)
 
 # Decay LR by a factor of 0.1 every 40 epochs
-exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=40, gamma=0.1)
+exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=80, gamma=0.1)
 
 ######################################################################
 # Train and evaluate
@@ -353,10 +365,10 @@ if fp16:
 criterion = nn.CrossEntropyLoss()
 if opt.moving_avg<1.0:
     model_test = copy.deepcopy(model)
-    num_epochs = 70
+    num_epochs = 140
 else:
     model_test = None
-    num_epochs = 60
+    num_epochs = 120
 
 model = train_model(model, model_test, criterion, optimizer_ft, exp_lr_scheduler,
                        num_epochs=num_epochs)
