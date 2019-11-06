@@ -86,9 +86,12 @@ class ft_net(nn.Module):
             self.model = model_ft
             #self.classifier = ClassBlock(4096, class_num, droprate)
         elif pool=='avg':
-            model_ft.avgpool = nn.AdaptiveAvgPool2d((1,1))
+            model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
             self.model = model_ft
             #self.classifier = ClassBlock(2048, class_num, droprate)
+        elif pool=='max':
+            model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
+            self.model = model_ft
 
         if init_model!=None:
             self.model = init_model.model
@@ -110,20 +113,25 @@ class ft_net(nn.Module):
             x = torch.cat((x1,x2), dim = 1)
             x = x.view(x.size(0), x.size(1))
         elif self.pool == 'avg':
-            x = self.model.avgpool(x)
+            x = self.model.avgpool2(x)
+            x = x.view(x.size(0), x.size(1))
+        elif self.pool == 'max':
+            x = self.model.maxpool2(x)
             x = x.view(x.size(0), x.size(1))
         #x = self.classifier(x)
         return x
 
 class two_view_net(nn.Module):
-    def __init__(self, class_num, droprate, stride = 2, share_weight = False):
+    def __init__(self, class_num, droprate, stride = 2, pool = 'avg', share_weight = False):
         super(two_view_net, self).__init__()
-        self.model_1 =  ft_net(class_num, stride=stride)
+        self.model_1 =  ft_net(class_num, stride=stride, pool = pool)
         if share_weight:
             self.model_2 = self.model_1
         else:
-            self.model_2 =  ft_net(class_num, stride = stride)
+            self.model_2 =  ft_net(class_num, stride = stride, pool = pool)
         self.classifier = ClassBlock(2048, class_num, droprate)
+        if pool =='avg+max':
+            self.classifier = ClassBlock(4096, class_num, droprate)
 
     def forward(self, x1, x2):
         if x1 is None:
@@ -141,15 +149,17 @@ class two_view_net(nn.Module):
 
 
 class three_view_net(nn.Module):
-    def __init__(self, class_num, droprate, stride = 2,share_weight = False):
+    def __init__(self, class_num, droprate, stride = 2, pool = 'avg', share_weight = False):
         super(three_view_net, self).__init__()
-        self.model_1 =  ft_net(class_num, stride = stride)
-        self.model_2 =  ft_net(class_num, stride = stride)
+        self.model_1 =  ft_net(class_num, stride = stride, pool = pool)
+        self.model_2 =  ft_net(class_num, stride = stride, pool = pool)
         if share_weight:
             self.model_3 = self.model_1
         else:
-            self.model_3 =  ft_net(class_num, stride = stride)
+            self.model_3 =  ft_net(class_num, stride = stride, pool = pool)
         self.classifier = ClassBlock(2048, class_num, droprate)
+        if pool =='avg+max':
+            self.classifier = ClassBlock(4096, class_num, droprate)
 
     def forward(self, x1, x2, x3):
         if x1 is None:

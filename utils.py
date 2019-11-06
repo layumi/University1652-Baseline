@@ -70,6 +70,7 @@ def load_network(name, opt):
     opt.batchsize = config['batchsize']
     opt.h = config['h']
     opt.w = config['w']
+    opt.share = config['share']
     opt.stride = config['stride']
     if 'pool' in config:
         opt.pool = config['pool']
@@ -92,9 +93,9 @@ def load_network(name, opt):
         model = PCB(opt.nclasses)
 
     if opt.views == 2:
-        model = two_view_net(opt.nclasses, opt.droprate)
+        model = two_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share = opt.share)
     elif opt.views == 3:
-        model = three_view_net(opt.nclasses, opt.droprate)
+        model = three_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share = opt.share)
     # load model
     if isinstance(epoch, int):
         save_filename = 'net_%03d.pth'% epoch

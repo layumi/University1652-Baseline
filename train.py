@@ -319,9 +319,9 @@ def draw_curve(current_epoch):
 #
 
 if opt.views == 2:
-    model = two_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, share_weight = opt.share)
+    model = two_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
 elif opt.views == 3:
-    model = three_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, share_weight = opt.share)
+    model = three_view_net(len(class_names), droprate = opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
 
 opt.nclasses = len(class_names)
 
