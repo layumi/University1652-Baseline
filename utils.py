@@ -93,9 +93,9 @@ def load_network(name, opt):
         model = PCB(opt.nclasses)
 
     if opt.views == 2:
-        model = two_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share = opt.share)
+        model = two_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
     elif opt.views == 3:
-        model = three_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share = opt.share)
+        model = three_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
     # load model
     if isinstance(epoch, int):
         save_filename = 'net_%03d.pth'% epoch
