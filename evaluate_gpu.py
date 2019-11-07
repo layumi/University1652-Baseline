@@ -74,6 +74,8 @@ query_feature = query_feature.cuda()
 gallery_feature = gallery_feature.cuda()
 
 print(query_feature.shape)
+print(gallery_feature.shape)
+#print(gallery_feature[0,:])
 CMC = torch.IntTensor(len(gallery_label)).zero_()
 ap = 0.0
 #print(query_label)

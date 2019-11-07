@@ -161,7 +161,7 @@ class three_view_net(nn.Module):
         if pool =='avg+max':
             self.classifier = ClassBlock(4096, class_num, droprate)
 
-    def forward(self, x1, x2, x3):
+    def forward(self, x1, x2, x3, x4 = None): # x4 is extra data
         if x1 is None:
             y1 = None
         else:
@@ -180,6 +180,11 @@ class three_view_net(nn.Module):
             x3 = self.model_3(x3)
             y3 = self.classifier(x3)
 
-        return y1, y2, y3
+        if x4 is None:
+            return y1, y2, y3
+        else:
+            x4 = self.model_2(x4)
+            y4 = self.classifier(x4)
+            return y1, y2, y3, y4
 
 

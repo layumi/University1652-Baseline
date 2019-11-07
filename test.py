@@ -35,7 +35,7 @@ parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or
 parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_data')
 parser.add_argument('--name', default='two_view', type=str, help='save model path')
 parser.add_argument('--pool', default='avg', type=str, help='avg|max')
-parser.add_argument('--batchsize', default=200, type=int, help='batchsize')
+parser.add_argument('--batchsize', default=128, type=int, help='batchsize')
 parser.add_argument('--h', default=256, type=int, help='height')
 parser.add_argument('--w', default=256, type=int, help='width')
 parser.add_argument('--views', default=2, type=int, help='views')
@@ -218,6 +218,9 @@ since = time.time()
 gallery_name = 'gallery_satellite'
 query_name = 'query_street'
 
+#gallery_name = 'gallery_street'
+#query_name = 'query_drone'
+
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)
 print('%d -> %d:'%(which_query, which_gallery))
@@ -232,26 +235,26 @@ with torch.no_grad():
     gallery_feature = extract_feature(model,dataloaders[gallery_name], which_gallery)
 
 # For street-view image, we use the avg feature as the final feature.
-'''
-if which_query == 2:
+
+if which_query == 3:
     new_query_label = np.unique(query_label)
     new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
     for i, query_index in enumerate(new_query_label):
-        new_query_feature[i,:] = torch.mean(query_feature[query_label == query_index, :])
+        new_query_feature[i,:] = torch.sum(query_feature[query_label == query_index, :], dim=0)
     query_feature = new_query_feature
     fnorm = torch.norm(query_feature, p=2, dim=1, keepdim=True)
     query_feature = query_feature.div(fnorm.expand_as(query_feature))
     query_label   = new_query_label
-elif which_gallery == 2:
+elif which_gallery == 3:
     new_gallery_label = np.unique(gallery_label)
-    new_gallery_feature = torch.FloatTensor(len(new_gallery_label) ,512).zero_()
+    new_gallery_feature = torch.FloatTensor(len(new_gallery_label), 512).zero_()
     for i, gallery_index in enumerate(new_gallery_label):
-        new_gallery_feature[i,:] = torch.mean(gallery_feature[gallery_label == gallery_index, :])
+        new_gallery_feature[i,:] = torch.sum(gallery_feature[gallery_label == gallery_index, :], dim=0)
     gallery_feature = new_gallery_feature
     fnorm = torch.norm(gallery_feature, p=2, dim=1, keepdim=True)
     gallery_feature = gallery_feature.div(fnorm.expand_as(gallery_feature))
     gallery_label   = new_gallery_label
-'''
+
 time_elapsed = time.time() - since
 print('Test complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))

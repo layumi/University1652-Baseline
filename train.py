@@ -57,6 +57,7 @@ parser.add_argument('--droprate', default=0.5, type=float, help='drop rate')
 parser.add_argument('--DA', action='store_true', help='use Color Data Augmentation' )
 parser.add_argument('--resume', action='store_true', help='use resume trainning' )
 parser.add_argument('--share', action='store_true', help='share weight between different view' )
+parser.add_argument('--extra_Google', action='store_true', help='using extra noise Google' )
 parser.add_argument('--fp16', action='store_true', help='use float16 instead of float32, which will save about 50% memory' )
 opt = parser.parse_args()
 
@@ -139,11 +140,13 @@ image_datasets['street'] = datasets.ImageFolder(os.path.join(data_dir, 'street')
                                           data_transforms['train'])
 image_datasets['drone'] = datasets.ImageFolder(os.path.join(data_dir, 'drone'),
                                           data_transforms['train'])
+image_datasets['google'] = datasets.ImageFolder(os.path.join(data_dir, 'google'),
+                                          data_transforms['train'])
 
 dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
                                              shuffle=True, num_workers=2, pin_memory=True) # 8 workers may work faster
-              for x in ['satellite', 'street', 'drone']}
-dataset_sizes = {x: len(image_datasets[x]) for x in ['satellite', 'street', 'drone']}
+              for x in ['satellite', 'street', 'drone', 'google']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['satellite', 'street', 'drone', 'google']}
 class_names = image_datasets['street'].classes
 print(dataset_sizes)
 use_gpu = torch.cuda.is_available()
@@ -193,11 +196,12 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
             running_corrects2 = 0.0
             running_corrects3 = 0.0
             # Iterate over data.
-            for data,data2,data3 in zip(dataloaders['satellite'],dataloaders['street'],dataloaders['drone']) :
+            for data,data2,data3,data4 in zip(dataloaders['satellite'], dataloaders['street'], dataloaders['drone'], dataloaders['google']) :
                 # get the inputs
                 inputs, labels = data
                 inputs2, labels2 = data2
                 inputs3, labels3 = data3
+                inputs4, labels4 = data4
                 now_batch_size,c,h,w = inputs.shape
                 if now_batch_size<opt.batchsize: # skip the last batch
                     continue
@@ -208,6 +212,9 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                     labels = Variable(labels.cuda().detach())
                     labels2 = Variable(labels2.cuda().detach())
                     labels3 = Variable(labels3.cuda().detach())
+                    if opt.extra_Google:
+                        inputs4 = Variable(inputs4.cuda().detach())
+                        labels4 = Variable(labels4.cuda().detach())
                 else:
                     inputs, labels = Variable(inputs), Variable(labels)
  
@@ -222,15 +229,20 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                     if opt.views == 2: 
                         outputs, outputs2 = model(inputs, inputs2)
                     elif opt.views == 3: 
-                        outputs, outputs2, outputs3 = model(inputs, inputs2, inputs3)
+                        if opt.extra_Google:
+                            outputs, outputs2, outputs3, outputs4 = model(inputs, inputs2, inputs3, inputs4)
+                        else:
+                            outputs, outputs2, outputs3 = model(inputs, inputs2, inputs3)
                 _, preds = torch.max(outputs.data, 1)
                 _, preds2 = torch.max(outputs2.data, 1)
                 
                 if opt.views == 2:
-                    loss = 0.1*criterion(outputs, labels) + criterion(outputs2, labels2)
+                    loss = criterion(outputs, labels) + criterion(outputs2, labels2)
                 elif opt.views == 3:
                     _, preds3 = torch.max(outputs3.data, 1)
-                    loss = 0.1*criterion(outputs, labels) + criterion(outputs2, labels2) + criterion(outputs3, labels3)
+                    loss = criterion(outputs, labels) + criterion(outputs2, labels2) + criterion(outputs3, labels3)
+                    if opt.extra_Google:
+                        loss += criterion(outputs4, labels4)
                 # backward + optimize only if in training phase
                 if epoch<opt.warm_epoch and phase == 'train': 
                     warm_up = min(1.0, warm_up + 0.9 / warm_iteration)
