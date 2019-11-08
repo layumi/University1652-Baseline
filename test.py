@@ -213,13 +213,14 @@ if use_gpu:
 since = time.time()
 
 #gallery_name = 'gallery_street' 
-#query_name = 'query_satellite' 
+query_name = 'query_satellite' 
 
-gallery_name = 'gallery_satellite'
-query_name = 'query_street'
+#gallery_name = 'gallery_satellite'
+#query_name = 'query_street'
 
 #gallery_name = 'gallery_street'
 #query_name = 'query_drone'
+gallery_name = 'gallery_drone'
 
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)
@@ -235,7 +236,7 @@ with torch.no_grad():
     gallery_feature = extract_feature(model,dataloaders[gallery_name], which_gallery)
 
 # For street-view image, we use the avg feature as the final feature.
-
+'''
 if which_query == 3:
     new_query_label = np.unique(query_label)
     new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
@@ -254,7 +255,7 @@ elif which_gallery == 3:
     fnorm = torch.norm(gallery_feature, p=2, dim=1, keepdim=True)
     gallery_feature = gallery_feature.div(fnorm.expand_as(gallery_feature))
     gallery_label   = new_gallery_label
-
+'''
 time_elapsed = time.time() - since
 print('Test complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
