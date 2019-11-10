@@ -33,7 +33,7 @@ parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or last')
 parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_data')
-parser.add_argument('--name', default='two_view', type=str, help='save model path')
+parser.add_argument('--name', default='three_view_long_share_d0.75_256_s1', type=str, help='save model path')
 parser.add_argument('--pool', default='avg', type=str, help='avg|max')
 parser.add_argument('--batchsize', default=128, type=int, help='batchsize')
 parser.add_argument('--h', default=256, type=int, help='height')
@@ -153,7 +153,7 @@ def extract_feature(model,dataloaders, view_index = 1):
         n, c, h, w = img.size()
         count += n
         print(count)
-        ff = torch.FloatTensor(n,512).zero_().cuda()
+        ff = torch.FloatTensor(n,2048).zero_().cuda()
 
         for i in range(2):
             if(i==1):
@@ -163,18 +163,7 @@ def extract_feature(model,dataloaders, view_index = 1):
                 if scale != 1:
                     # bicubic is only  available in pytorch>= 1.1
                     input_img = nn.functional.interpolate(input_img, scale_factor=scale, mode='bilinear', align_corners=False)
-                if opt.views ==2:
-                    if view_index == 1:
-                        outputs, _ = model(input_img, None) 
-                    elif view_index ==2:
-                        _, outputs = model(None, input_img) 
-                elif opt.views ==3:
-                    if view_index == 1:
-                        outputs, _, _ = model(input_img, None, None)
-                    elif view_index ==2:
-                        _, outputs, _ = model(None, input_img, None)
-                    elif view_index ==3:
-                        _, _, outputs = model(None, None, input_img)
+                outputs = model(input_img)
                 ff += outputs
         # norm feature
         if opt.PCB:
@@ -203,8 +192,9 @@ def get_id(img_path):
 # Load Collected data Trained model
 print('-------test-----------')
 
-model, _, epoch = load_network(opt.name, opt)
-model.classifier.classifier = nn.Sequential()
+#model, _, epoch = load_network(opt.name, opt)
+model = models.resnet50(pretrained=True)
+model.fc = nn.Sequential()
 model = model.eval()
 if use_gpu:
     model = model.cuda()
@@ -213,14 +203,14 @@ if use_gpu:
 since = time.time()
 
 #gallery_name = 'gallery_street' 
-#query_name = 'query_satellite' 
+query_name = 'query_satellite' 
 
-gallery_name = 'gallery_satellite'
+#gallery_name = 'gallery_satellite'
 #query_name = 'query_street'
 
 #gallery_name = 'gallery_street'
-query_name = 'query_drone'
-#gallery_name = 'gallery_drone'
+#query_name = 'query_drone'
+gallery_name = 'gallery_drone'
 
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)
@@ -237,7 +227,7 @@ with torch.no_grad():
 
 # For street-view image, we use the avg feature as the final feature.
 '''
-if which_query == 2:
+if which_query == 3:
     new_query_label = np.unique(query_label)
     new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
     for i, query_index in enumerate(new_query_label):
@@ -246,7 +236,7 @@ if which_query == 2:
     fnorm = torch.norm(query_feature, p=2, dim=1, keepdim=True)
     query_feature = query_feature.div(fnorm.expand_as(query_feature))
     query_label   = new_query_label
-elif which_gallery == 2:
+elif which_gallery == 3:
     new_gallery_label = np.unique(gallery_label)
     new_gallery_feature = torch.FloatTensor(len(new_gallery_label), 512).zero_()
     for i, gallery_index in enumerate(new_gallery_label):
