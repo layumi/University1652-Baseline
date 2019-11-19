@@ -30,6 +30,7 @@ core
 *.zip
 *.mat
 *.jpg
+*.jpeg
 *.npy
 *.pt
 *.pth
