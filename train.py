@@ -19,6 +19,7 @@ import time
 import os
 from model import two_view_net, three_view_net
 from random_erasing import RandomErasing
+from autoaugment import ImageNetPolicy, CIFAR10Policy
 import yaml
 import math
 from shutil import copyfile
@@ -120,7 +121,7 @@ if opt.color_jitter:
     transform_satellite_list = [transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0)] + transform_satellite_list
 
 if opt.DA:
-    transform_train_list = [ReIDPolicy()] + transform_train_list
+    transform_train_list = [ImageNetPolicy()] + transform_train_list
 
 print(transform_train_list)
 data_transforms = {

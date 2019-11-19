@@ -33,7 +33,7 @@ parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or last')
 parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_data')
-parser.add_argument('--name', default='two_view', type=str, help='save model path')
+parser.add_argument('--name', default='three_view_long_share_d0.75_256_s1_google', type=str, help='save model path')
 parser.add_argument('--pool', default='avg', type=str, help='avg|max')
 parser.add_argument('--batchsize', default=128, type=int, help='batchsize')
 parser.add_argument('--h', default=256, type=int, help='height')
@@ -227,44 +227,52 @@ which_query = which_view(query_name)
 print('%d -> %d:'%(which_query, which_gallery))
 
 gallery_path = image_datasets[gallery_name].imgs
+f = open('gallery_name.txt','w')
+for p in gallery_path:
+    f.write(p[0]+'\n')
 query_path = image_datasets[query_name].imgs
+f = open('query_name.txt','w')
+for p in query_path:
+    f.write(p[0]+'\n')
+
 gallery_label = get_id(gallery_path)
 query_label = get_id(query_path)
 
-with torch.no_grad():
-    query_feature = extract_feature(model,dataloaders[query_name], which_query)
-    gallery_feature = extract_feature(model,dataloaders[gallery_name], which_gallery)
+if __name__ == "__main__":
+    with torch.no_grad():
+        query_feature = extract_feature(model,dataloaders[query_name], which_query)
+        gallery_feature = extract_feature(model,dataloaders[gallery_name], which_gallery)
 
-# For street-view image, we use the avg feature as the final feature.
-'''
-if which_query == 2:
-    new_query_label = np.unique(query_label)
-    new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
-    for i, query_index in enumerate(new_query_label):
-        new_query_feature[i,:] = torch.sum(query_feature[query_label == query_index, :], dim=0)
-    query_feature = new_query_feature
-    fnorm = torch.norm(query_feature, p=2, dim=1, keepdim=True)
-    query_feature = query_feature.div(fnorm.expand_as(query_feature))
-    query_label   = new_query_label
-elif which_gallery == 2:
-    new_gallery_label = np.unique(gallery_label)
-    new_gallery_feature = torch.FloatTensor(len(new_gallery_label), 512).zero_()
-    for i, gallery_index in enumerate(new_gallery_label):
-        new_gallery_feature[i,:] = torch.sum(gallery_feature[gallery_label == gallery_index, :], dim=0)
-    gallery_feature = new_gallery_feature
-    fnorm = torch.norm(gallery_feature, p=2, dim=1, keepdim=True)
-    gallery_feature = gallery_feature.div(fnorm.expand_as(gallery_feature))
-    gallery_label   = new_gallery_label
-'''
-time_elapsed = time.time() - since
-print('Test complete in {:.0f}m {:.0f}s'.format(
+    # For street-view image, we use the avg feature as the final feature.
+    '''
+    if which_query == 2:
+        new_query_label = np.unique(query_label)
+        new_query_feature = torch.FloatTensor(len(new_query_label) ,512).zero_()
+        for i, query_index in enumerate(new_query_label):
+            new_query_feature[i,:] = torch.sum(query_feature[query_label == query_index, :], dim=0)
+        query_feature = new_query_feature
+        fnorm = torch.norm(query_feature, p=2, dim=1, keepdim=True)
+        query_feature = query_feature.div(fnorm.expand_as(query_feature))
+        query_label   = new_query_label
+    elif which_gallery == 2:
+        new_gallery_label = np.unique(gallery_label)
+        new_gallery_feature = torch.FloatTensor(len(new_gallery_label), 512).zero_()
+        for i, gallery_index in enumerate(new_gallery_label):
+            new_gallery_feature[i,:] = torch.sum(gallery_feature[gallery_label == gallery_index, :], dim=0)
+        gallery_feature = new_gallery_feature
+        fnorm = torch.norm(gallery_feature, p=2, dim=1, keepdim=True)
+        gallery_feature = gallery_feature.div(fnorm.expand_as(gallery_feature))
+        gallery_label   = new_gallery_label
+    '''
+    time_elapsed = time.time() - since
+    print('Test complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
 
-# Save to Matlab for check
-result = {'gallery_f':gallery_feature.numpy(),'gallery_label':gallery_label,'query_f':query_feature.numpy(),'query_label':query_label}
-scipy.io.savemat('pytorch_result.mat',result)
+    # Save to Matlab for check
+    result = {'gallery_f':gallery_feature.numpy(),'gallery_label':gallery_label,'query_f':query_feature.numpy(),'query_label':query_label}
+    scipy.io.savemat('pytorch_result.mat',result)
 
-print(opt.name)
-result = './model/%s/result.txt'%opt.name
-os.system('python evaluate_gpu.py | tee -a %s'%result)
+    print(opt.name)
+    result = './model/%s/result.txt'%opt.name
+    os.system('python evaluate_gpu.py | tee -a %s'%result)
 

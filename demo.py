@@ -15,8 +15,11 @@ parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_da
 opts = parser.parse_args()
 
 
-gallery_name = 'gallery_satellite'
-query_name = 'query_street'
+#gallery_name = 'gallery_satellite'
+#query_name = 'query_drone'
+gallery_name = 'gallery_drone'
+query_name = 'query_satellite'
+
 data_dir = opts.test_dir
 image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ) for x in [gallery_name, query_name]}
 
@@ -28,7 +31,7 @@ def imshow(path, title=None):
     plt.imshow(im)
     if title is not None:
         plt.title(title)
-    plt.pause(0.001)  # pause a bit so that plots are updated
+    plt.pause(0.1)  # pause a bit so that plots are updated
 
 ######################################################################
 result = scipy.io.loadmat('pytorch_result.mat')
@@ -81,6 +84,11 @@ query_path, _ = image_datasets[query_name].imgs[i]
 query_label = query_label[i]
 print(query_path)
 print('Top 10 images are as follow:')
+save_folder = 'image_show/%02d'%opts.query_index
+if not os.path.isdir(save_folder):
+    os.mkdir(save_folder)
+os.system('cp %s %s/query.jpg'%(query_path, save_folder))
+
 try: # Visualize Ranking Result 
     # Graphical User Interface is needed
     fig = plt.figure(figsize=(16,4))
@@ -92,12 +100,15 @@ try: # Visualize Ranking Result
         ax.axis('off')
         img_path, _ = image_datasets[gallery_name].imgs[index[i]]
         label = gallery_label[index[i]]
+        print(label)
         imshow(img_path)
+        os.system('cp %s %s/s%02d.jpg'%(img_path, save_folder, i))
         if label == query_label:
             ax.set_title('%d'%(i+1), color='green')
         else:
             ax.set_title('%d'%(i+1), color='red')
         print(img_path)
+    #plt.pause(100)  # pause a bit so that plots are updated
 except RuntimeError:
     for i in range(10):
         img_path = image_datasets.imgs[index[i]]

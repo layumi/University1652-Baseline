@@ -85,7 +85,7 @@ for i in range(len(query_label)):
         continue
     CMC = CMC + CMC_tmp
     ap += ap_tmp
-    #print(i, CMC_tmp[0])
+    print(i, CMC_tmp[0])
 
 CMC = CMC.float()
 CMC = CMC/len(query_label) #average CMC
