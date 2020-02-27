@@ -1,0 +1,7 @@
+@inproceedings{zheng2019joint,
+  title={Joint discriminative and generative learning for person re-identification},
+  author={Zheng, Zhedong and Yang, Xiaodong and Yu, Zhiding and Zheng, Liang and Yang, Yi and Kautz, Jan},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={2138--2147},
+  year={2019}
+}

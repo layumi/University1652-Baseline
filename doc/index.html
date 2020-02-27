@@ -1,0 +1,333 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	h1 {
+		font-weight:300;
+	}
+
+	.disclaimerbox {
+		background-color: #eee;
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.rounded {
+		border: 0px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+  <head>
+		<title>Joint Discriminative and Generative Learning for Person Re-identification</title>
+		<meta property="og:image" content="https://github.com/layumi/DG-Net/blob/master/NxN.jpg" />
+		<meta property="og:title" content="Joint Discriminative and Generative Learning for Person Re-identification. In CVPR, 2019." />
+  </head>
+
+  <body>
+    <br>
+          <center>
+          	<span style="font-size:34px">Joint Discriminative and Generative Learning for Person Re-identification</span><br>
+	  		  <table align=center width=900px>
+	  			  <tr>
+	  	              <td align=center width=300px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="http://zdzheng.xyz/">Zhedong Zheng</a><sup>1,2</sup></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=300px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="https://xiaodongyang.org/">Xiaodong Yang</a><sup>1</sup></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=200px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="https://chrisding.github.io/">Zhiding Yu</a><sup>1</sup></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=200px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="http://liangzheng.com.cn/">Liang Zheng</a><sup>3</sup></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=200px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="https://www.uts.edu.au/staff/yi.yang">Yi Yang</a><sup>2</sup></span>
+		  		  		</center>
+		  		  	  </td>
+                              <td align=center width=200px>
+                                                <center>
+                                                        <span style="font-size:22px"><a href="http://jankautz.com/">Jan Kautz</a><sup>1</sup></span>
+                                                </center>
+                                          </td>
+	  			  </tr>
+			  </table>
+	  		  <table align=center width=1000px>
+	  			  <tr>
+	  	              <td align=center width=100px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=300px>
+	  					<center>
+				          	<span style="font-size:18px"><sup>1</sup>NVIDIA Research</span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=400px>
+	  					<center>
+				          	<span style="font-size:18px"><sup>2</sup>University of Technology Sydney</span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=400px>
+	  					<center>
+				          	<span style="font-size:18px"><sup>3</sup>Australian National University</span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=100px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+			  </table>
+	  		  <table align=center width=1100px>
+	  			  <tr>
+	  	              <td align=center width=275px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=225px>
+	  					<center>
+	  						<span style="font-size:22px"><a href='https://github.com/NVlabs/DG-Net'> [Code]</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=225px>
+	  					<center>
+	  						<span style="font-size:22px"><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Joint_Discriminative_and_Generative_Learning_for_Person_Re-Identification_CVPR_2019_paper.html"> [Paper]</a></span>
+		  		  		</center>
+		  		  	  </td>
+	  	              <td align=center width=275px>
+	  					<center>
+				          	<span style="font-size:18px"></span>
+		  		  		</center>
+		  		  	  </td>
+			  </table>
+          </center>
+
+  		  <table align=center width=1100px>
+  			  <tr>
+  	              <td width=400px>
+  					<center>
+                    <iframe width="800" height="450"
+                    src="https://www.youtube.com/embed/ubCrEAIpQs4">
+                    </iframe>
+					</center>
+  	              </td>
+  	              </tr>
+  	              </table>
+
+  		  <br>
+		  <hr>
+
+  		  <table align=center width=900px>
+	  		 	<center><h1>Abstract</h1></center>
+	  		 	<tr>
+		            <!-- <td align=center width=600px> -->
+					Person re-identification (re-id) remains challenging due to significant intra-class variations across different cameras. Recently, there has been a growing interest in using generative models to augment training data and enhance the invariance to input changes. The generative pipelines in existing methods, however, stay relatively separate from the discriminative re-id learning stages. Accordingly, re-id models are often trained in a straightforward manner on the generated data. In this paper, we seek to improve learned re-id embeddings by better leveraging the generated data. To this end, we propose a joint learning framework that couples re-id learning and data generation end-to-end. Our model involves a generative module that separately encodes each person into an appearance code and a structure code, and a discriminative module that shares the appearance encoder with the generative module. By switching the appearance or structure codes, the generative module is able to generate high-quality cross-id composed images, which are online fed back to the appearance encoder and used to improve the discriminative module. The proposed joint learning framework renders significant improvement over the baseline without using generated data, leading to the state-of-the-art performance on several benchmark datasets.<!-- </td> -->
+  		  <br>
+				</tr>
+  		  <br>
+		  <hr>
+
+
+ 		<center><h1>DG-Net</h1></center>
+
+  		  <table align=center width=900px>
+  			  <tr>
+  	                <td align=center width=900px>
+  					<center>
+						  <td><a href='https://github.com/NVlabs/DG-Net'><img class="round" style="width:900px" src="./index_files/network.png"/></a></td>
+	  		  		</center>
+	  		  		</td>
+			  </tr>
+		  </table>
+
+		  <br>
+
+  		  <table align=center width=800px>
+			  <tr><center>
+				<span style="font-size:28px"><a href='https://github.com/NVlabs/DG-Net'>[GitHub]</a>
+			  <br>
+			  </center></tr>
+		  </table>
+		  <br>
+
+		  <hr>
+
+  		  <table align=center width=800 px>
+	 		<center><h1>Paper</h1></center>
+  			  <tr>
+				  <td><a href="http://arxiv.org/abs/1904.07223"><img class="layered-paper-big" style="height:175px" src="./index_files/page1.png"/></a></td>
+				  <td><span style="font-size:12pt">Z. Zheng, X. Yang, Z. Yu, L. Zheng, Y. Yang, J Kautz.</span><br>
+				  <b><span style="font-size:12pt">Joint Discriminative and Generative Learning for Person Re-identification.</b></span><br>
+				  <span style="font-size:12pt">CVPR, 2019 (Oral) <a href="http://arxiv.org/abs/1904.07223">[ArXiv]</a> <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Joint_Discriminative_and_Generative_Learning_for_Person_Re-Identification_CVPR_2019_paper.html">[CVF]</a></span>.
+				  </td>
+  	              </td>
+              </tr>
+  		  </table>
+		  <br><br>
+
+		  <hr>
+
+  		  <table align=center width=200 px>
+	 		<center><h1>Poster</h1></center>
+  			  <tr>
+				  <td><a href="./index_files/poster_cvpr.pdf"><img class="paper-big" style="width:600px" src="./index_files/poster_teaser.png"/></a></td>
+              </tr>
+  		  </table>
+		  <br>
+		  <table align=center width=600px>
+			  <tr>
+				  <td><span style="font-size:24pt"><center>
+				  	<a href="./index_files/poster_cvpr.pdf">[PDF]</a>
+  	              </center></td>
+              </tr>
+  		  </table>
+		  <hr>
+		  
+  		  <table align=center width=200 px>
+	 		<center><h1>DG-Market Dataset</h1></center>
+  			  <tr>
+				  <td><a href="./index_files/DGMarket-logo.png"><img class="paper-big" style="width:600px" src="./index_files/DGMarket-logo.jpg"/></a></td>
+              </tr>
+  		  </table>
+		  <br>
+
+		  <table align=center width=600px>
+			  <tr>
+				  <!-- <td align=center width=600px> -->
+				We provide our generated images and make a large-scale synthetic dataset called DG-Market. This dataset is generated by our DG-Net and consists of 128,307 images (613MB), about 10 times larger than the original Market-1501. It can be used as a source of unlabeled training dataset for semi-supervised learning.
+		  		  <br>
+				  <td><span style="font-size:24pt"><center>
+				  	<a href="https://github.com/NVlabs/DG-Net#dg-market">[Download]</a>
+  	              </center></td>
+              </tr>
+  		  </table>
+
+  		  <br>
+
+
+		<br><br>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75863369-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75863369-5');
+</script>
+
+
+
+</body>
+</html>
+
