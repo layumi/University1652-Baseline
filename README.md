@@ -32,7 +32,8 @@ python setup.py install --cuda_ext --cpp_ext
 ## Dataset & Preparation
 Download [University-1652] or [CVUSA] upon request.
 
-## Train & Evaluation University-1652
+## Train & Evaluation 
+### Train & Evaluation University-1652
 ```
 python train.py --name three_view_long_share_d0.75_256_s1_google  --extra --views 3  --droprate 0.75  --share  --stride 1 --h 256  --w 256 --fp16; 
 python test.py --name three_view_long_share_d0.75_256_s1_google
