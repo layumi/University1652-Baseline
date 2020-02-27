@@ -85,11 +85,12 @@ for i in range(len(query_label)):
         continue
     CMC = CMC + CMC_tmp
     ap += ap_tmp
-    print(i, CMC_tmp[0])
+    #print(i, CMC_tmp[0])
 
 CMC = CMC.float()
 CMC = CMC/len(query_label) #average CMC
-print('Rank@1:%.2f Rank@5:%.2f Rank@10:%.2f mAP:%.2f'%(CMC[0]*100,CMC[4]*100,CMC[9]*100,ap/len(query_label)*100))
+print(round(len(gallery_label)*0.01))
+print('Recall@1:%.2f Recall@5:%.2f Recall@10:%.2f Recall@top1:%.2f AP:%.2f'%(CMC[0]*100,CMC[4]*100,CMC[9]*100, CMC[round(len(gallery_label)*0.01)]*100, ap/len(query_label)*100))
 
 # multiple-query
 CMC = torch.IntTensor(len(gallery_label)).zero_()

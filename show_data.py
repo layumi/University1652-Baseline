@@ -4,7 +4,10 @@ import os
 import numpy as np
 from PIL import Image
 
-target_root = 'data/train/drone'
+#target_root = 'data/train/drone'
+#target_root = 'data/train/street'
+#target_root = 'data/train/satellite'
+target_root = 'data/train/google'
 
 def pad(inp, pad = 3):
     #print(inp.size)
@@ -14,8 +17,8 @@ def pad(inp, pad = 3):
     return bg
 
 count = 0
-ncol = 4
-nrow = 4
+ncol = 20
+nrow = 25
 npad = 3
 im = {}
 white_col = np.ones( (128+2*npad,24,3))*255
@@ -25,14 +28,18 @@ for folder_name in os.listdir(target_root):
         continue
     for img_name in os.listdir(folder_root):
         input1 = Image.open(folder_root + '/' + img_name)
+        input1 = input1.convert('RGB')
         print(folder_root + '/' + img_name)
         input1 = input1.resize( (128, 128))
         # Start testing
         tmp = pad(input1, pad=npad)
         if count%ncol == 0:
             im[count//ncol] = tmp
-        im[count//ncol] = np.concatenate((im[count//ncol], white_col, tmp), axis=1)
+        else:
+            im[count//ncol] = np.concatenate((im[count//ncol], white_col, tmp), axis=1)
         count +=1
+        if 'drone' in target_root:
+            break
     if count > nrow*ncol:
         break
         
@@ -49,5 +56,5 @@ for i in range(nrow):
 
 #pic = np.concatenate((first_row, white_row, pic), axis=0)
 pic = Image.fromarray(pic.astype('uint8'))
-#pic.save('sample_%s.jpg'%os.path.basename(target_root))
-pic.save('sample.jpg')
+pic.save('sample_%s.jpg'%os.path.basename(target_root))
+#pic.save('sample.jpg')

@@ -96,6 +96,15 @@ def load_network(name, opt):
         model = two_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
     elif opt.views == 3:
         model = three_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share)
+
+    if 'use_vgg16' in config:
+        opt.use_vgg16 = config['use_vgg16']
+        if opt.views == 2:
+            model = two_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share, VGG16 = opt.use_vgg16)
+        elif opt.views == 3:
+            model = three_view_net(opt.nclasses, opt.droprate, stride = opt.stride, pool = opt.pool, share_weight = opt.share, VGG16 = opt.use_vgg16)
+
+
     # load model
     if isinstance(epoch, int):
         save_filename = 'net_%03d.pth'% epoch

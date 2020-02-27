@@ -32,10 +32,10 @@ except ImportError: # will be 3.x series
 parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
 parser.add_argument('--which_epoch',default='last', type=str, help='0,1,2,3...or last')
-parser.add_argument('--test_dir',default='./data/test',type=str, help='./test_data')
+parser.add_argument('--test_dir',default='./data/cvpr2017_cvusa/val',type=str, help='./test_data')
 parser.add_argument('--name', default='three_view_long_share_d0.75_256_s1_google', type=str, help='save model path')
 parser.add_argument('--pool', default='avg', type=str, help='avg|max')
-parser.add_argument('--batchsize', default=128, type=int, help='batchsize')
+parser.add_argument('--batchsize', default=64, type=int, help='batchsize')
 parser.add_argument('--h', default=256, type=int, help='height')
 parser.add_argument('--w', default=256, type=int, help='width')
 parser.add_argument('--views', default=2, type=int, help='views')
@@ -54,6 +54,7 @@ with open(config_path, 'r') as stream:
 opt.fp16 = config['fp16'] 
 opt.use_dense = config['use_dense']
 opt.use_NAS = config['use_NAS']
+opt.use_vgg16 = config['use_vgg16']
 opt.stride = config['stride']
 opt.views = config['views']
 
@@ -117,9 +118,9 @@ if opt.multi:
     dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
                                              shuffle=False, num_workers=16) for x in ['gallery','query','multi-query']}
 else:
-    image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ,data_transforms) for x in ['gallery_satellite','gallery_drone', 'gallery_street', 'query_satellite', 'query_drone', 'query_street']}
+    image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ,data_transforms) for x in ['satellite', 'street']}
     dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
-                                             shuffle=False, num_workers=16) for x in ['gallery_satellite', 'gallery_drone','gallery_street', 'query_satellite', 'query_drone', 'query_street']}
+                                             shuffle=False, num_workers=16) for x in ['satellite','street']}
 use_gpu = torch.cuda.is_available()
 
 ######################################################################
@@ -208,6 +209,7 @@ print('-------test-----------')
 model, _, epoch = load_network(opt.name, opt)
 model.classifier.classifier = nn.Sequential()
 model = model.eval()
+print(model)
 if use_gpu:
     model = model.cuda()
 
@@ -217,12 +219,8 @@ since = time.time()
 #gallery_name = 'gallery_street' 
 #query_name = 'query_satellite' 
 
-gallery_name = 'gallery_satellite'
-#query_name = 'query_street'
-
-#gallery_name = 'gallery_street'
-query_name = 'query_drone'
-#gallery_name = 'gallery_drone'
+gallery_name = 'satellite'
+query_name = 'street'
 
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)
