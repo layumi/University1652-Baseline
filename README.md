@@ -5,11 +5,11 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/layumi/Person_reID_baseline_pytorch.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/Person_reID_baseline_pytorch/alerts/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-[[Paper]](https://arxiv.org/abs/1711.05535) 
+[[Paper]](https://arxiv.org/abs/2002.12186) 
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
-This repository contains the code for our paper [University-1652: A Synthetic Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/1711.05535). Thank you for your kindly attention.
+This repository contains the code for our paper [University-1652: A Synthetic Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186). Thank you for your kindly attention.
 
 ## Table of contents
 * [Features](#features)
