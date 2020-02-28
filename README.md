@@ -2,6 +2,8 @@
 
 [[Paper]](https://arxiv.org/abs/1711.05535) 
 
+![](https://github.com/layumi/University1652-Baseline/blob/master/doc/index_files/Data.jpg)
+
 This repository contains the code for our paper [University-1652: A Synthetic Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/1711.05535). Thank you for your kindly attention.
 
 
