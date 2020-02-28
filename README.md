@@ -81,9 +81,9 @@ python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2
 The following paper uses and reports the result of the baseline model. You may cite it in your paper.
 ```
 @article{zheng2020joint,
-  title={},
-  author={Zheng, Zhedong },
-  journal={arXiv },
-  year={2019}
+  title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
+  author={Zhedong Zheng, Yunchao Wei, Yi Yang},
+  journal={arXiv 2002.12186},
+  year={2020}
 }
 ```
