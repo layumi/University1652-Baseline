@@ -6,6 +6,25 @@
 
 This repository contains the code for our paper [University-1652: A Synthetic Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/1711.05535). Thank you for your kindly attention.
 
+## Table of contents
+* [Features](#features)
+* [Prerequisites](#prerequisites)
+* [Getting Started](#getting-started)
+    * [Installation](#installation)
+    * [Dataset Preparation](#dataset--preparation)
+    * [Train Evaluation ](#train--evaluation)
+* [Citation](#citation)
+
+## Features
+Now we have supported:
+- Float16 to save GPU memory based on [apex](https://github.com/NVIDIA/apex)
+- Multiple Query Evaluation
+- Re-Ranking
+- Random Erasing
+- ResNet/VGG-16
+- Visualize Training Curves
+- Visualize Ranking Result
+- Linear Warm-up 
 
 ## Prerequisites
 
@@ -46,4 +65,17 @@ python test.py --name three_view_long_share_d0.75_256_s1_google
 python prepare_cvusa.py
 python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm 5 --lr 0.02 --use_vgg16 --h 256 --w 256  --fp16 --batchsize 16;
 python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2 
+```
+
+
+
+## Citation
+The following paper uses and reports the result of the baseline model. You may cite it in your paper.
+```
+@article{zheng2020joint,
+  title={},
+  author={Zheng, Zhedong },
+  journal={arXiv },
+  year={2019}
+}
 ```
