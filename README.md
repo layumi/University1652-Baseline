@@ -96,3 +96,8 @@ The following paper uses and reports the result of the baseline model. You may c
   year={2020}
 }
 ```
+
+## Related Work
+- Instance Loss [Code](https://github.com/layumi/Image-Text-Embedding)
+- Lending Orientation to Neural Networks for Cross-view Geo-localization [Code](https://github.com/Liumouliu/OriCNN)
+- Predicting Ground-Level Scene Layout from Aerial Imagery [Code](https://github.com/viibridges/crossnet)
