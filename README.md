@@ -15,14 +15,16 @@
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
-This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186). Thank you for your kindly attention.
+This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186). We collect 1652 buildings of 72 universities in total. 
+Thank you for your kindly attention.
 
 **Task 1: Drone-view target localization.** (Drone -> Satellite)} Given one drone-view image or video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
 
 **Task 2: Drone navigation.** (Satellite -> Drone)}  Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 ## Table of contents
-* [Features](#features)
+* [About Dataset](#about-dataset)
+* [Code Features](#code-features)
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
     * [Installation](#installation)
@@ -30,7 +32,21 @@ This repository contains the dataset link and the code for our paper [University
     * [Train Evaluation ](#train--evaluation)
 * [Citation](#citation)
 
-## Features
+## About Dataset
+The dataset split is as follows: 
+| Split | #imgs | #classes | #universities|
+| --------   | -----  | ----| ----|
+|Training | 50,218 | 701 | 33 |
+| Query$_{drone}$ | 37,855 | 701 |  39 |
+| Query$_{satellite}$ | 701 | 701 | 39|
+| Query$_{ground}$ | 2,579 | 701 | 39|
+| Gallery$_{drone}$ | 51,355 | 951 | 39|
+| Gallery$_{satellite} |  951 | 951 | 39|
+| Gallery$_{ground}$ | 2,921 | 793  | 39|
+
+We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
+
+## Code Features
 Now we have supported:
 - Float16 to save GPU memory based on [apex](https://github.com/NVIDIA/apex)
 - Multiple Query Evaluation
