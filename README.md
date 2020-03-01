@@ -15,8 +15,7 @@
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
-This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186). We collect 1652 buildings of 72 universities in total. 
-Thank you for your kindly attention.
+This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186). We collect 1652 buildings of 72 universities around the world. Thank you for your kindly attention.
 
 **Task 1: Drone-view target localization.** (Drone -> Satellite)} Given one drone-view image or video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
 
