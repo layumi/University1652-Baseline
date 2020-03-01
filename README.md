@@ -37,12 +37,12 @@ The dataset split is as follows:
 | Split | #imgs | #classes | #universities|
 | --------   | -----  | ----| ----|
 |Training | 50,218 | 701 | 33 |
-| Query$_{drone}$ | 37,855 | 701 |  39 |
-| Query$_{satellite}$ | 701 | 701 | 39|
-| Query$_{ground}$ | 2,579 | 701 | 39|
-| Gallery$_{drone}$ | 51,355 | 951 | 39|
-| Gallery$_{satellite} |  951 | 951 | 39|
-| Gallery$_{ground}$ | 2,921 | 793  | 39|
+| Query_drone | 37,855 | 701 |  39 |
+| Query_satellite | 701 | 701 | 39|
+| Query_ground | 2,579 | 701 | 39|
+| Gallery_drone | 51,355 | 951 | 39|
+| Gallery_satellite |  951 | 951 | 39|
+| Gallery_ground | 2,921 | 793  | 39|
 
 We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
 
