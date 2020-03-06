@@ -92,6 +92,9 @@ python train.py --name three_view_long_share_d0.75_256_s1_google  --extra --view
 python test.py --name three_view_long_share_d0.75_256_s1_google
 ```
 
+Default setting: Drone -> Satellite
+If you want to try other evaluation setting, you may change these lines at: https://github.com/layumi/University1652-Baseline/blob/master/test.py#L217-L225
+
 ### Train & Evaluation CVUSA
 ```
 python prepare_cvusa.py
