@@ -83,7 +83,7 @@ python setup.py install --cuda_ext --cpp_ext
 ## Dataset & Preparation
 Download [University-1652] upon request. You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
 
-Or download [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/) / [CVACT]((https://github.com/Liumouliu/OriCNN)).
+Or download [CVUSA](http://cs.uky.edu/~jacobs/datasets/cvusa/) / [CVACT](https://github.com/Liumouliu/OriCNN).
 
 ## Train & Evaluation 
 ### Train & Evaluation University-1652
