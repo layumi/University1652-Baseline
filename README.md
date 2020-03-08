@@ -29,6 +29,7 @@ This repository contains the dataset link and the code for our paper [University
     * [Installation](#installation)
     * [Dataset Preparation](#dataset--preparation)
     * [Train Evaluation ](#train--evaluation)
+    * [Trained Model](#trained--model)
 * [Citation](#citation)
 
 ## About Dataset
@@ -102,7 +103,9 @@ python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm 5 --lr 0.02 --use_
 python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2 
 ```
 
+## Trained Model
 
+I will release the trained model soon. After download, please put model folders under `./model/`.
 
 ## Citation
 The following paper uses and reports the result of the baseline model. You may cite it in your paper.
