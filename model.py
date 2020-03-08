@@ -210,11 +210,11 @@ class three_view_net(nn.Module):
     def __init__(self, class_num, droprate, stride = 2, pool = 'avg', share_weight = False, VGG16=False):
         super(three_view_net, self).__init__()
         if VGG16:
-            self.model_1 =  ft_net(class_num, stride = stride, pool = pool)
-            self.model_2 =  ft_net(class_num, stride = stride, pool = pool)
-        else:
             self.model_1 =  ft_net_VGG16(class_num, stride = stride, pool = pool)
             self.model_2 =  ft_net_VGG16(class_num, stride = stride, pool = pool)
+        else:
+            self.model_1 =  ft_net(class_num, stride = stride, pool = pool)
+            self.model_2 =  ft_net(class_num, stride = stride, pool = pool)
 
         if share_weight:
             self.model_3 = self.model_1
