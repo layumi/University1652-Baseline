@@ -24,6 +24,7 @@ This repository contains the dataset link and the code for our paper [University
 
 ## Table of contents
 * [About Dataset](#about-dataset)
+* [News](#news)
 * [Code Features](#code-features)
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
@@ -46,6 +47,9 @@ The dataset split is as follows:
 | Gallery_ground | 2,921 | 793  | 39|
 
 We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
+
+## News
+**12 March 2020** I add the [state-of-the-art](https://github.com/layumi/University1652-Baseline/tree/master/State-of-the-art) page for geo-localization and [tutorial](https://github.com/layumi/University1652-Baseline/tree/master/tutorial), which will be updated soon.
 
 ## Code Features
 Now we have supported:
