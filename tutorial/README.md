@@ -1,13 +1,20 @@
 # Geo-Localization-Practical
 
-[![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](https://github.com/layumi/Person_reID_baseline_pytorch/tree/master/tutorial) 
+[![Readme-EN](https://img.shields.io/badge/README-English-green.svg)](https://github.com/layumi/Person_reID_baseline_pytorch/tree/master/tutorial) (8 min read)
 
 By [Zhedong Zheng](http://zdzheng.xyz/)
 
 This is a [University of Technology Sydney](https://www.uts.edu.au) computer vision practical, authored by Zhedong Zheng.
-The practical explores the basis of learning shared features for different platforms. In this practical, we will learn to build a simple geo-localization system step by step. (8 min read) :+1: **Any suggestion is welcomed.**
+The practical explores the basis of learning shared features for different platforms. In this practical, we will learn to build a simple geo-localization system step by step.  :+1: **Any suggestion is welcomed.**
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/top3.jpg)
+
+We hope this tutorial could help the drone-related tasks, such as drone delivery (e.g., sending mask), event detection and agriculture. Next, we mainly focus on the two basic tasks: 
+
+**Task 1: Drone-view target localization.** (Drone -> Satellite) Given one drone-view image or video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
+
+**Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
+
 
 ## Keywords
 Geo-Localization, University-1652, CVUSA
