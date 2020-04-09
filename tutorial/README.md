@@ -41,25 +41,27 @@ Check the Prerequisites. The download links for this practice are:
 ### Part 1.1: Prepare Data Folder 
 You may notice that the downloaded folder is organized as: 
 ```
-├── Market/
-│   ├── bounding_box_test/          /* Files for testing (candidate images pool)
-│   ├── bounding_box_train/         /* Files for training 
-│   ├── gt_bbox/                    /* Files for multiple query testing 
-│   ├── gt_query/                   /* We do not use it
-│   ├── query/                      /* Files for testing (query images)
+├── University-1652/
 │   ├── readme.txt
-│   ├── pytorch/
-│       ├── train/                   /* train 
-│           ├── 0002
-|           ├── 0007
+│   ├── train/
+│       ├── drone/                   /* drone-view training images 
+│           ├── 0001
+|           ├── 0002
 |           ...
-│       ├── val/                     /* val
-│       ├── train_all/               /* train+val      
-│       ├── query/                   /* query files  
-│       ├── gallery/                 /* gallery files  
+│       ├── street/                  /* street-view training images 
+│       ├── satellite/               /* satellite-view training images       
+│       ├── google/                  /* noisy street-view training images (collected from Google Image)
+│   ├── test/
+│       ├── query_drone/  
+│       ├── gallery_drone/  
+│       ├── query_street/  
+│       ├── gallery_street/ 
+│       ├── query_satellite/  
+│       ├── gallery_satellite/ 
+│       ├── 4K_drone/
 ```
 
-In every subdir, such as `pytorch/train/0002`, images with the same ID are arranged in the folder.
+In every subdir, such as `train/drone/0002`, images with the same ID are arranged in the folder.
 Now we have successfully prepared the data for `torchvision` to read the data. 
 
 ### Part 1.2: Build Neural Network (`model.py`)
