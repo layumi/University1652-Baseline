@@ -46,6 +46,28 @@ The dataset split is as follows:
 | Gallery_satellite |  951 | 951 | 39|
 | Gallery_ground | 2,921 | 793  | 39|
 
+More detailed file structure:
+```
+├── University-1652/
+│   ├── readme.txt
+│   ├── train/
+│       ├── drone/                   /* drone-view training images 
+│           ├── 0001
+|           ├── 0002
+|           ...
+│       ├── street/                  /* street-view training images 
+│       ├── satellite/               /* satellite-view training images       
+│       ├── google/                  /* noisy street-view training images (collected from Google Image)
+│   ├── test/
+│       ├── query_drone/  
+│       ├── gallery_drone/  
+│       ├── query_street/  
+│       ├── gallery_street/ 
+│       ├── query_satellite/  
+│       ├── gallery_satellite/ 
+│       ├── 4K_drone/
+```
+
 We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
