@@ -1,4 +1,4 @@
-## State-of-the-art
+## Awesome Geo-localization
 ### University-1652
 
 |Methods | R@1 | AP | R@1 | AP | Reference |
