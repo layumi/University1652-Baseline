@@ -137,7 +137,7 @@ You could download the trained model at [GoogleDrive](https://drive.google.com/o
 ## Citation
 The following paper uses and reports the result of the baseline model. You may cite it in your paper.
 ```bibtex
-@article{zheng2020joint,
+@article{zheng2020university,
   title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
   author={Zhedong Zheng, Yunchao Wei, Yi Yang},
   journal={arXiv 2002.12186},
