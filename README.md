@@ -72,6 +72,7 @@ We note that there are no ovelaps between 33 univeristies of training set and 39
 
 ## News
 **12 July  2020** I made the baseline of triplet loss (with soft margin) on University-1652 public available at [Here](https://github.com/layumi/University1652-triplet-loss).
+
 **12 March 2020** I add the [state-of-the-art](https://github.com/layumi/University1652-Baseline/tree/master/State-of-the-art) page for geo-localization and [tutorial](https://github.com/layumi/University1652-Baseline/tree/master/tutorial), which will be updated soon.
 
 ## Code Features
