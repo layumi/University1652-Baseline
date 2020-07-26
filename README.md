@@ -145,7 +145,7 @@ The following paper uses and reports the result of the baseline model. You may c
 ```bibtex
 @article{zheng2020university,
   title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
-  author={Zhedong Zheng, Yunchao Wei, Yi Yang},
+  author={Zheng, Zhedong and Wei, Yunchao and Yang, Yi},
   journal={ACM Multimedia},
   year={2020}
 }
