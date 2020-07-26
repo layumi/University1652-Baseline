@@ -71,7 +71,9 @@ More detailed file structure:
 We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
-**12 July  2020** I made the baseline of triplet loss (with soft margin) on University-1652 public available at [Here](https://github.com/layumi/University1652-triplet-loss).
+**26 July 2020** The paper is accepted by ACM Multimedia 2020.
+
+**12 July 2020** I made the baseline of triplet loss (with soft margin) on University-1652 public available at [Here](https://github.com/layumi/University1652-triplet-loss).
 
 **12 March 2020** I add the [state-of-the-art](https://github.com/layumi/University1652-Baseline/tree/master/State-of-the-art) page for geo-localization and [tutorial](https://github.com/layumi/University1652-Baseline/tree/master/tutorial), which will be updated soon.
 
@@ -144,7 +146,7 @@ The following paper uses and reports the result of the baseline model. You may c
 @article{zheng2020university,
   title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
   author={Zhedong Zheng, Yunchao Wei, Yi Yang},
-  journal={arXiv 2002.12186},
+  journal={ACM Multimedia},
   year={2020}
 }
 ```
