@@ -85,14 +85,33 @@ from torchvision import models
 
 # Define the ResNet50-based Model
 class ft_net(nn.Module):
-    def __init__(self, class_num = 751):
+
+    def __init__(self, class_num, droprate=0.5, stride=2, init_model=None, pool='avg'):
         super(ft_net, self).__init__()
-        #load the model
-        model_ft = models.resnet50(pretrained=True) 
-        # change avg pooling to global pooling
-        model_ft.avgpool = nn.AdaptiveAvgPool2d((1,1))
-        self.model = model_ft
-        self.classifier = ClassBlock(2048, class_num) #define our classifier.
+        model_ft = models.resnet50(pretrained=True)
+        # avg pooling to global pooling
+        if stride == 1:
+            model_ft.layer4[0].downsample[0].stride = (1,1)
+            model_ft.layer4[0].conv2.stride = (1,1)
+
+        self.pool = pool
+        if pool =='avg+max':
+            model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
+            model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
+            self.model = model_ft
+            #self.classifier = ClassBlock(4096, class_num, droprate)
+        elif pool=='avg':
+            model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
+            self.model = model_ft
+            #self.classifier = ClassBlock(2048, class_num, droprate)
+        elif pool=='max':
+            model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
+            self.model = model_ft
+
+        if init_model!=None:
+            self.model = init_model.model
+            self.pool = init_model.pool
+            #self.classifier.add_block = init_model.classifier.add_block
 
     def forward(self, x):
         x = self.model.conv1(x)
@@ -103,11 +122,63 @@ class ft_net(nn.Module):
         x = self.model.layer2(x)
         x = self.model.layer3(x)
         x = self.model.layer4(x)
-        x = self.model.avgpool(x)
-        x = torch.squeeze(x)
-        x = self.classifier(x) #use our classifier.
+        if self.pool == 'avg+max':
+            x1 = self.model.avgpool2(x)
+            x2 = self.model.maxpool2(x)
+            x = torch.cat((x1,x2), dim = 1)
+            x = x.view(x.size(0), x.size(1))
+        elif self.pool == 'avg':
+            x = self.model.avgpool2(x)
+            x = x.view(x.size(0), x.size(1))
+        elif self.pool == 'max':
+            x = self.model.maxpool2(x)
+            x = x.view(x.size(0), x.size(1))
+        #x = self.classifier(x)
         return x
 ```
+
+We have the data from three different platiforms, which may not share the low-level patterns. One straight-forward idea is to use backbone without sharing  weights. Here we re-use the class `ft_net` that we just defined to build `model_1` and `model_2`.
+
+```python
+class two_view_net(nn.Module):
+    def __init__(self, class_num, droprate, stride = 2, pool = 'avg', share_weight = False, VGG16=False):
+        super(two_view_net, self).__init__()
+        if VGG16:
+            self.model_1 =  ft_net_VGG16(class_num, stride=stride, pool = pool)
+        else:
+            self.model_1 =  ft_net(class_num, stride=stride, pool = pool)
+        if share_weight:
+            self.model_2 = self.model_1
+        else:
+            if VGG16:
+                self.model_2 =  ft_net_VGG16(class_num, stride = stride, pool = pool)
+            else:
+                self.model_2 =  ft_net(class_num, stride = stride, pool = pool)
+
+        self.classifier = ClassBlock(2048, class_num, droprate)
+        if pool =='avg+max':
+            self.classifier = ClassBlock(4096, class_num, droprate)
+        if VGG16:
+            self.classifier = ClassBlock(512, class_num, droprate)
+            if pool =='avg+max':
+                self.classifier = ClassBlock(1024, class_num, droprate)
+
+    def forward(self, x1, x2):
+        if x1 is None:
+            y1 = None
+        else:
+            x1 = self.model_1(x1)
+            y1 = self.classifier(x1)
+
+        if x2 is None:
+            y2 = None
+        else:
+            x2 = self.model_2(x2)
+            y2 = self.classifier(x2)
+        return y1, y2
+```
+Note that the `classifier` does share weight, which is the key of [instance loss](https://arxiv.org/abs/1711.05535).
+
 ### Part 1.3: Training (`python train.py`)
 OK. Now we have prepared the training data and defined model structure.
 
