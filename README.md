@@ -71,6 +71,9 @@ More detailed file structure:
 We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+**27 July 2020** The meta data of 1652 buildings, such as latitude and longitude, are now available at [Google Driver](https://drive.google.com/file/d/1PL8fVky9KZg7XESsuS5NCsYRyYAwui3S/view?usp=sharing). (You could use Google Earth Pro to open the kml file).  
+We also provide the spiral flight tour file at [Google Driver](https://drive.google.com/file/d/1EW5Esi72tPcfL3zmoHYpufKj_SXrY-xE/view?usp=sharing). (You could open the kml file via Google Earth Pro to enable the flight camera).  
+
 **26 July 2020** The paper is accepted by ACM Multimedia 2020.
 
 **12 July 2020** I made the baseline of triplet loss (with soft margin) on University-1652 public available at [Here](https://github.com/layumi/University1652-triplet-loss).
