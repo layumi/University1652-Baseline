@@ -8,6 +8,7 @@
 |Triplet Loss (margin=0.5)  | 53.58 | 58.60 | 64.48 | 53.15 |
 |Weighted Soft Margin Triplet Loss | 53.21 | 58.03 | 65.62 | 54.47|
 |Instance Loss | 58.23 | 62.91 | 74.47 | 59.45 |
+|LPN | 75.93 | 79.14 | 86.45 | 74.79 | Tingyu W, Zhedong Z, Chenggang Y, and Yi, Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. [[Paper]](https://arxiv.org/abs/2008.11646) |
 
 
 ### cvusa
@@ -23,4 +24,5 @@
 |Instance Loss  | 43.91 | 66.38 | 74.58 | 91.78 | Zhedong Zheng, Yunchao Wei, Yi Yang. University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization. ACM Multimedia 2020. [[Paper]](https://arxiv.org/abs/2002.12186) |
 |CVFT | 61.43 | 84.69 | 90.49 | 99.02 | Shi Y, Yu X, Liu L, et al. Optimal Feature Transport for Cross-View Image Geo-Localization. AAAI 2020. [[Paper]](https://arxiv.org/abs/1907.05021) |
 |SAFA | 89.84 | 96.93 | 98.14 | 99.64 | Yujiao Shi, Liu Liu, Xin Yu, et al. Spatial-Aware Feature Aggregation for Cross-View Image based Geo-Localization. NIPS 2019. [[Paper]](http://papers.neurips.cc/paper/9199-spatial-aware-feature-aggregation-for-image-based-cross-view-geo-localization) |
+|LPN | 92.83 | 98.00 | 98.85 | 99.78 | Tingyu W, Zhedong Z, Chenggang Y, and Yi, Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. [[Paper]](https://arxiv.org/abs/2008.11646) 
 *: The method utilizes extra orientation information as input.
