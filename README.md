@@ -144,7 +144,7 @@ python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2
 
 ## Trained Model
 
-You could download the trained model at [GoogleDrive](https://drive.google.com/open?id=1iES210erZWXptIttY5EBouqgcF5JOBYO). After download, please put model folders under `./model/`.
+You could download the trained model at [GoogleDrive](https://drive.google.com/open?id=1iES210erZWXptIttY5EBouqgcF5JOBYO) or [OneDrive](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EW19pLps66RCuJcMAOtWg5kB6Ux_O-9YKjyg5hP24-yWVQ?e=BZXcdM). After download, please put model folders under `./model/`.
 
 ## Citation
 The following paper uses and reports the result of the baseline model. You may cite it in your paper.
