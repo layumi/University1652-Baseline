@@ -7,7 +7,7 @@
 |Triplet Loss (margin=0.3)  | 55.18 | 59.97 | 63.62 | 53.85 |
 |Triplet Loss (margin=0.5)  | 53.58 | 58.60 | 64.48 | 53.15 |
 |Weighted Soft Margin Triplet Loss | 53.21 | 58.03 | 65.62 | 54.47|
-|Instance Loss | 58.23 | 62.91 | 74.47 | 59.45 |
+|Instance Loss | 58.23 | 62.91 | 74.47 | 59.45 | Zheng Z, Zheng L, Garrett M, et al. Dual-Path Convolutional Image-Text Embedding with Instance Loss. TOMM 2020. [[Paper]](https://arxiv.org/abs/1711.05535) |
 |LPN | 75.93 | 79.14 | 86.45 | 74.79 | Tingyu W, Zhedong Z, Chenggang Y, and Yi, Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. arXiv 2020. [[Paper]](https://arxiv.org/abs/2008.11646) |
 
 
