@@ -156,7 +156,20 @@ The following paper uses and reports the result of the baseline model. You may c
   year={2020}
 }
 ```
-
+Instance loss is defined in 
+```bibtex
+@article{zheng2017dual,
+  title={Dual-Path Convolutional Image-Text Embeddings with Instance Loss},
+  author={Zheng, Zhedong and Zheng, Liang and Garrett, Michael and Yang, Yi and Xu, Mingliang and Shen, Yi-Dong},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  doi={10.1145/3383184},
+  volume={16},
+  number={2},
+  pages={1--23},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+```
 ## Related Work
 - Instance Loss [Code](https://github.com/layumi/Image-Text-Embedding)
 - Lending Orientation to Neural Networks for Cross-view Geo-localization [Code](https://github.com/Liumouliu/OriCNN)
