@@ -69,7 +69,7 @@ More detailed file structure:
 │       ├── 4K_drone/
 ```
 
-We note that there are no ovelaps between 33 univeristies of training set and 39 univeristies of test set.
+We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
 **21 August 2020** The transfer learning code for Oxford and Paris is at [Here](https://github.com/layumi/cnnimageretrieval-pytorch/blob/master/cirtorch/examples/test_My1652model.py).
