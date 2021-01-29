@@ -1,5 +1,10 @@
 ## Awesome Geo-localization
-### University-1652
+
+ * [University-1652 Dataset](#university-1652-dataset)
+ * [cvusa Dataset](#cvusa-dataset)
+ * [cvact Dataset](#cvact-dataset)
+ 
+### University-1652 Dataset
 
 |Methods | R@1 | AP | R@1 | AP | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
@@ -15,7 +20,7 @@
 |Instance Loss + Verification Loss + LPN | 77.08 | 80.18 | 85.02 | 73.80 |
 |Instance Loss + Weighted Soft Margin Triplet Loss + LPN | 76.29 | 79.46 | 81.74 | 73.58 |
 
-### cvusa
+### cvusa Dataset
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 |Workman | - | - | - | 34.40 | Scott Workman, Richard Souvenir, and Nathan Jacobs. ICCV 2015. Wide-area image geolocalization with aerial reference imagery [[Paper]](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Workman_Wide-Area_Image_Geolocalization_ICCV_2015_paper.pdf) |
@@ -32,7 +37,7 @@
 |SAFA + LPN | 92.83 | 98.00 | 98.85 | 99.78 | Tingyu W, Zhedong Z, Chenggang Y, and Yi, Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. arXiv 2020. [[Paper]](https://arxiv.org/abs/2008.11646) 
 *: The method utilizes extra orientation information as input.
 
-### cvact
+### cvact Dataset
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 |CVM-Net | 20.15 | 45.00 | 56.87 | 87.57 | Sixing Hu, Mengdan Feng, Rang MH Nguyen, and Gim Hee Lee. CVPR 2018. CVM-net:Cross-view matching network for image-based ground-to-aerial geo-localization. [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_CVM-Net_Cross-View_Matching_CVPR_2018_paper.html)| 
