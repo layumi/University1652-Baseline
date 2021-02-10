@@ -37,7 +37,7 @@ This repository contains the dataset link and the code for our paper [University
 
 ## About Dataset
 The dataset split is as follows: 
-| Split | #imgs | #classes | #universities|
+| Split | #imgs | #buildings | #universities|
 | --------   | -----  | ----| ----|
 |Training | 50,218 | 701 | 33 |
 | Query_drone | 37,855 | 701 |  39 |
