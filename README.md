@@ -72,6 +72,8 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+**3 March 2021** GeM Pooling is added. You may use it by `--pool gem`.
+
 **21 January 2021** The GPU-Re-Ranking,  a GNN-based real-time post-processing code, is at [Here](GPU-Re-Ranking/).
 
 **21 August 2020** The transfer learning code for Oxford and Paris is at [Here](https://github.com/layumi/cnnimageretrieval-pytorch/blob/master/cirtorch/examples/test_My1652model.py).
