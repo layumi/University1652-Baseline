@@ -72,7 +72,7 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
-**3 March 2021** GeM Pooling is added. You may use it by `--pool gem`.
+**3 March 2021** [GeM Pooling](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8382272&casa_token=SVu7pCOzZAEAAAAA:zuGKumdcCIT8YxRMTipouH8XvawFsbOMqxAeDYWH5jmcdAIuJ8YZ557E8gH2dGgovpmWMPXFB-4) is added. You may use it by `--pool gem`.
 
 **21 January 2021** The GPU-Re-Ranking,  a GNN-based real-time post-processing code, is at [Here](GPU-Re-Ranking/).
 
