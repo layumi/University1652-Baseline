@@ -135,7 +135,14 @@ python test.py --name three_view_long_share_d0.75_256_s1_google
 ```
 
 Default setting: Drone -> Satellite
-If you want to try other evaluation setting, you may change these lines at: https://github.com/layumi/University1652-Baseline/blob/master/test.py#L217-L225
+If you want to try other evaluation setting, you may change these lines at: https://github.com/layumi/University1652-Baseline/blob/master/test.py#L217-L225 
+
+### Ablation Study without Street 
+```
+python train_no_street.py --name two_view_long_no_street_share_d0.75_256_s1  --share --views 3  --droprate 0.75  --stride 1 --h 256  --w 256  --fp16; 
+python test.py --name two_view_long_no_street_share_d0.75_256_s1
+```
+Set three views but set the weight of loss on street images to zero.
 
 ### Train & Evaluation CVUSA
 ```
