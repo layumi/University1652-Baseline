@@ -29,8 +29,8 @@ core
 *.tar
 *.zip
 *.mat
-*.jpg
-*.jpeg
+#*.jpg
+#*.jpeg
 *.npy
 *.pt
 *.pth

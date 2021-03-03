@@ -215,14 +215,14 @@ if use_gpu:
 since = time.time()
 
 #gallery_name = 'gallery_street' 
-#query_name = 'query_satellite' 
+query_name = 'query_satellite' 
 
-gallery_name = 'gallery_satellite'
+#gallery_name = 'gallery_satellite'
 #query_name = 'query_street'
 
 #gallery_name = 'gallery_street'
-query_name = 'query_drone'
-#gallery_name = 'gallery_drone'
+#query_name = 'query_drone'
+gallery_name = 'gallery_drone'
 
 which_gallery = which_view(gallery_name)
 which_query = which_view(query_name)

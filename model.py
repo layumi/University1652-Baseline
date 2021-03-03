@@ -7,6 +7,28 @@ from torch.autograd import Variable
 from torch.nn import functional as F
 
 ######################################################################
+class GeM(nn.Module):
+    # channel-wise GeM zhedong zheng
+    def __init__(self, dim = 2048, p=3, eps=1e-6):
+        super(GeM,  self).__init__()
+        self.p = nn.Parameter(torch.ones(dim)*p) #initial p
+        self.eps = eps
+
+    def forward(self, x):
+        return self.gem(x, p=self.p, eps=self.eps)
+
+    def gem(self, x, p=3, eps=1e-6):
+        x = torch.transpose(x, 1, -1)
+        x = (x+eps).pow(p)
+        x = torch.transpose(x, 1, -1)
+        x = F.avg_pool2d(x, (x.size(-2), x.size(-1)))
+        x = x.view(x.size(0), x.size(1))
+        x = x.pow(1./p)
+        return x
+
+    def __repr__(self):
+        return self.__class__.__name__ + '(' + 'p=' + '{:.4f}'.format(self.p.data.tolist()[0]) + ', ' + 'eps=' + str(self.eps) + ')'
+
 def weights_init_kaiming(m):
     classname = m.__class__.__name__
     # print(classname)
@@ -82,15 +104,16 @@ class ft_net_VGG16(nn.Module):
         if pool =='avg+max':
             model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
             model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
-            self.model = model_ft
             #self.classifier = ClassBlock(4096, class_num, droprate)
         elif pool=='avg':
             model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
-            self.model = model_ft
             #self.classifier = ClassBlock(2048, class_num, droprate)
         elif pool=='max':
             model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
-            self.model = model_ft
+        elif pool=='gem':
+            model_ft.gem2 = GeM(dim = 512)
+
+        self.model = model_ft
 
         if init_model!=None:
             self.model = init_model.model
@@ -103,13 +126,14 @@ class ft_net_VGG16(nn.Module):
             x1 = self.model.avgpool2(x)
             x2 = self.model.maxpool2(x)
             x = torch.cat((x1,x2), dim = 1)
-            x = x.view(x.size(0), x.size(1))
         elif self.pool == 'avg':
             x = self.model.avgpool2(x)
-            x = x.view(x.size(0), x.size(1))
         elif self.pool == 'max':
             x = self.model.maxpool2(x)
-            x = x.view(x.size(0), x.size(1))
+        elif self.pool=='gem':
+            x = self.model.gem2(x)
+
+        x = x.view(x.size(0), x.size(1))
 
         #x = self.classifier(x)
         return x
@@ -130,15 +154,16 @@ class ft_net(nn.Module):
         if pool =='avg+max':
             model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
             model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
-            self.model = model_ft
             #self.classifier = ClassBlock(4096, class_num, droprate)
         elif pool=='avg':
             model_ft.avgpool2 = nn.AdaptiveAvgPool2d((1,1))
-            self.model = model_ft
             #self.classifier = ClassBlock(2048, class_num, droprate)
         elif pool=='max':
             model_ft.maxpool2 = nn.AdaptiveMaxPool2d((1,1))
-            self.model = model_ft
+        elif pool=='gem':
+            model_ft.gem2 = GeM(dim=2048)
+
+        self.model = model_ft
 
         if init_model!=None:
             self.model = init_model.model
@@ -158,13 +183,14 @@ class ft_net(nn.Module):
             x1 = self.model.avgpool2(x)
             x2 = self.model.maxpool2(x)
             x = torch.cat((x1,x2), dim = 1)
-            x = x.view(x.size(0), x.size(1))
         elif self.pool == 'avg':
             x = self.model.avgpool2(x)
-            x = x.view(x.size(0), x.size(1))
         elif self.pool == 'max':
             x = self.model.maxpool2(x)
-            x = x.view(x.size(0), x.size(1))
+        elif self.pool == 'gem':
+            x = self.model.gem2(x)
+
+        x = x.view(x.size(0), x.size(1))
         #x = self.classifier(x)
         return x
 
