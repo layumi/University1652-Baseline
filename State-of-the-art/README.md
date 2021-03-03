@@ -8,6 +8,7 @@
 
 |Methods | R@1 | AP | R@1 | AP | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
+|| Drone -> Satellite | | Satellite -> Drone |  |
 |Contrastive Loss | 52.39 | 57.44 | 63.91 | 52.24|
 |Triplet Loss (margin=0.3)  | 55.18 | 59.97 | 63.62 | 53.85 |
 |Triplet Loss (margin=0.5)  | 53.58 | 58.60 | 64.48 | 53.15 |
