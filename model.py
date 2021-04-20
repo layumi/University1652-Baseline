@@ -8,26 +8,27 @@ from torch.nn import functional as F
 
 ######################################################################
 class GeM(nn.Module):
-    # channel-wise GeM zhedong zheng
-    def __init__(self, dim = 2048, p=2, eps=1e-6):
+    # GeM zhedong zheng
+    def __init__(self, dim = 2048, p=3, eps=1e-6):
         super(GeM,  self).__init__()
-        self.p = nn.Parameter(torch.ones(dim)*p) #initial p
+        self.p = nn.Parameter(torch.ones(dim)*p, requires_grad = True) #initial p
         self.eps = eps
-
+        self.dim = dim
     def forward(self, x):
         return self.gem(x, p=self.p, eps=self.eps)
 
-    def gem(self, x, p=2, eps=1e-6):
+    def gem(self, x, p=3, eps=1e-6):
         x = torch.transpose(x, 1, -1)
-        x = x.pow(1+F.relu(p))
+        x = x.clamp(min=eps).pow(p)
         x = torch.transpose(x, 1, -1)
-        x = F.avg_pool2d(x, (x.size(-2), x.size(-1)))
-        x = x.view(x.size(0), x.size(1))
-        x = x.pow(1./p)
+        x = torch.mean(x, dim=-1)
+        x = torch.transpose(x, 1, -1)
+        x = torch.pow(x , 1./p )
+        x = torch.transpose(x, 1, -1)
         return x
 
     def __repr__(self):
-        return self.__class__.__name__ + '(' + 'p=' + '{:.4f}'.format(1+self.p.data.tolist()[0]) + ', ' + 'eps=' + str(self.eps) + ')'
+        return self.__class__.__name__ + '(' + 'p=' + '{:.4f}'.format(self.p.data.tolist()[0]) + ', ' + 'eps=' + str(self.eps) + ',' + 'dim='+str(self.dim)+')'
 
 def weights_init_kaiming(m):
     classname = m.__class__.__name__
