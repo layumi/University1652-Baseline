@@ -21,10 +21,9 @@ class GeM(nn.Module):
         x = torch.transpose(x, 1, -1)
         x = x.clamp(min=eps).pow(p)
         x = torch.transpose(x, 1, -1)
-        x = torch.mean(x, dim=-1)
-        x = torch.transpose(x, 1, -1)
-        x = torch.pow(x , 1./p )
-        x = torch.transpose(x, 1, -1)
+        x = F.avg_pool2d(x, (x.size(-2), x.size(-1)))
+        x = x.view(x.size(0), x.size(1))
+        x = x.pow(1./p)
         return x
 
     def __repr__(self):
