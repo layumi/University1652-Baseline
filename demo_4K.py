@@ -4,7 +4,7 @@ import torch
 import numpy as np
 import os
 from torchvision import datasets
-import matplotlib
+#import matplotlib
 #matplotlib.use('agg')
 import matplotlib.pyplot as plt
 #######################################################################
