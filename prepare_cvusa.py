@@ -1,6 +1,5 @@
 import os
 from shutil import copyfile
-import numpy as np
 
 download_path = 'data/cvpr2017_cvusa/'
 train_split = download_path + 'splits/train-19zl.csv'
