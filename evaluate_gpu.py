@@ -92,22 +92,22 @@ CMC = CMC/len(query_label) #average CMC
 print(round(len(gallery_label)*0.01))
 print('Recall@1:%.2f Recall@5:%.2f Recall@10:%.2f Recall@top1:%.2f AP:%.2f'%(CMC[0]*100,CMC[4]*100,CMC[9]*100, CMC[round(len(gallery_label)*0.01)]*100, ap/len(query_label)*100))
 
-# multiple-query
-CMC = torch.IntTensor(len(gallery_label)).zero_()
-ap = 0.0
-if multi:
-    for i in range(len(query_label)):
-        mquery_index1 = np.argwhere(mquery_label==query_label[i])
-        mquery_index2 = np.argwhere(mquery_cam==query_cam[i])
-        mquery_index =  np.intersect1d(mquery_index1, mquery_index2)
-        mq = torch.mean(mquery_feature[mquery_index,:], dim=0)
-        ap_tmp, CMC_tmp = evaluate(mq,query_label[i],query_cam[i],gallery_feature,gallery_label,gallery_cam)
-        if CMC_tmp[0]==-1:
-            continue
-        CMC = CMC + CMC_tmp
-        ap += ap_tmp
-        #print(i, CMC_tmp[0])
-    CMC = CMC.float()
-    CMC = CMC/len(query_label) #average CMC
-    print('multi Rank@1:%f Rank@5:%f Rank@10:%f mAP:%f'%(CMC[0],CMC[4],CMC[9],ap/len(query_label)))
+# multiple-query evaluation is not used.
+#CMC = torch.IntTensor(len(gallery_label)).zero_()
+#ap = 0.0
+#if multi:
+#    for i in range(len(query_label)):
+#        mquery_index1 = np.argwhere(mquery_label==query_label[i])
+#        mquery_index2 = np.argwhere(mquery_cam==query_cam[i])
+#        mquery_index =  np.intersect1d(mquery_index1, mquery_index2)
+#        mq = torch.mean(mquery_feature[mquery_index,:], dim=0)
+#        ap_tmp, CMC_tmp = evaluate(mq,query_label[i],query_cam[i],gallery_feature,gallery_label,gallery_cam)
+#        if CMC_tmp[0]==-1:
+#            continue
+#        CMC = CMC + CMC_tmp
+#        ap += ap_tmp
+#        #print(i, CMC_tmp[0])
+#    CMC = CMC.float()
+#    CMC = CMC/len(query_label) #average CMC
+#    print('multi Rank@1:%f Rank@5:%f Rank@10:%f mAP:%f'%(CMC[0],CMC[4],CMC[9],ap/len(query_label)))
 
