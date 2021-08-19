@@ -1,8 +1,8 @@
 <h1 align="center"> University1652-Baseline </h1>
 
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/layumi/Person_reID_baseline_pytorch.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/Person_reID_baseline_pytorch/context:python)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/layumi/Person_reID_baseline_pytorch.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/Person_reID_baseline_pytorch/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/alerts/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 [![VideoDemo](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/youtube1.png)](https://www.youtube.com/embed/dzxXPp8tVn4?vq=hd1080)
@@ -103,7 +103,7 @@ Now we have supported:
 - Python 3.6
 - GPU Memory >= 8G
 - Numpy > 1.12.1
-- Pytorch 0.3+
+- Pytorch 0.3+ (The latest pytorch 1.9, 1.8 may not work due to the change of torchvision.)
 - [Optional] apex (for float16) 
 
 ## Getting started
