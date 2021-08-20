@@ -20,7 +20,6 @@ import os
 from model import two_view_net, three_view_net
 from random_erasing import RandomErasing
 import yaml
-import math
 from shutil import copyfile
 from utils import update_average, get_model_list, load_network, save_network, make_weights_for_balanced_classes
 
@@ -28,7 +27,7 @@ version =  torch.__version__
 #fp16
 try:
     from apex.fp16_utils import *
-    from apex import amp, optimizers
+    from apex import amp
 except ImportError: # will be 3.x series
     print('This is not an error. If you want to use low precision, i.e., fp16, please install the apex with cuda support (https://github.com/NVIDIA/apex) and update pytorch to 1.0')
 ######################################################################
