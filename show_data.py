@@ -1,5 +1,3 @@
-import sys
-import torch
 import os
 import numpy as np
 from PIL import Image
