@@ -20,7 +20,6 @@ import os
 from model import two_view_net, three_view_net
 from random_erasing import RandomErasing
 import yaml
-import math
 from shutil import copyfile
 from utils import update_average, get_model_list, load_network, save_network, make_weights_for_balanced_classes
 
