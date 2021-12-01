@@ -9,6 +9,7 @@ import torch.optim as optim
 from torch.optim import lr_scheduler
 from torch.autograd import Variable
 from torchvision import datasets, transforms
+from folder import ImageFolder
 import torch.backends.cudnn as cudnn
 import matplotlib
 matplotlib.use('agg')
@@ -139,7 +140,7 @@ image_datasets['street'] = datasets.ImageFolder(os.path.join(data_dir, 'street')
                                           data_transforms['train'])
 image_datasets['drone'] = datasets.ImageFolder(os.path.join(data_dir, 'drone18'),
                                           data_transforms['train'])
-image_datasets['google'] = datasets.ImageFolder(os.path.join(data_dir, 'google'),
+image_datasets['google'] = ImageFolder(os.path.join(data_dir, 'google'),
                                           data_transforms['train'])
 
 dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
