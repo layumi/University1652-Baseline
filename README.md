@@ -72,6 +72,8 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+**1 Dec 2021** Fix the issue due to the latest torchvision, which do not allow the empty subfolder. Note that some buildings do not have google images.  
+
 **3 March 2021** [GeM Pooling](https://cmp.felk.cvut.cz/~radenfil/publications/Radenovic-arXiv17a.pdf) is added. You may use it by `--pool gem`.
 
 **21 January 2021** The GPU-Re-Ranking,  a GNN-based real-time post-processing code, is at [Here](GPU-Re-Ranking/).
@@ -103,7 +105,7 @@ Now we have supported:
 - Python 3.6
 - GPU Memory >= 8G
 - Numpy > 1.12.1
-- Pytorch 0.3+ (The latest pytorch 1.9, 1.8 may not work due to the change of torchvision.)
+- Pytorch 0.3+ 
 - [Optional] apex (for float16) 
 
 ## Getting started
