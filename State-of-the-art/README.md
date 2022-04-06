@@ -6,6 +6,7 @@
  
 ### University-1652 Dataset
 
+Drone <-> Satellite 
 |Methods | R@1 | AP | R@1 | AP | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 || Drone -> Satellite | | Satellite -> Drone |  |
@@ -25,6 +26,7 @@
 |PCL | 79.47 | 83.63 | 87.69 | 78.51 | Xiaoyang Tian, Jie Shao, Deqiang Ouyang, and Heng Tao Shen. UAV-Satellite View Synthesis for Cross-view Geo-Localization. TCSVT 2021. [[Paper]](10.1109/TCSVT.2021.3121987) |
 
 
+Ground <-> Satellite
 
 | Methods | Training Set | R@1 | AP | R@1 | AP | Reference |
 | -------- | -------- | ----- | ---- | ---- |  ---- |  ---- |
