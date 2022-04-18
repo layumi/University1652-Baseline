@@ -23,7 +23,7 @@ Drone <-> Satellite
 |LPN | 75.93 | 79.14 | 86.45 | 74.79 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
 |Instance Loss + Verification Loss + LPN | 77.08 | 80.18 | 85.02 | 73.80 |
 |Instance Loss + Weighted Soft Margin Triplet Loss + LPN | 76.29 | 79.46 | 81.74 | 73.58 |
-|PCL | 79.47 | 83.63 | 87.69 | 78.51 | Xiaoyang Tian, Jie Shao, Deqiang Ouyang, and Heng Tao Shen. UAV-Satellite View Synthesis for Cross-view Geo-Localization. TCSVT 2021. [[Paper]](10.1109/TCSVT.2021.3121987) |
+|PCL | 79.47 | 83.63 | 87.69 | 78.51 | Xiaoyang Tian, Jie Shao, Deqiang Ouyang, and Heng Tao Shen. UAV-Satellite View Synthesis for Cross-view Geo-Localization. TCSVT 2021. [[Paper]](https://ieeexplore.ieee.org/document/9583266) |
 
 
 Ground <-> Satellite
