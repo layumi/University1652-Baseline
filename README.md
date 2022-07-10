@@ -75,6 +75,8 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+**10 Jul 2022** Rainy？Night？Foggy？ Snow？ You may check our new paper "Multiple-environment Self-adaptive Network for Aerial-view Geo-localization" at https://arxiv.org/pdf/2204.08381 
+
 **1 Dec 2021** Fix the issue due to the latest torchvision, which do not allow the empty subfolder. Note that some buildings do not have google images.  
 
 **3 March 2021** [GeM Pooling](https://cmp.felk.cvut.cz/~radenfil/publications/Radenovic-arXiv17a.pdf) is added. You may use it by `--pool gem`.
