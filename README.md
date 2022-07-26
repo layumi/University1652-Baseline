@@ -160,12 +160,12 @@ python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm 5 --lr 0.02 --use_
 python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2 
 ```
 
-### Show retrieved Top-10 
+### Show the retrieved Top-10 result 
 ```
 python test.py --name three_view_long_share_d0.75_256_s1_google # after test
 python demo.py --query_index 0 # which image you want to query in the query set 
 ```
-It will save a image named `show.png' containig top-10 retrieval results in the folder. 
+It will save an image named `show.png' containig top-10 retrieval results in the folder. 
 
 ## Trained Model
 
