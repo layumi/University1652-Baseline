@@ -160,6 +160,13 @@ python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm 5 --lr 0.02 --use_
 python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2 
 ```
 
+### Show retrieved Top-10 
+```
+python test.py --name three_view_long_share_d0.75_256_s1_google # after test
+python demo.py --query_index 0 # which image you want to query in the query set 
+```
+It will save a image named `show.png' containig top-10 retrieval results in the folder. 
+
 ## Trained Model
 
 You could download the trained model at [GoogleDrive](https://drive.google.com/open?id=1iES210erZWXptIttY5EBouqgcF5JOBYO) or [OneDrive](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EW19pLps66RCuJcMAOtWg5kB6Ux_O-9YKjyg5hP24-yWVQ?e=BZXcdM). After download, please put model folders under `./model/`.
