@@ -18,6 +18,8 @@
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
 
+### Recently, we raise a special issue on Remote Sensing from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+
 ### Download [University-1652] upon request. You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
 
 This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186), ACM Multimedia 2020. The offical paper link is at https://dl.acm.org/doi/10.1145/3394171.3413896. We collect 1652 buildings of 72 universities around the world. Thank you for your kindly attention.
