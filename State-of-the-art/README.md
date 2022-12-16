@@ -3,7 +3,11 @@
  * [University-1652 Dataset](#university-1652-dataset)
  * [cvusa Dataset](#cvusa-dataset)
  * [cvact Dataset](#cvact-dataset)
- 
+
+### News 
+
+Recently, we raise a special issue on Remote Sensing from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+
 ### University-1652 Dataset
 
 Drone <-> Satellite 
