@@ -29,6 +29,7 @@ Drone <-> Satellite
 |PCL | 79.47 | 83.63 | 87.69 | 78.51 | Xiaoyang Tian, Jie Shao, Deqiang Ouyang, and Heng Tao Shen. UAV-Satellite View Synthesis for Cross-view Geo-Localization. TCSVT 2021. [[Paper]](https://ieeexplore.ieee.org/document/9583266) |
 |FSRA (k=1)| 82.25 | 84.82 | 87.87 | 81.53 | Ming Dai, Jianhong Hu, Jiedong Zhuang, Enhui Zheng. A Transformer-Based Feature Segmentation and Region Alignment Method For UAV-View Geo-Localization. TCSVT 2022. [[Paper]](https://arxiv.org/pdf/2201.09206.pdf)  [[Code]](https://github.com/dmmm1997/fsra) |
 |FSRA (k=3)| 84.51 | 86.71 | 88.45 | 83.37 |
+|PAAN | 84.51 | 86.78 | 91.01 | 82.28 | Duc Viet Bui, Masao Kubo, Hiroshi Sato. A Part-aware Attention Neural Network for Cross-view Geo-localization between UAV and Satellite.  Journal of Robotics Networking and Artificial Life 2022 [[Paper]](https://www.researchgate.net/profile/Viet-Bui-9/publication/366091845_A_Part-aware_Attention_Neural_Network_for_Cross-view_Geo-localization_between_UAV_and_Satellite/links/63914181e42faa7e75a6122e/A-Part-aware-Attention-Neural-Network-for-Cross-view-Geo-localization-between-UAV-and-Satellite.pdf) |
 
 
 Ground <-> Satellite
