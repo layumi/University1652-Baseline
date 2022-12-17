@@ -57,7 +57,7 @@ Ground <-> Satellite
 |Zhai  | - | - | - | 43.20 | Menghua Zhai, Zachary Bessinger, Scott Workman, and Nathan Jacobs. CVPR 2017. Predicting ground-level scene layout from aerial imagery.[[Paper]](https://arxiv.org/abs/1612.02709) |
 |Vo | - | - | - | 63.70 | Nam N Vo and James Hays. ECCV 2016. Localizing and orienting street views using overhead imagery| 
 |CVM-Net | 18.80 | 44.42 | 57.47 | 91.54 | Sixing Hu, Mengdan Feng, Rang MH Nguyen, and Gim Hee Lee. CVPR 2018. CVM-net:Cross-view matching network for image-based ground-to-aerial geo-localization. [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_CVM-Net_Cross-View_Matching_CVPR_2018_paper.html)| 
-|Orientation* | 27.15 | 54.66 | 67.54 | 93.91 | Liu Liu and Hongdong Li. CVPR 2019. Lending Orientation to Neural Networks for Cross-view Geo-localization [[Paper]](https://arxiv.org/abs/1903.12351) |
+|Orientation** | 27.15 | 54.66 | 67.54 | 93.91 | Liu Liu and Hongdong Li. CVPR 2019. Lending Orientation to Neural Networks for Cross-view Geo-localization [[Paper]](https://arxiv.org/abs/1903.12351) |
 |Siam-FCANet | - | - | - | 98.3 | Sudong C, Yulan G, Salman K, et al. Ground-to-Aerial Image Geo-Localization With a Hard Exemplar Reweighting Triplet Loss. ICCV 2019. [[Paper]](https://salman-h-khan.github.io/papers/ICCV19-3.pdf) |
 |Feature Fusion | 48.75 | - | 81.27 | 95.98 | Krishna Regmi, Mubarak Shah, et al. Bridging the Domain Gap for Ground-to-Aerial Image Matching. ICCV 2019. [[Paper]](https://arxiv.org/abs/1904.11045) |
 |Instance Loss  | 43.91 | 66.38 | 74.58 | 91.78 | Zheng Z, Zheng L, Garrett M, et al. Dual-Path Convolutional Image-Text Embedding with Instance Loss. TOMM 2020. [[Paper]](https://arxiv.org/abs/1711.05535) [[Code]](https://github.com/layumi/University1652-Baseline)|
@@ -79,7 +79,8 @@ Ground <-> Satellite
 | GeoDTR | 93.76 | 98.47 | 99.22 | 99.85 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | GeoDTR* | 95.43 | 98.86 | 99.34 | 99.86 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | FI* | 95.50 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
-*: The method utilizes the polar transformation (assuming that all satellite images face north) as input.
+|*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
+|** : The method utilizes the polar prior hint. |
 
 ### cvact val Dataset
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
@@ -87,7 +88,7 @@ Ground <-> Satellite
 |CVM-Net | 20.15 | 45.00 | 56.87 | 87.57 | Sixing Hu, Mengdan Feng, Rang MH Nguyen, and Gim Hee Lee. CVPR 2018. CVM-net:Cross-view matching network for image-based ground-to-aerial geo-localization. [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_CVM-Net_Cross-View_Matching_CVPR_2018_paper.html)| 
 |Instance Loss  | 31.20 | 53.64 | 63.00 | 85.27 | Zheng Z, Zheng L, Garrett M, et al. Dual-Path Convolutional Image-Text Embedding with Instance Loss. TOMM 2020. [[Paper]](https://arxiv.org/abs/1711.05535) [[Code]](https://github.com/layumi/University1652-Baseline) |
 |RK-Net (USAM) | 40.53 | - | - | 89.12 | Lin J, Zheng Z, Zhong Z, Luo Z, Li S, Yang Y, Sebe N. Joint Representation Learning and Keypoint Detection for Cross-view Geo-localization. TIP 2022. [[Paper]](https://zhunzhong.site/paper/RK_Net.pdf)  [[Code]](https://github.com/AggMan96/RK-Net) |
-|Orientation* | 46.96 | 68.28 | 75.48 | 92.04 | Liu Liu and Hongdong Li. CVPR 2019. Lending Orientation to Neural Networks for Cross-view Geo-localization [[Paper]](https://arxiv.org/abs/1903.12351) |
+|Orientation** | 46.96 | 68.28 | 75.48 | 92.04 | Liu Liu and Hongdong Li. CVPR 2019. Lending Orientation to Neural Networks for Cross-view Geo-localization [[Paper]](https://arxiv.org/abs/1903.12351) |
 |CVFT | 61.05 | 81.33 | 86.52 | 95.93 | Shi Y, Yu X, Liu L, et al. Optimal Feature Transport for Cross-View Image Geo-Localization. AAAI 2020. [[Paper]](https://arxiv.org/abs/1907.05021) |
 |MS Attention w DataAug| 73.19 | 90.39 | 93.38 | 97.45 |Rodrigues, Royston, and Masahiro Tani. "Are These From the Same Place? Seeing the Unseen in Cross-View Image Geo-Localization." WACV 2021. [[Paper]](https://openaccess.thecvf.com/content/WACV2021/papers/Rodrigues_Are_These_From_the_Same_Place_Seeing_the_Unseen_in_WACV_2021_paper.pdf)|
 |LPN| 79.99 | 90.63 | 92.56 | 97.03 | Tingyu Wang, Zhedong Zheng, Chenggang Yan, and Yi, Yang. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646) [[Code]](https://github.com/wtyhub/LPN)|
@@ -106,4 +107,5 @@ Ground <-> Satellite
 | GeoDTR | 85.43 | 94.81 | 96.11 | 98.26 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | GeoDTR* | 86.21 | 95.44 | 96.72 | 98.77 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | FI* | 86.79 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
-*: The method utilizes the polar transformation (assuming that all satellite images face north) as input.
+|*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
+|** : The method utilizes the polar prior hint. |
