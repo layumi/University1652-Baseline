@@ -1,0 +1,1652 @@
+0000 Bibliothèque Saint-Jean, University of Alberta
+0001 Clare Drake Arena
+0002 Foote Field
+0003 Myer Horowitz Theatre
+0004 National Institute for Nanotechnology
+0005 St Joseph's College, Edmonton
+0006 Stollery Children's Hospital
+0007 Universiade Pavilion
+0008 University of Alberta Hospital
+0009 Alberta B. Farrington Softball Stadium
+0010 Decision Theater
+0011 Gammage Memorial Auditorium
+0012 Harrington–Birchett House
+0013 Industrial Arts Building
+0014 Irish Field
+0015 Louise Lincoln Kerr House and Studio
+0016 Matthews Hall
+0017 Mona Plummer Aquatic Center
+0018 Old Main (Arizona State University)
+0019 Packard Stadium
+0020 Security Building (Phoenix, Arizona)
+0021 Sun Devil Gym
+0022 Sun Devil Stadium
+0023 United States Post Office (Phoenix, Arizona)
+0024 Wells Fargo Arena (Tempe, Arizona)
+0025 Administration Building
+0026 Wheeler Hall
+0027 Marting Hall
+0028 Malicky Center
+0029 Burrell Memorial Observatory
+0030 Kleist Center for Art and Drama
+0031 Wilker Hall
+0032 Kamm Hall
+0033 Dietsch Hall
+0034 Telfer Hall
+0035 Ward Hall
+0036 Thomas Center for Innovation and Growth (CIG)
+0037 Kulas Musical Arts Building, Baldwin Wallace University
+0038 Boesel Musical Arts Center, Baldwin Wallace University
+0039 Merner-Pfeiffer Hall, Baldwin Wallace University
+0040 Ritter Library, Baldwin Wallace University
+0041 Lindsay-Crossman Chapel, Baldwin Wallace University
+0042 Presidents House, Baldwin Wallace University
+0043 Student Activities Center (SAC), Baldwin Wallace University
+0044 Strosacker Hall (Union), Baldwin Wallace University
+0045 Bonds Hall, Baldwin Wallace University
+0046 Durst Welcome Center, Baldwin Wallace University
+0047 Lou Higgins Center, Baldwin Wallace University
+0048 Tressel Field @ Finnie Stadium, Baldwin Wallace University
+0049 Rutherford Library
+0050 Rudolph Ursprung Gymnasium, Baldwin Wallace University
+0051 Packard Athletic Center (formerly Bagley Hall), Baldwin Wallace University
+0052 Baldwin-Wallace College North Campus Historic District, Baldwin Wallace University
+0053 Baldwin-Wallace College South Campus Historic District, Baldwin Wallace University
+0054 Binghamton University Events Center, Binghamton University
+0055 Commonwealth Avenue, Boston University
+0056 Boston University Photonics Center, Boston University
+0057 Boston University School of Law, Boston University
+0058 Boston University Track and Tennis Center, Boston University
+0059 Boston University West Campus
+0060 BU Castle, Boston University
+0061 George Sherman Union, Boston University
+0062 John Hancock Student Village, Boston University
+0063 Marsh Chapel, Boston University
+0064 Metcalf Center for Science and Engineering, Boston University
+0065 Morse Auditorium, Boston University
+0066 Mugar Memorial Library, Boston University
+0067 Myles Standish Hall, Boston University
+0068 Questrom School of Business, Boston University
+0069 Shelton Hall (Boston University), Boston University
+0070 Walter Brown Arena, Boston University
+0071 Warren Towers, Boston University
+0072 Benson (Ezra Taft) Building, Brigham Young University
+0073 Brimhall (George H.) Building, Brigham Young University
+0074 BYU Conference Center, Brigham Young University
+0075 Centennial Carillon Tower, Brigham Young University
+0076 Chemicals Management Building, Brigham Young University
+0077 Clark (Herald R.) Building, Brigham Young University
+0078 Clark (J. Reuben) Building (Law School), Brigham Young University
+0079 Clyde (W.W.) Engineering Building, Brigham Young University
+0080 Crabtree (Roland A.) Technology Building, Brigham Young University
+0081 Eyring (Carl F.) Science Center, Brigham Young University
+0082 Faculty Office Building, Brigham Young University
+0083 Former Presidents' Home, Brigham Young University
+0084 BYU Testing Center, Grant (Heber J.) Building, Brigham Young University
+0085 Harman (Caroline Hemenway) Building, Brigham Young University
+0086 Harris (Franklin S.) Fine Arts Center, Brigham Young University
+0087 Kimball (Spencer W.) Tower, Brigham Young University
+0088 Knight (Amanda) Hall, Brigham Young University
+0089 Knight (Jesse) Building, Brigham Young University
+0090 Lee (Harold B.) Library, Brigham Young University
+0091 Life Sciences Building, Brigham Young University
+0092 Maeser (Karl G.) Building, Brigham Young University
+0093 Martin (Thomas L.) Building, Brigham Young University
+0094 McKay (David O.) Building, Brigham Young University
+0095 Smith (Joseph F.) Building, Brigham Young University
+0096 Smith (Joseph) Building, Brigham Young University
+0097 Snell (William H.) Building, Brigham Young University
+0098 Talmage (James E.) Math Sciences/Computer Building, Brigham Young University
+0099 Tanner (N. Eldon) Building, Brigham Young University
+0100 Taylor (John) Building (Comprehensive Clinic), Brigham Young University
+0101 University Parkway Center, Brigham Young University
+0102 Wells (Daniel H.) Building (ROTC), Brigham Young University
+0103 Brewster (Sam F.) Building, Brigham Young University
+0104 Fletcher (Harvey L.) Building, Brigham Young University
+0105 Hinckley (Gordon B.) Alumni & Visitors Center, Brigham Young University
+0106 McDonald (Howard S.) Building, Brigham Young University
+0107 Smoot (Abraham O.) Administration Building, Brigham Young University
+0108 University Press Building, Brigham Young University
+0109 Edwards (LaVell) Stadium, Brigham Young University
+0110 Indoor Practice Facility, Brigham Young University
+0111 Marriott (J. Willard) Center, Brigham Young University
+0112 North University Fields, Brigham Young University
+0113 Richards (Stephen L.) Building, Brigham Young University
+0114 Smith (George Albert) Fieldhouse, Brigham Young University
+0115 Auxiliary Services Building, Brigham Young University
+0116 Creamery On Ninth East(BYU Creamery), Brigham Young University
+0117 Culinary Support Center
+0118 Wilkinson (Ernest L.) Student Center, Brigham Young University
+0119 BYU Broadcasting Building, Brigham Young University
+0120 Bean (Monte L.) Life Science Museum, Brigham Young University
+0121 Museum of Art, Brigham Young University
+0122 Museum of Paleontology, Brigham Young University
+0123 BYU Jerusalem Center, Brigham Young University
+0124 Helaman Halls (C) Chipman (Steven L.) Hall, Brigham Young University
+0125 Helaman Halls (G) Budge (William) Hall, Brigham Young University
+0126 Helaman Halls (J) "Building 9", Brigham Young University
+0127 Heritage Halls 25, Brigham Young University
+0128 Heritage Halls 26, Brigham Young University
+0129 Heritage Halls 27, Brigham Young University
+0130 Heritage Halls 28, Brigham Young University
+0131 Heritage Halls 29, Brigham Young University
+0132 Heritage Halls 30, Brigham Young University
+0133 Wyview Park Central Building, Brigham Young University
+0134 Physical Plant Central Heating Plant, Brigham Young University
+0135 B(Outdoors Unlimited), Brigham Young University
+0136 Oliver House (Performing Arts Management), Brigham Young University
+0137 Larry H. Miller Field, Brigham Young University
+0138 Helaman Halls (B) Hinckley Hall, Brigham Young University
+0139 Heritage Halls 9, Brigham Young University
+0140 Heritage Halls 15, Brigham Young University
+0141 Heritage Halls Central Building, Brigham Young University
+0142 South Field (Provo), Brigham Young University
+0143 Alumnae Hall, Brown University
+0144 Applied Math Building, Brown University
+0145 Arnold Laboratory, Brown University
+0146 Barus and Holley Building, Brown University
+0147 Benevolent Street
+0148 Blistein House, Brown University
+0149 Brook Street
+0150 Brown Street
+0151 Dyer House
+0152 Engineering Research Center
+0153 Feinstein House, Brown University
+0154 Frederick Lippitt and Mary Ann Lippitt House
+0155 George Street
+0156 George Street
+0157 George Street
+0158 Giddings House
+0159 Granoff Center for the Creative Arts
+0160 Grant Recital Hall
+0161 Hope Street
+0162 Lincoln Field Building
+0163 List Art Center
+0164 Lyman Hall, Brown University
+0165 Manning Hall, Brown University
+0166 Manning Street
+0167 Manning Street, Brown University
+0168 Marston Hall
+0169 Maxcy Hall, Brown University
+0170 Mencoff Hall, Brown University
+0171 Paolino Building, Brown University
+0172 Partridge Hall, Brown University
+0173 Prince Engineering Laboratory, Brown University
+0174 Rhode Island Hall
+0175 Richmond Street
+0176 Robinson Hall
+0177 Salomon Center
+0178 Sayles Hall
+0179 Ship Street
+0180 Shirley Miller House
+0181 Sidney E. Frank Hall for Life Sciences
+0182 Smith-Buonanno Hall
+0183 Stephen Robert Hall, Brown University
+0184 T.F. Green Hall, Brown University
+0185 Thayer Street
+0186 Waterman Street
+0187 Waterman Street
+0188 Waterman Street
+0189 Waterman Street
+0190 Waterman Street
+0191 Watson Institute for International and Public Affairs
+0192 Wilbour Hall
+0193 Benevolent Street
+0194 Benevolent Street
+0195 Benevolent Street
+0196 Benoni Cooke House
+0197 Corliss-Brackett House
+0198 Grad Center B, Brown University
+0199 Grad Center A, Brown University
+0200 Young Orchard 4, Brown University
+0201 Young Orchard 10, Brown University
+0202 Vartan Gregorian Quad A, Brown University
+0203 Archibald House, Brown University
+0204 Everett House, Brown University
+0205 Jameson House, Brown University
+0206 Mead House, Brown University
+0207 Poland House, Brown University
+0208 Caswell Hall, Brown University
+0209 Hegeman Hall, Brown University
+0210 Littlefield Hall, Brown University
+0211 Minden Hall, Brown University
+0212 Slater Hall, Brown University
+0213 Andrews Hall, Brown University
+0214 Champlin Hall, Brown University
+0215 Chapin House, Brown University
+0216 Diman House, Brown University
+0217 Marcy House, Brown University
+0218 Sears House, Brown University
+0219 Benevolent Street, Brown University
+0220 70-Benevolent Street, Brown University
+0221 74-Benevolent Street, Brown University
+0222 Brown Street, Brown University
+0223 Charlesfield Street, Brown University
+0224 Charlesfield Street, Brown University
+0225 70-Charlesfield Street, Brown University
+0226 71-Charlesfield Street, Brown University
+0227 Hope Street, Brown University
+0228 Andrews House, Brown University
+0229 Carrie Tower, Brown University
+0230 75-Charlesfield Street, Brown University
+0231 Faculty Club, Brown University
+0232 Gardner House, Brown University
+0233 Ladd Observatory, Brown University
+0234 Nightingale-Brown House, Brown University
+0235 Grad Center E, Brown University
+0236 Hoppin House, Brown University
+0237 Maddock Alumni Center, Brown University
+0238 South Street Landing, Brown University
+0239 Annmary Brown Memorial, Brown University
+0240 John Carter Brown Library, Brown University
+0241 John D. Rockefeller, Jr. Library, Brown University
+0242 John Hay Library, Brown University
+0243 Orwig Music Center, Brown University
+0244 Sciences Library, Brown University
+0245 Grad Center C, Brown University
+0246 Grad Center D, Brown University
+0247 Perkins Hall, Brown University
+0248 Young Orchard 2, Brown University
+0249 Emery Hall, Brown University
+0250 Machado House, Brown University
+0251 Metcalf Hall, Brown University
+0252 Miller Hall, Brown University
+0253 New Pembroke #1, Brown University
+0254 New Pembroke #2, Brown University
+0255 New Pembroke #3, Brown University
+0256 New Pembroke #4, Brown University
+0257 North House (Brown Street), Brown University
+0258 Buxton House, Brown University
+0259 President's House, Brown University
+0260 Sharpe Refectory, Brown University
+0261 Brown Stadium, Brown University
+0262 Marston Boat House, Brown University
+0263 Meehan Auditorium, Brown University
+0264 Olney-Margolies Athletic Center, Brown University
+0265 Pizzitola Sports Center, Brown University
+0266 Smith Swimming Center, Brown University
+0267 66-Benevolent Street, Brown University
+0268 66-Charlesfield Street, Brown University
+0269 Old Stone Bank, Brown University
+0270 Bancroft Library, University of California, Berkeley
+0271 Berkeley Art Museum and Pacific Film Archive, University of California, Berkeley
+0272 Blake Garden (Kensington, California), University of California, Berkeley
+0273 Bowles Hall, University of California, Berkeley
+0274 California Hall, University of California, Berkeley
+0275 California Memorial Stadium, University of California, Berkeley
+0276 Campbell Hall (UC Berkeley), University of California, Berkeley
+0277 Center for New Music and Audio Technologies, University of California, Berkeley
+0278 Cloyne Court Hotel, University of California, Berkeley
+0279 Doe Memorial Library, University of California, Berkeley
+0280 Dwinelle Hall, University of California, Berkeley
+0281 Edwards Stadium, University of California, Berkeley
+0282 Etcheverry Hall, University of California, Berkeley
+0283 Evans Hall (UC Berkeley), University of California, Berkeley
+0284 Gilman Hall, University of California, Berkeley
+0285 Haas School of Business, University of California, Berkeley
+0286 Hearst Memorial Mining Building, University of California, Berkeley
+0287 International House Berkeley, University of California, Berkeley
+0288 Jacobs Institute for Design Innovation, University of California, Berkeley
+0289 Julia Morgan Hall, University of California, Berkeley
+0290 Lawrence Berkeley National Laboratory, University of California, Berkeley
+0291 Lawrence Hall of Science, University of California, Berkeley、
+0292 LeConte Hall, University of California, Berkeley
+0293 Moffitt Library, University of California, Berkeley
+0294 Moses Hall, University of California, Berkeley
+0295 University of California Museum of Paleontology, University of California, Berkeley
+0296 Museum of Vertebrate Zoology, University of California, Berkeley
+0297 Renewable and Appropriate Energy Laboratory, University of California, Berkeley
+0298 Sather Gate, University of California, Berkeley
+0299 Sather Tower, University of California, Berkeley
+0300 Senior Hall (Berkeley, California), University of California, Berkeley
+0301 Shyh Wang Hall, University of California, Berkeley
+0302 South Hall (UC Berkeley), University of California, Berkeley
+0303 Space Sciences Laboratory, University of California, Berkeley
+0304 Stern Hall (Berkeley), University of California, Berkeley
+0305 Transportation Library, UC Berkeley, University of California, Berkeley
+0306 UC Berkeley School of Social Welfare, University of California, Berkeley
+0307 University House, Berkeley, University of California, Berkeley
+0308 UC Berkeley School of Optometry, University of California, Berkeley
+0309 Wheeler Hall, University of California, Berkeley
+0310 Zellerbach Hall, University of California, Berkeley
+0311 Charles E. Young Research Library, University of California, Los Angeles
+0312 Drake Stadium (UCLA), University of California, Los Angeles
+0313 Easton Stadium, University of California, Los Angeles
+0314 Geffen Playhouse, University of California, Los Angeles
+0315 David Geffen School of Medicine at UCLA, University of California, Los Angeles
+0316 Hammer Museum, University of California, Los Angeles
+0317 Harbor–UCLA Medical Center, University of California, Los Angeles
+0318 Jackie Robinson Stadium, University of California, Los Angeles
+0319 Martin Luther King Jr. Community Hospital, University of California, Los Angeles
+0320 Ronald Reagan UCLA Medical Center, University of California, Los Angeles
+0321 Pauley Pavilion, University of California, Los Angeles
+0322 Powell Library, University of California, Los Angeles
+0323 Rose Bowl (stadium), University of California, Los Angeles
+0324 Royce Hall, University of California, Los Angeles
+0325 Spieker Aquatics Center, University of California, Los Angeles
+0326 Wallis Annenberg Stadium, University of California, Los Angeles
+0327 William Andrews Clark Memorial Library, University of California, Los Angeles
+0328 UCLA Hillel
+0329 AlloSphere, University of California, Santa Barbara
+0330 Art, Design & Architecture Museum, University of California, Santa Barbara
+0331 Bren Hall, University of California, Santa Barbara
+0332 Caesar Uyesaka Stadium, University of California, Santa Barbara
+0333 Harder Stadium, University of California, Santa Barbara
+0334 Robertson Gymnasium, University of California, Santa Barbara
+0335 Santa Barbara Student Housing Cooperative, University of California, Santa Barbara
+0336 Storke Tower, University of California, Santa Barbara
+0337 UC Santa Barbara Events Center, University of California, Santa Barbara
+0338 UCSB Center for Spatial Studies, University of California, Santa Barbara
+0339 Lick Observatory, University of California, Santa Cruz
+0340 McHenry Library, University of California, Santa Cruz
+0341 Cambridge University Athletics Track, the University of Cambridge
+0342 Bridge of Sighs (Cambridge), the University of Cambridge
+0343 Goldie Boathouse, the University of Cambridge
+0344 Lady Mitchell Hall, the University of Cambridge
+0345 Church of St Mary the Great, Cambridge, the University of Cambridge
+0346 Mathematical Bridge, the University of Cambridge
+0347 Cambridge Medical School building, the University of Cambridge
+0348 Cambridge Observatory, the University of Cambridge
+0349 Cambridge University Real Tennis Club, the University of Cambridge
+0350 Senate House, Cambridge, the University of Cambridge
+0351 University of Cambridge Sports Centre, the University of Cambridge
+0352 William Gates Building, Cambridge, the University of Cambridge
+0353 Basilica of the National Shrine of the Immaculate Conception, the Catholic University of America
+0354 Maloney Hall, the Catholic University of America
+0355 Saint John Paul II National Shrine, the Catholic University of America
+0356 Alan B. Miller Hall, College of William & Mary
+0357 Alumni House (College of William & Mary), College of William & Mary
+0358 Blow Gymnasium, College of William & Mary
+0359 Brafferton (building), College of William & Mary
+0360 Henry C. Wolf Law Library, College of William & Mary
+0361 Jimmye Laycock Football Center, College of William & Mary
+0362 Kaplan Arena, College of William & Mary
+0363 McCormack–Nagelsen Tennis Center, College of William & Mary
+0364 Millie West Tennis Facility, College of William & Mary
+0365 Muscarelle Museum of Art, College of William & Mary
+0366 Phi Beta Kappa Memorial Hall, College of William & Mary
+0367 Plumeri Park, College of William & Mary
+0368 William & Mary Police Department, College of William & Mary
+0369 Earl Gregg Swem Library, College of William & Mary
+0370 Wren Building, College of William & Mary
+0371 Zable Stadium, College of William & Mary
+0372 Bishop Court Apartments, Concordia University
+0373 Henry F. Hall Building, Concordia University
+0374 Andrew Dickson White House, Cornell University
+0375 Anabel Taylor Hall, Cornell University
+0376 Bailey Hall, Cornell University
+0377 Baker Laboratory, Cornell University
+0378 Bard Hall, Cornell University
+0379 Barnes Hall, Cornell University
+0380 Bartels Hall, Cornell University
+0381 Barton Hall, Cornell University
+0382 Beebe Hall, Cornell University
+0383 Big Red Barn, Cornell University
+0384 Boyce Thompson Institute for Plant Research, Cornell University
+0385 Bradfield Hall, Cornell University
+0386 Bruckner Hall, Cornell University
+0387 Caldwell Hall, Cornell University
+0388 Carpenter Hall, Cornell University
+0389 Clark Hall, Cornell University
+0390 Computing and Communications Center, Cornell University
+0391 Comstock Hall, Cornell University
+0392 Cornell Health, Cornell University
+0393 Cornell Store, Cornell University
+0394 Corson Hall, Cornell University
+0395 Day Hall, Cornell University
+0396 Dolgen Hall ("ILR Extension Building"), Cornell University
+0397 Duffield Hall, Cornell University
+0398 Emerson Hall, Cornell University
+0399 Fernow Hall, Cornell University
+0400 Human Ecology Building, Cornell University
+0401 Ives Hall, Cornell University / Martin P. Catherwood Library, Cornell University		
+0402 Ives Hall East, Cornell University
+0403 Johnson Museum of Art, Cornell University
+0404 Kennedy Hall, Cornell University
+0405 Kimball Hall, Cornell University
+0406 King-Shaw Hall ("ILR Conference Center"), Cornell University
+0407 Kinzelberg Hall, Cornell University		
+0408 Klarman Hall, Cornell University
+0409 Kroch Library, Cornell University
+0410 Lincoln Hall, Cornell University
+0411 Lynah Rink, Cornell University
+0412 Malott Hall, Cornell University
+0413 Mann Library building, Cornell University
+0414 Mann Library addition, Cornell University
+0415 Martha Van Rensselaer Hall, Cornell University
+0416 Martha Van Rensselaer Hall West Wing, Cornell University
+0417 McGraw Hall, Cornell University
+0418 McGraw Tower (University Chimes), Cornell University
+0419 Milstein Hall, Cornell University
+0420 Morrill Hall, Cornell University
+0421 Morrison Hall, Cornell University
+0422 Mudd Hall, Cornell University
+0423 Myron Taylor Hall, Cornell University
+0424 Myron Taylor Hall Jane Foster Library Addition, Cornell University
+0425 Nevin (Brian C.) Welcome Center, Cornell University
+0426 Olin Chemistry Research Laboratory, Cornell University
+0427 Olin Hall, Cornell University
+0428 Phillips Hall, Cornell University
+0429 Physical Sciences Building, Cornell University
+0430 Post (Kenneth) Laboratory, Cornell University
+0431 Rhodes (Frank H.T.) Hall, Cornell University
+0432 Rice Hall, Cornell University
+0433 Riley-Robb Hall, Cornell University
+0434 Roberts Hall, Cornell University
+0435 Rockefeller Hall, Cornell University
+0436 Sage Chapel, Cornell University
+0437 Sage Hall, Cornell University
+0438 Savage Hall, Cornell University
+0439 Schoellkopf Crescent, Cornell University
+0440 Schoellkopf House, Cornell University
+0441 Schoellkopf Memorial Hall, Cornell University
+0442 Sibley Dome, Cornell University
+0443 Snee Hall, Cornell University
+0444 Space Sciences Building, Cornell University
+0445 Statler Hall, Cornell University
+0446 Statler Hotel, Cornell University
+0447 Stimson Hall, Cornell University
+0448 Stocking Hall West, Cornell University		
+0449 Teagle Hall, Cornell University
+0450 Thurston Hall, Cornell University
+0451 Tjaden Hall, Cornell University
+0452 Uris Hall, Cornell University
+0453 Upson Hall, Cornell University
+0454 Uris Library, Cornell University
+0455 Veterinary Research Tower, Cornell University
+0456 Ward Lab, Cornell University
+0457 Warren Hall, Cornell University
+0458 Weill Hall, Cornell University
+0459 Willard Straight Hall, Cornell University
+0460 Wing Hall, Cornell University
+0461 Baker Hall / Baker Tower, Cornell University
+0462 Bethe (Hans) House, Cornell University
+0463 Boldt Hall, Cornell University
+0464 Cascadilla Hall, Cornell University
+0465 Eddy Gate, Cornell University
+0466 Founders Hall, Cornell University
+0467 Hartung–Boothroyd Observatory, Cornell University
+0468 Llenroc, Cornell University
+0469 Mennen Hall, Cornell University
+0470 Noyes Community and Recreation Center, Cornell University
+0471 Rose (Flora) House, Cornell University
+0472 Schwartz Performing Arts Center, Cornell University
+0473 Sheldon Court, Cornell University
+0474 Telluride House, Cornell University
+0475 Von Cramm Cooperative Hall, Cornell University
+0476 Appel Commons, Cornell University
+0477 Balch Hall, Cornell University
+0478 Clara Dickson Hall, Cornell University
+0479 Court–Kay–Bauer Community, Cornell University
+0480 Fuertes Observatory, Cornell University
+0481 Helen Newman Hall, Cornell University
+0482 High Rise 5, Cornell University
+0483 Holland Living Center (Low Rise 8), Cornell University
+0484 Mary Donlon Hall, Cornell University
+0485 Mews Hall, Cornell University
+0486 Noyes Lodge, Cornell University
+0487 Risley Hall, Cornell University
+0488 Robert Purcell Community Center, Cornell University
+0489 Fischell Band Center, Cornell University
+0490 Friedman Wrestling Center, Cornell University
+0491 Gates (Bill & Melinda) Hall, Cornell University
+0492 Goldwin Smith Hall, Cornell University
+0493 Grumman Squash Courts, Cornell University
+0494 Ho Plaza, Cornell University
+0495 Hollister Hall, Cornell University
+0496 Hughes Hall, Cornell University
+0497 Schoellkopf field west stands, Cornell University
+0498 Cornell Dairy, Cornell University
+0499 Cornell Lab of Ornithology, Cornell University
+0500 Cornell Laboratory for Accelerator-based Sciences and Education, Cornell University
+0501 Bowen Field House, Eastern Michigan University
+0502 Bruce T. Halle Library, Eastern Michigan University
+0503 Convocation Center (Eastern Michigan University), Eastern Michigan University
+0504 Eastern Michigan University Student Center, Eastern Michigan University
+0505 McKenny Hall, Eastern Michigan University
+0506 Olds-Robb Recreation-Intramural Complex, Eastern Michigan University
+0507 Pease Auditorium, Eastern Michigan University
+0508 Rynearson Stadium, Eastern Michigan University
+0509 Sherzer Hall, Eastern Michigan University
+0510 Appleton Tower, the University of Edinburgh
+0511 Bedlam Theatre, the University of Edinburgh
+0512 Edinburgh University Library, the University of Edinburgh
+0513 FloWaveTT, the University of Edinburgh
+0514 Gordon Aikman Lecture Theatre, the University of Edinburgh
+0515 Informatics Forum, the University of Edinburgh
+0516 King's Buildings, the University of Edinburgh
+0517 Masson Hall, the University of Edinburgh
+0518 McEwan Hall, the University of Edinburgh
+0519 New College, Edinburgh, the University of Edinburgh
+0520 Old College, University of Edinburgh, the University of Edinburgh
+0521 Pollock Halls of Residence, the University of Edinburgh
+0522 Potterrow Student Centre, the University of Edinburgh
+0523 Reid Concert Hall, the University of Edinburgh
+0524 Salisbury Green, the University of Edinburgh
+0525 St Leonard's Hall, the University of Edinburgh
+0526 Talbot Rice Gallery, the University of Edinburgh
+0527 Teviot Row House, the University of Edinburgh
+0528 Alfred A. McKethan Stadium, the University of Florida
+0529 Anderson Hall (Gainesville, Florida), the University of Florida
+0530 Baughman Center, the University of Florida
+0531 Ben Hill Griffin Stadium, the University of Florida
+0532 Bryan Hall (Gainesville, Florida), the University of Florida
+0533 Buckman Hall (Gainesville, Florida), the University of Florida
+0534 Carleton Auditorium, the University of Florida
+0535 Century Tower (University of Florida), the University of Florida
+0536 Constans Theatre, the University of Florida
+0537 Curtis M. Phillips Center for the Performing Arts, the University of Florida
+0538 Fletcher Hall (Gainesville, Florida), the University of Florida
+0539 Flint Hall (Gainesville, Florida), the University of Florida
+0540 Florida Gymnasium, the University of Florida
+0541 Florida Museum of Natural History, the University of Florida
+0542 Griffin–Floyd Hall, the University of Florida
+0543 The Hub (Gainesville, Florida), the University of Florida
+0544 Hume Hall, the University of Florida
+0545 Infirmary (Gainesville, Florida), the University of Florida
+0546 J. Wayne Reitz Union, the University of Florida
+0547 James G. Pressly Stadium, the University of Florida
+0548 Katie Seashole Pressly Softball Stadium, the University of Florida
+0549 Library East (Gainesville, Florida), the University of Florida
+0550 Linder Stadium at Ring Tennis Complex, the University of Florida
+0551 Mark Bostick Golf Course, the University of Florida
+0552 Matherly Hall, the University of Florida
+0553 Murphree Area, the University of Florida
+0554 Newell Hall (Gainesville, Florida), the University of Florida
+0555 Norman Gym (Gainesville, Florida), the University of Florida
+0556 North Hall (Gainesville, Florida), the University of Florida
+0557 Peabody Hall (Gainesville, Florida), the University of Florida
+0558 Plaza of the Americas (Gainesville, Florida), the University of Florida
+0559 Earl and Christy Powell University House
+0560 Riker Hall (Gainesville, Florida), the University of Florida
+0561 Rolfs Hall (Gainesville, Florida), the University of Florida
+0562 Samuel P. Harn Museum of Art, the University of Florida
+0563 Sledd Hall, the University of Florida
+0564 O'Connell Center, the University of Florida
+0565 Thomas Hall (Gainesville, Florida), the University of Florida
+0566 Tigert Hall, the University of Florida
+0567 Tolbert Hall (Gainesville, Florida), the University of Florida
+0568 University Auditorium (Gainesville, Florida), the University of Florida
+0569 University of Florida Library West, the University of Florida
+0570 University of Florida Marston Science Library, the University of Florida
+0571 University of Florida Southwest Recreation Center, the University of Florida
+0572 Ustler Hall, the University of Florida
+0573 Van Fleet Hall (Gainesville, Florida), the University of Florida
+0574 Walker Hall (Gainesville, Florida), the University of Florida
+0575 Weil Hall (Gainesville, Florida), the University of Florida
+0576 Yulee area, the University of Florida
+0577 Pennsylvania Avenue, George Washington University
+0578 H.B. Burns Memorial Building, George Washington University
+0579 Corcoran Gallery of Art, George Washington University
+0580 Corcoran Hall, George Washington University
+0581 F Street House, George Washington University
+0582 Foggy Bottom–GWU station, George Washington University
+0583 Fulbright Hall, George Washington University
+0584 Gelman Library, George Washington University
+0585 George Washington University Art Galleries, George Washington University
+0586 Himmelfarb Health Sciences Library, George Washington University
+0587 George Washington University Hospital, George Washington University
+0588 Jacob Burns Law Library, George Washington University
+0589 Lenthall Houses, George Washington University
+0590 Lisner Auditorium, George Washington University
+0591 Madison Hall, George Washington University
+0592 Munson Hall, George Washington University
+0593 Jacqueline Bouvier Kennedy Onassis Hall, George Washington University
+0594 Stockton Hall, George Washington University
+0595 Car Barn, Georgetown University
+0596 Davis Performing Arts Center, Georgetown University
+0597 Healy Hall, Georgetown University
+0598 Bunn Intercultural Center, Georgetown University
+0599 Leavey Center, Georgetown University
+0600 Jesuit Community Cemetery, Georgetown University
+0601 Bernard P. McDonough Hall, Georgetown University
+0602 Observatory, Georgetown University
+0603 Reiss Science Building, Georgetown University
+0604 White-Gravenor Hall, Georgetown University
+0605 Copley Hall, Georgetown University
+0606 Darnall Hall, Georgetown University
+0607 Gewirz Student Center, Georgetown University
+0608 New South Hall, Georgetown University
+0609 McCarthy Hall, Georgetown University
+0610 Village C, Georgetown University
+0611 Wolfington Hall Jesuit Residence, Georgetown University
+0612 Edward Bennett Williams Law Library, Georgetown University
+0613 Medical and Dental Building, Georgetown University
+0614 Pasquerilla Healthcare Center, Georgetown University
+0615 Cooper Field, Georgetown University
+0616 Sport and Fitness Center, Georgetown University
+0617 Dahlgren Chapel of the Sacred Heart, Georgetown University
+0618 Eric E. Hotung International Law Center, Georgetown University
+0619 Gervase Building, Georgetown University
+0620 Mortara Center For International Studies, Georgetown University
+0621 Rafik B. Hariri Building, Georgetown University
+0622 Regents Hall, Georgetown University
+0623 Liberal Arts and Science Building, Georgetown University
+0624 Alban Towers, Georgetown University
+0625 Gaston Hall, Georgetown University
+0626 Halcyon House, Georgetown University
+0627 Holy Rood Cemetery, Georgetown University
+0628 MedStar Georgetown University Hospital, Georgetown University
+0629 McDonough Gymnasium, Georgetown University		
+0630 Riggs Library, Georgetown University
+0631 Bobby Dodd Stadium, Georgia Institute of Technology
+0632 Brittain Dining Hall, Georgia Institute of Technology
+0633 Burger Bowl, Georgia Institute of Technology		
+0634 Clough Undergraduate Learning Commons, Georgia Institute of Technology
+0635 Ferst Center for the Arts, Georgia Institute of Technology
+0636 Food Processing Technology Building, Georgia Institute of Technology
+0637 Georgia Institute of Technology Historic District, Georgia Institute of Technology
+0638 Georgia Tech Campus Recreation Center, Georgia Institute of Technology
+0639 Georgia Tech Library, Georgia Institute of Technology
+0640 Junior's Grill, Georgia Institute of Technology
+0641 Kessler Campanile, Georgia Institute of Technology
+0642 Klaus Advanced Computing Building, Georgia Institute of Technology
+0643 Marcus Nanotechnology Building, Georgia Institute of Technology
+0644 Neely Nuclear Research Center, Georgia Institute of Technology
+0645 Russ Chandler Stadium, Georgia Institute of Technology
+0646 Student Competition Center, Georgia Institute of Technology
+0647 Tech Tower, Georgia Institute of Technology
+0648 Technology Square (Atlanta), Georgia Institute of Technology
+0649 Adolphus Busch Hall, Harvard University
+0650 Austin Hall (Harvard University), Harvard University
+0651 Baker Library/Bloomberg Center, Harvard University
+0652 Beck-Warren House, Harvard University
+0653 Bertram Hall (Radcliffe College), Harvard University		
+0654 Boylston Hall, Harvard University
+0655 Burden Hall, Harvard University
+0656 Cabot Science Library, Harvard University
+0657 Carpenter Center for the Visual Arts, Harvard University
+0658 Ruth Mulan Chu Chao Center, Harvard University
+0659 The Class of Chapel, Harvard University
+0660 Conant Hall, Harvard University
+0661 Dana-Palmer House, Harvard University
+0662 Divinity Hall, Harvard Divinity School, Harvard University
+0663 Gore Hall (Harvard College library), Harvard University
+0664 Grace Hopkinson Eliot Hall, Harvard University
+0665 Harvard Art Museums, Harvard University
+0666 Harvard Hall, Harvard University
+0667 Harvard Lampoon Building, Harvard University
+0668 Harvard Museum of Natural History, Harvard University
+0669 Harvard University Herbaria, Harvard University
+0670 Harvard Yard, Harvard University
+0671 Harvard–Smithsonian Center for Astrophysics, Harvard University
+0672 Harvard–Yenching Library, Harvard University
+0673 Holden Chapel, Harvard University
+0674 Houghton Library, Harvard University
+0675 Jordan Field, Harvard University
+0676 Lamont Library, Harvard University
+0677 Loeb House, Harvard University
+0678 Memorial Church of Harvard University, Harvard University
+0679 Memorial Hall (Harvard University), Harvard University
+0680 Monroe C. Gutman Library, Harvard University		
+0681 Morgan Hall, Harvard University
+0682 Newell Boathouse, Harvard University
+0683 Peabody Museum of Archaeology and Ethnology, Harvard University
+0684 Peabody Terrace, Harvard University
+0685 Radcliffe Quadrangle (Harvard), Harvard University
+0686 Schlesinger Library, Harvard University
+0687 Harvard Science Center, Harvard University
+0688 Sever Hall, Harvard University
+0689 Smith Campus Center, Harvard University
+0690 Spangler Center, Harvard University
+0691 Tata Hall, Harvard University
+0692 University Hall (Harvard University), Harvard University
+0693 Weld Boathouse, Harvard University
+0694 Widener Library, Harvard University
+0695 Founders Library, Howard University
+0696 General Oliver Otis Howard House, Howard University
+0697 Activities and Recreation Center (UIUC), the University of Illinois at Urbana–Champaign
+0698 Alma Mater (Illinois sculpture), the University of Illinois at Urbana–Champaign
+0699 Alpha Delta Pi
+0700 Alpha Gamma Delta Fraternity House, the University of Illinois at Urbana–Champaign
+0701 Alpha Phi Fraternity House-Beta Alpha Chapter (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0702 Alpha Rho Chi Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0703 Alpha Xi Delta Sorority Chapter House (Champaign, Illinois
+0704 Altgeld Hall, the University of Illinois at Urbana–Champaign
+0705 Astronomical Observatory (University of Illinois at Urbana–Champaign), the University of Illinois at Urbana–Champaign
+0706 Atkins Tennis Center, the University of Illinois at Urbana–Champaign
+0707 Beckman Institute for Advanced Science and Technology, the University of Illinois at Urbana–Champaign
+0708 Beta Theta Pi Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0709 Busey–Evans Residence Halls, the University of Illinois at Urbana–Champaign
+0710 Business Instructional Facility, the University of Illinois at Urbana–Champaign		
+0711 UIUC Campus Recreation Center – East (CRCE), the University of Illinois at Urbana–Champaign
+0712 Carl R. Woese Institute for Genomic Biology, the University of Illinois at Urbana–Champaign
+0713 Complex Fields (UIUC), the University of Illinois at Urbana–Champaign
+0714 University of Illinois Conservatory and Plant Collection, the University of Illinois at Urbana–Champaign
+0715 State Farm Center the University of Illinois at Urbana–Champaign
+0716 Delta Kappa Epsilon Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0717 Delta Upsilon Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0718 UIUC College of Education, the University of Illinois at Urbana–Champaign
+0719 Grainger College of Engineering, the University of Illinois at Urbana–Champaign
+0720 University of Illinois Round Barn
+0721 Foellinger Auditorium, the University of Illinois at Urbana–Champaign
+0722 Gamma Phi Beta Sorority House (Urbana, Illinois), the University of Illinois at Urbana–Champaign
+0723 Grainger Engineering Library, the University of Illinois at Urbana–Champaign
+0724 Harker Hall, the University of Illinois at Urbana–Champaign
+0725 Huff Hall, the University of Illinois at Urbana–Champaign
+0726 University of Illinois Ice Arena, the University of Illinois at Urbana–Champaign
+0727 Illini Union, the University of Illinois at Urbana–Champaign
+0728 Illinois Field, the University of Illinois at Urbana–Champaign		
+0729 Irwin Indoor Practice Facility
+0730 Kappa Delta Rho Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0731 Kappa Kappa Gamma Sorority House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0732 Kappa Sigma Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0733 Kenney Gym and Kenney Gym Annex, the University of Illinois at Urbana–Champaign
+0734 Krannert Art Museum, the University of Illinois at Urbana–Champaign
+0735 Krannert Center for the Performing Arts, the University of Illinois at Urbana–Champaign
+0736 Lincoln Hall (University of Illinois), the University of Illinois at Urbana–Champaign
+0737 Louise Freer Hall, the University of Illinois at Urbana–Champaign
+0738 Main Library (University of Illinois at Urbana–Champaign), the University of Illinois at Urbana–Champaign
+0739 McFarland Memorial Bell Tower , the University of Illinois at Urbana–Champaign
+0740 Memorial Stadium (Champaign), the University of Illinois at Urbana–Champaign
+0741 National Center for Supercomputing Applications, the University of Illinois at Urbana–Champaign
+0742 Natural History Building, the University of Illinois at Urbana–Champaign
+0743 Newmark Civil Engineering Laboratory, the University of Illinois at Urbana–Champaign
+0744 Noyes Laboratory of Chemistry, the University of Illinois at Urbana–Champaign
+0745 Phi Delta Theta Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0746 Prairie Observatory
+0747 Thomas M. Siebel Center for Computer Science, the University of Illinois at Urbana–Champaign
+0748 Sigma Alpha Epsilon Fraternity House (Champaign, Illinois), the University of Illinois at Urbana–Champaign
+0749 Spurlock Museum, the University of Illinois at Urbana–Champaign
+0750 Tina Weedon Smith Memorial Hall, the University of Illinois at Urbana–Champaign
+0751 UIUC School of Social Work, the University of Illinois at Urbana–Champaign		
+0752 University Laboratory High School (Urbana, Illinois), the University of Illinois at Urbana–Champaign
+0753 University of Illinois Willard Airport, the University of Illinois at Urbana–Champaign
+0754 Alumni Center (Iowa State University), Iowa State University
+0755 Beardshear Hall, Iowa State University
+0756 Black Engineering Building, Iowa State University
+0757 Brunnier Art Museum, Iowa State University
+0758 Campanile (Iowa State University), Iowa State University
+0759 Carver Hall, Iowa State University
+0760 Catt Hall, Iowa State University
+0761 Christian Petersen Art Museum, Iowa State University
+0762 Enrollment Services Center, Iowa State University
+0763 The Farm House (Knapp–Wilson House), Iowa State University
+0764 Food Sciences Building, Iowa State University
+0765 Hunziker House, Iowa State University
+0766 Laboratory of Mechanics, Iowa State University
+0767 Memorial Union (Iowa State University), Iowa State University
+0768 Morrill Hall (Iowa State University), Iowa State University
+0769 State Gymnasium, Iowa State University
+0770 Collegium Maius, Jagiellonian University
+0771 Collegium Novum, Jagiellonian University
+0772 Collegium Witkowski, Jagiellonian University
+0773 Jagiellonian Library, Jagiellonian University
+0774 Ahearn Field, Kansas State University
+0775 Anderson Hall (Manhattan, Kansas), Kansas State University
+0776 Bramlage Coliseum, Kansas State University
+0777 Hale Library, Kansas State University
+0778 K-State Student Union, Kansas State University
+0779 Tointon Family Stadium, Kansas State University
+0780 Albert B. Chandler Hospital, the University of Kentucky
+0781 Alumni Gymnasium (University of Kentucky), the University of Kentucky
+0782 Anderson Tower (University of Kentucky), the University of Kentucky
+0783 Biological Pharmaceutical Complex Building (University of Kentucky), the University of Kentucky
+0784 Biomedical Biological Science Research Building (University of Kentucky), the University of Kentucky
+0785 Charles T. Wethington Jr. Building, the University of Kentucky
+0786 Cliff Hagan Stadium, the University of Kentucky
+0787 E.J. Nutter Training Facility, the University of Kentucky
+0788 Eastern State Hospital (Kentucky), the University of Kentucky
+0789 Gatton Business and Economics Building, the University of Kentucky
+0790 Greg Page Apartments, the University of Kentucky
+0791 Hilary J. Boone Center, the University of Kentucky
+0792 Joe Craft Center, the University of Kentucky
+0793 Kentucky Proud Park, the University of Kentucky
+0794 Kroger Field, the University of Kentucky
+0795 Law Building (University of Kentucky), the University of Kentucky
+0796 Linda and Jack Gill Heart Institute, the University of Kentucky
+0797 Main Building (University of Kentucky), the University of Kentucky
+0798 Margaret I. King Library, the University of Kentucky
+0799 Memorial Coliseum (University of Kentucky), the University of Kentucky
+0800 Memorial Hall (University of Kentucky), the University of Kentucky
+0801 Patterson Office Tower, the University of Kentucky
+0802 Sanders–Brown Center on Aging, the University of Kentucky
+0803 Singletary Center for the Arts, the University of Kentucky
+0804 UK HealthCare, the University of Kentucky
+0805 William T. Young Library, the University of Kentucky
+0806 Bretton Hall, West Yorkshire, the University of Leeds
+0807 Brotherton Library, the University of Leeds
+0808 Great Hall of the University of Leeds, the University of Leeds
+0809 Leeds University Union, the University of Leeds
+0810 Parkinson Building, the University of Leeds
+0811 University of Leeds Refectory, the University of Leeds
+0812 Packer Memorial Chapel, Lehigh University
+0813 Zoellner Arts Center, Lehigh University
+0814 Agnes Flanagan Chapel, Lewis & Clark College
+0815 Aubrey Watzek Library, Lewis & Clark College
+0816 John R. Howard Hall, Lewis & Clark College
+0817 Hoffman Art Gallery, Lewis & Clark College
+0818 LSU Campus Mounds, Louisiana State University
+0819 LSU Cox Communications Academic Center for Student-Athletes, Louisiana State University
+0820 Greek Theatre (Baton Rouge), Louisiana State University
+0821 Highland Road Park Observatory, Louisiana State University
+0822 Hill Memorial Library, Louisiana State University
+0823 LSU Hilltop Arboretum, Louisiana State University
+0824 Huey P. Long Field House, Louisiana State University
+0825 John M. Parker Agricultural Coliseum, Louisiana State University
+0826 Edmund Kirby Smith Hall, Louisiana State University
+0827 Louisiana Museum of Natural History, Louisiana State University
+0828 Louisiana State University Business Education Complex, Louisiana State University
+0829 Louisiana State University Laboratory School, Louisiana State University
+0830 LSU Tiger Band Hall, Louisiana State University
+0831 Memorial Tower, Louisiana State University
+0832 Troy H. Middleton Library, Louisiana State University
+0833 Mike the Tiger Habitat, Louisiana State University
+0834 Pentagon Barracks, Louisiana State University
+0835 Swine Palace, Louisiana State University
+0836 Shaw Center for the Arts, Louisiana State University
+0837 Alan Turing Building, the University of Manchester
+0838 Arthur Lewis Building, the University of Manchester
+0839 Barnes Wallis Building, the University of Manchester
+0840 The Beyer building (University of Manchester), the University of Manchester
+0841 Chancellors Hotel & Conference Centre, the University of Manchester
+0842 Godlee Observatory, the University of Manchester
+0843 Grove House, Manchester, the University of Manchester
+0844 Henry Royce Institute, the University of Manchester
+0845 John Rylands Library, the University of Manchester
+0846 Maths and Social Sciences Building, the University of Manchester
+0847 National Graphene Institute, the University of Manchester
+0848 Renold Building, the University of Manchester
+0849 Sackville Street Building, the University of Manchester
+0850 Schuster Laboratory, the University of Manchester
+0851 Stephen Joseph Studio, the University of Manchester
+0852 Stopford Building, the University of Manchester
+0853 Tabley House, the University of Manchester
+0854 University of Manchester Library, the University of Manchester
+0855 Whitworth Art Gallery, the University of Manchester
+0856 Whitworth Hall, the University of Manchester
+0857 Wolfson Molecular Imaging Centre, the University of Manchester
+0858 McGuirk Alumni Stadium
+0859 Curry Hicks Cage, University of Massachusetts Amherst
+0860 Draper Hall Annex, University of Massachusetts Amherst
+0861 Earl Lorden Field, University of Massachusetts Amherst
+0862 Fernald Hall, University of Massachusetts Amherst
+0863 University Museum of Contemporary Art, University of Massachusetts Amherst
+0864 Flint Laboratory, University of Massachusetts Amherst
+0865 George N. Parks Minuteman Marching Band Building, University of Massachusetts Amherst
+0866 John F. Thompson Hall, University of Massachusetts Amherst
+0867 John W. Lederle Graduate Research Center, University of Massachusetts Amherst
+0868 Marston Hall, University of Massachusetts Amherst
+0869 Morrill Science Center, University of Massachusetts Amherst
+0870 Mullins Center, University of Massachusetts Amherst
+0871 Murray D. Lincoln Campus Center, University of Massachusetts Amherst
+0872 Old Chapel (Amherst, Massachusetts), University of Massachusetts Amherst
+0873 Orchard Hill Observatory, University of Massachusetts Amherst
+0874 Rudd Field (UMass), University of Massachusetts Amherst
+0875 UMass Softball Complex, University of Massachusetts Amherst
+0876 W. E. B. Du Bois Library, University of Massachusetts Amherst
+0877 MIT Chapel, Massachusetts Institute of Technology
+0878 Green Building (MIT), Massachusetts Institute of Technology
+0879 Kresge Auditorium, Massachusetts Institute of Technology
+0880 Massachusetts Institute of Technology Libraries, Massachusetts Institute of Technology
+0881 MIT Museum, Massachusetts Institute of Technology
+0882 MIT Nuclear Research Reactor, Massachusetts Institute of Technology
+0883 Ray and Maria Stata Center, Massachusetts Institute of Technology
+0884 Wiesner Building, Massachusetts Institute of Technology
+0885 Zesiger Sports and Fitness Center, Massachusetts Institute of Technology
+0886 Arts Building (McGill University), McGill University
+0887 Burnside Hall, McGill University
+0888 Lady Meredith House, McGill University
+0889 Martlet House, McGill University
+0890 McConnell Arena, McGill University
+0891 McGill University Life Sciences Research Complex, McGill University
+0892 McIntyre Medical Sciences Building, McGill University
+0893 McLennan Library Building, McGill University
+0894 Percival Molson Memorial Stadium, McGill University
+0895 The Presbyterian College, Montreal, McGill University
+0896 Redpath Museum, McGill University
+0897 Roddick Gates, McGill University
+0898 Dahlberg Arena, the University of Montana
+0899 Dornblaser Field, the University of Montana
+0900 Maureen and Mike Mansfield Library, the University of Montana
+0901 The Payne Family Native American Center, the University of Montana
+0902 SpectrUM Discovery Area, the University of Montana
+0903 Washington–Grizzly Stadium, the University of Montana
+0904 Durham–UNH station, University of New Hampshire
+0905 Lundholm Gym, University of New Hampshire
+0906 Memorial Union Building (New Hampshire), University of New Hampshire
+0907 New Hampshire PBS, University of New Hampshire
+0908 University of New Hampshire Observatory, University of New Hampshire
+0909 Thompson Hall (University of New Hampshire), University of New Hampshire
+0910 Whittemore Center, University of New Hampshire
+0911 Wildcat Stadium (University of New Hampshire), University of New Hampshire
+0912 Culture Lab, Newcastle University
+0913 Emerson Cavitation Tunnel, Newcastle University
+0914 Great North Museum: Hancock, Newcastle University
+0915 Hatton Gallery, Newcastle University
+0916 Newcastle University Library, Newcastle University\
+0917 Royal Victoria Infirmary, Newcastle University
+0918 Alumni Hall (University of Notre Dame), University of Notre Dame
+0919 Notre Dame Stadium
+0920 Arlotta Family Lacrosse Stadium, University of Notre Dame
+0921 Badin Hall (University of Notre Dame), University of Notre Dame
+0922 Carroll Hall (University of Notre Dame), University of Notre Dame
+0923 Cartier Field, University of Notre Dame
+0924 Compton Family Ice Arena, University of Notre Dame
+0925 Courtney Tennis Center, University of Notre Dame
+0926 Dunne Hall (University of Notre Dame), University of Notre Dame
+0927 Eck Tennis Pavilion, University of Notre Dame
+0928 Flaherty Hall (University of Notre Dame), University of Notre Dame
+0929 Frank Eck Stadium, University of Notre Dame
+0930 Hesburgh Library, University of Notre Dame
+0931 Edmund P. Joyce Center, University of Notre Dame
+0932 Keenan Hall, University of Notre Dame
+0933 LaFortune Student Center, University of Notre Dame
+0934 Legends of Notre Dame, University of Notre Dame
+0935 Lewis Hall (Notre Dame), University of Notre Dame
+0936 Loftus Sports Center, University of Notre Dame
+0937 Main Building (University of Notre Dame), University of Notre Dame
+0938 Melissa Cook Stadium, University of Notre Dame
+0939 Morrissey Hall (University of Notre Dame), University of Notre Dame
+0940 Burke Golf Course at Notre Dame
+0941 Harris Family Track and Field Stadium
+0942 O'Neill Hall of Music/Sacred Musi
+0943 Pasquerilla West Hall (University of Notre Dame), University of Notre Dame
+0944 Rolfs Aquatic Center, University of Notre Dame
+0945 Basilica of the Sacred Heart (Notre Dame), University of Notre Dame
+0946 Snite Museum of Art, University of Notre Dame
+0947 Sorin Hall (University of Notre Dame), University of Notre Dame
+0948 St. Edward's Hall (University of Notre Dame), University of Notre Dame
+0949 Stepan Center, University of Notre Dame
+0950 University of Notre Dame Fire Department, University of Notre Dame
+0951 Washington Hall (University of Notre Dame), University of Notre Dame
+0952 Zahm Hall, University of Notre Dame
+0953 Austin Hall (Oregon State University), Oregon State University
+0954 Community Hall (Oregon State University), Oregon State University
+0955 Dixon Recreation Center, Oregon State University
+0956 Dryden Hall, Oregon State University
+0957 Gill Coliseum, Oregon State University
+0958 Hatfield Marine Science Center, Oregon State University
+0959 The LaSells Stewart Center, Oregon State University
+0960 Memorial Union (Oregon State University), Oregon State University
+0961 Merryfield Hall, Oregon State University
+0962 Oregon State University Radiation Center, Oregon State University
+0963 Owen Hall (Oregon State University), Oregon State University
+0964 Peavy Hall, Oregon State University
+0965 Pharmacy Building, Oregon State University
+0966 The Valley Library, Oregon State University
+0967 Waldo Hall, Oregon State University
+0968 Autzen Stadium, University of Oregon
+0969 Chapman Hall, University of Oregon
+0970 Collier House (University of Oregon), University of Oregon
+0971 Deady Hall, University of Oregon
+0972 Deschutes Hall, University of Oregon
+0973 Erb Memorial Union, University of Oregon
+0974 Friendly Hall, University of Oregon
+0975 MarAbel B. Frohnmayer Music Building, University of Oregon
+0976 Gerlinger Hall, University of Oregon
+0977 Global Scholars Hall, University of Oregon
+0978 Hatfield-Dowlin Complex, University of Oregon
+0979 Hayward Field, University of Oregon
+0980 John E. Jaqua Center for Student Athletes, University of Oregon
+0981 Johnson Hall (Eugene, Oregon), University of Oregon
+0982 Knight Library, University of Oregon
+0983 Lillis Business Complex, University of Oregon
+0984 Computing Center, University of Oregon
+0985 James F. Miller Theatre Complex, University of Oregon
+0986 Villard Hall, University of Oregon
+0987 Fenton Hall, University of Oregon
+0988 Anstett Hall, University of Oregon
+0989 Chiles Business Center, University of Oregon
+0990 McKenzie Hall, University of Oregon
+0991 Condon Hall, University of Oregon
+0992 Jordan Schnitzer Museum of Art, University of Oregon
+0993 Prince Lucien Campbell Hall, University of Oregon
+0994 Gerlinger Annex, University of Oregon
+0995 Hendricks Hall, University of Oregon
+0996 Susan Campbell Hall, University of Oregon
+0997 Clinical Services Building, University of Oregon
+0998 Alder Building, University of Oregon
+0999 Lorry I. Lokey Education Building, University of Oregon
+1000 HEDCO Education Building, University of Oregon
+1001 Education Annex, University of Oregon
+1002 Beall Concert Hall, University of Oregon
+1003 Allen Hall, University of Oregon
+1004 Earl Complex, University of Oregon
+1005 Carson Hall, University of Oregon
+1006 Walton Complex, University of Oregon
+1007 Living Learning Center, University of Oregon
+1008 Lawrence Hall, University of Oregon
+1009 Straub Hall, University of Oregon
+1010 Agate Hall, University of Oregon
+1011 Agate House, University of Oregon
+1012 William W. Knight Law Center, University of Oregon
+1013 Many Nations Longhouse, University of Oregon
+1014 Oregon Hall, University of Oregon
+1015 Student Health Center, University of Oregon
+1016 Museum of Natural and Cultural History, University of Oregon
+1017 Lorry I. Lokey Science Complex, University of Oregon
+1018 Cascade Hall, University of Oregon
+1019 Cascade Annex, University of Oregon
+1020 Columbia Hall, University of Oregon
+1021 Huestis Hall, University of Oregon
+1022 Klamath Hall, University of Oregon
+1023 Onyx Bridge, University of Oregon
+1024 Pacific Hall, University of Oregon
+1025 Streisinger Hall, University of Oregon
+1026 Willamette Hall, University of Oregon
+1027 Robert and Beverly Lewis Integrative Science Building, University of Oregon
+1028 Volcanology, University of Oregon
+1029 Riverfront Research Park, University of Oregon
+1030 Wilkinson House, University of Oregon
+1031 Fine Arts Studios University of Oregon
+1032 Urban Farm, University of Oregon
+1033 Zebrafish International Resource Center, University of Oregon
+1034 Central Power Plant, University of Oregon
+1035 Campus Operations, University of Oregon
+1036 Franklin Building, University of Oregon
+1037 Rainier Building, University of Oregon
+1038 University of Oregon Alumni Associatio
+1039 Matthew Knight Arena, University of Oregon
+1040 East Campus Graduate Village, University of Oregon
+1041 Bean Complex, University of Oregon
+1042 Hamilton Complex, University of Oregon
+1043 Moss Street Children's Center, University of Oregon
+1044 Vivian Olum Child Development Center, University of Oregon
+1045 Labor Education and Resource Center, University of Oregon
+1046 McArthur Court, University of Oregon
+1047 Esslinger Hall, University of Oregon
+1048 Student Recreation Center, University of Oregon
+1049 Bowerman Family Building, University of Oregon
+1050 Outdoor Program Barn, University of Oregon
+1051 Howe Field, University of Oregon
+1052 Agate Apartments, University of Oregon
+1053 PK Park, University of Oregon
+1054 Moshofsky Sports Center, University of Oregon
+1055 UO Police East Building, University of Oregon
+1056 Parking and Transportation Building, University of Oregon
+1057 UO Annex, University of Oregon
+1058 PeaceHealth Sacred Heart Medical Center University District
+1059 Riley Hall, University of Oregon
+1060 Barnhart Hall, University of Oregon
+1061 Center for Medical Education and Research, University of Oregon
+1062 McMorran House, University of Oregon
+1063 White Stag Block, University of Oregon
+1064 KWAX, University of Oregon
+1065 University of Oregon Museum of Natural and Cultural History, University of Oregon
+1066 Banbury Road, Oxford, the University of Oxford
+1067 Abbot's Kitchen, Oxford, the University of Oxford
+1068 All Souls College, Oxford
+1069 Balliol College, Oxford
+1070 Blackfriars, Oxford, the University of Oxford
+1071 Blue Boar Quadrangle, the University of Oxford
+1072 Brasenose College, Oxford, the University of Oxford
+1073 Bridge of Sighs (Oxford), the University of Oxford
+1074 Burton Taylor Studio, the University of Oxford
+1075 Campion Hall, the University of Oxford
+1076 Castle Mill, the University of Oxford
+1077 Christ Church Picture Gallery, the University of Oxford
+1078 Christ Church, Oxford, the University of Oxford
+1079 Clarendon Building, the University of Oxford
+1080 Clarendon Institute, the University of Oxford
+1081 Convocation House, the University of Oxford
+1082 Corpus Christi College, Oxford, the University of Oxford
+1083 Denys Wilkinson Building, the University of Oxford
+1084 Divinity School, Oxford, the University of Oxford
+1085 Examination Schools, the University of Oxford
+1086 Exeter College, Oxford, the University of Oxford
+1087 Founders Tower, the University of Oxford
+1088 Green Templeton College, Oxford, the University of Oxford
+1089 Harris Manchester College, Oxford, the University of Oxford
+1090 Hertford College, Oxford, the University of Oxford
+1091 Holywell Manor, Oxford, the University of Oxford
+1092 Holywell Music Room, the University of Oxford
+1093 Jacqueline Du Pré Music Building, the University of Oxford
+1094 Buildings of Jesus College, Oxford, the University of Oxford
+1095 Keble College, Oxford, the University of Oxford
+1096 Kellogg College, Oxford, the University of Oxford
+1097 Lady Margaret Hall, Oxford, the University of Oxford
+1098 Linacre College, Oxford, the University of Oxford
+1099 Lincoln College, Oxford, the University of Oxford
+1100 Lindemann Lecture Theatre
+1101 Magdalen College, Oxford, the University of Oxford
+1102 Magdalen Tower, the University of Oxford
+1103 Mansfield College, Oxford, the University of Oxford
+1104 The Meadow Building, the University of Oxford
+1105 Merton College, Oxford, the University of Oxford
+1106 Merton Street tennis court, the University of Oxford
+1107 Mob Quad, the University of Oxford
+1108 New College, Oxford, the University of Oxford
+1109 New Inn Hall, Oxford, the University of Oxford
+1110 New Radcliffe House, the University of Oxford
+1111 Buildings of Nuffield College, Oxford, the University of Oxford
+1112 O'Reilly Theatre, the University of Oxford
+1113 Old Ashmolean Building, the University of Oxford
+1114 Oriel College, Oxford, the University of Oxford
+1115 Osler House, the University of Oxford
+1116 The Oxford Union Library
+1117 Parks College, Oxford, the University of Oxford
+1118 Peckwater Quadrangle, the University of Oxford
+1119 Pembroke College, Oxford, the University of Oxford
+1120 Oxford Playhouse, the University of Oxford
+1121 The Queen's College, Oxford, the University of Oxford
+1122 Radcliffe Observatory, the University of Oxford
+1123 Redcliffe-Maud House, the University of Oxford
+1124 Regent's Park College, Oxford, the University of Oxford
+1125 Rewley House, the University of Oxford
+1126 Rhodes House, the University of Oxford
+1127 Roger Bannister running track, the University of Oxford
+1128 St Anne's College, Oxford, the University of Oxford
+1129 St Antony's College, Oxford, the University of Oxford
+1130 St Benet's Hall, Oxford, the University of Oxford
+1131 St Catherine's College, Oxford, the University of Oxford
+1132 St Cross Church, Oxford, the University of Oxford
+1133 St Cross College, Oxford, the University of Oxford
+1134 St Edmund Hall, Oxford, the University of Oxford
+1135 St Hilda's College, Oxford, the University of Oxford
+1136 St Hugh's College, Oxford, the University of Oxford
+1137 St Peter's College, Oxford, the University of Oxford
+1138 Sheldonian Theatre, the University of Oxford
+1139 Shelley Memorial, the University of Oxford
+1140 Somerville College, Oxford, the University of Oxford
+1141 University Church of St Mary the Virgin, the University of Oxford
+1142 St Stephen's House, Oxford, the University of Oxford
+1143 Staverton House, Oxford, the University of Oxford
+1144 Thom Building, the University of Oxford
+1145 Tom Quad, the University of Oxford
+1146 Trinity College, Oxford, the University of Oxford
+1147 University College Boathouse, the University of Oxford
+1148 Wadham College, Oxford, the University of Oxford
+1149 Wolfson College, Oxford, the University of Oxford
+1150 Worcester College, Oxford, the University of Oxford
+1151 Wycliffe Hall, Oxford, the University of Oxford
+1152 Cujas Library, the University of Paris
+1153 Sorbonne, the University of Paris
+1154 Chancellor's Residence (University of Pittsburgh), University of Pittsburgh
+1155 Cost Sports Center, University of Pittsburgh
+1156 PITT PUBLIC HEALTH
+1157 Fanny Edel Falk Laboratory School, University of Pittsburgh'
+1158 Fitzgerald Field House, University of Pittsburgh
+1159 Heinz Memorial Chapel, University of Pittsburgh
+1160 Learning Research and Development Center, University of Pittsburgh
+1161 Log Cabin (University of Pittsburgh), University of Pittsburgh
+1162 O'Hara Student Center, University of Pittsburgh
+1163 Petersen Events Center, University of Pittsburgh
+1164 Petersen Sports Complex, University of Pittsburgh
+1165 Stephen Foster Memorial, University of Pittsburgh
+1166 University Child Development Center, University of Pittsburgh
+1167 University Club (University of Pittsburgh), University of Pittsburgh
+1168 University Place Office Building, University of Pittsburgh
+1169 William Pitt Union, University of Pittsburgh
+1170 5th Avenue Cinema, Portland State University
+1171 Art Building and Annex, Portland State University
+1172 Simon Benson House, Portland State University
+1173 Blackstone Hall (Portland State University), Portland State University
+1174 Blumel Hall, Portland State University
+1175 Crowne Plaza Portland-Downtown Conv Ctr
+1176 East Hall (Portland State University)
+1177 Engineering Building, Portland State University
+1178 Epler Hall, Portland State University
+1179 Fourth Avenue Building (Portland State University), Portland State University
+1180 Harder House, Portland State University
+1181 Harrison Tower
+1182 Helen Gordon Child Development Center, Portland State University
+1183 Hoffmann Hall, Portland State University
+1184 Karl Miller Center, Portland State University
+1185 King Albert Hall (Portland State University), Portland State University
+1186 Lincoln Hall (Portland, Oregon), Portland State University
+1187 Market Center Building, Portland State University
+1188 Portland State University Library
+1189 Montgomery Hall (Portland State University), Portland State University
+1190 Ondine Hall, Portland State University
+1191 Parkway Manor (Portland State University)
+1192 Science and Education Center, Portland State University
+1193 Science Building One, Portland State University
+1194 Science Research and Teaching Center, Portland State University
+1195 Shattuck Hall, Portland State University
+1196 Smith Memorial Student Union, Portland State University
+1197 St. Helens Court (Portland State University), Portland State University
+1198 University Center Building, Portland State University
+1199 Urban Center Building, Portland State University
+1200 Viking Pavilion, Portland State University
+1201 Kya Rosa, University of Pretoria,
+1202 Old Arts Building (University of Pretoria
+1203 Onderstepoort Veterinary Academic Hospital, University of Pretoria
+1204 Weskoppies Psychiatric Hospital, University of Pretoria
+1205 Princeton University Art Museum, Princeton University
+1206 Alexander Hall (Princeton University), Princeton University
+1207 Hobey Baker Memorial Rink, Princeton University
+1208 Bill Clarke Field, Princeton University
+1209 Class of Stadium, Princeton University
+1210 Cleveland Tower, Princeton University
+1211 Dillon Gymnasium, Princeton University
+1212 Forbes College, Princeton University
+1213 Frist Campus Center, Princeton University
+1214 Jadwin Gymnasium, Princeton University
+1215 Joseph Henry House, Princeton University
+1216 McCarter Theatre, Princeton University
+1217 Nassau Hall, Princeton University
+1218 Powers Field
+1219 President's House (Princeton University), Princeton University
+1220 Seeley G. Mudd Manuscript Library
+1221 Prospect House (Princeton, New Jersey), Princeton University
+1222 Shea Rowing Center, Princeton University
+1223 Princeton University Chapel, Princeton University
+1224 Walter Lowrie House (Princeton, New Jersey), Princeton University
+1225 Foxhill House, the University of Reading
+1226 ICMA Centre, the University of Reading
+1227 Region War Room, the University of Reading
+1228 Meteorology
+1229 University of Reading Science & Technology Centre, the University of Reading
+1230 Wantage Hall, the University of Reading
+1231 Eliot Hall (Reed College), Reed College
+1232 Eric V. Hauser Memorial Library, Reed College
+1233 Old Dorm Block, Reed College
+1234 Performing Arts Building, Reed College
+1235 Studio Art Building, Reed College
+1236 RMIT Building 220
+1237 Capitol Theatre, Melbourne, RMIT University
+1238 RMIT Design Hub, RMIT University
+1239 RMIT Building 13
+1240 Former Melbourne Magistrates' Court, RMIT University
+1241 RMIT Building 11, RMIT University
+1242 Storey Hall, RMIT University
+1243 Swanston Academic Building, RMIT University
+1244 Alexander Johnston Hall, Rutgers University
+1245 Archibald S. Alexander Library, Rutgers University
+1246 Busch Campus of Rutgers University, Rutgers University
+1247 College Avenue Campus, Rutgers University
+1248 Demarest Hall, Rutgers University
+1249 Ernest Lynton North and South Towers, Rutgers University
+1250 Geology Hall, Rutgers University
+1251 Golden Dome Athletic Center, Rutgers University
+1252 John Cotton Dana Library, Rutgers University
+1253 Kirkpatrick Chapel, Rutgers University
+1254 Old Queens, Rutgers University
+1255 One Washington Park, Rutgers University
+1256 Daniel S. Schanck Observatory, Rutgers University
+1257 Voorhees Chapel (Rutgers), Rutgers University
+1258 Voorhees Town Center
+1259 Winants Hall, Rutgers University
+1260 George Vari Engineering and Computing Centre, Ryerson University
+1261 Heaslip House, Ryerson University
+1262 Kerr Hall, Ryerson University
+1263 O'Keefe House, Ryerson University
+1264 Oakham House, Ryerson University
+1265 Rogers Communications Centre, Ryerson University
+1266 Ryerson Image Centre, Ryerson University
+1267 Ryerson University Library, Ryerson University
+1268 Sally Horsfall Eaton Centre, Ryerson University
+1269 South Bond Building, Ryerson University
+1270 Stevens Stadium, Santa Clara University
+1271 Alfred Denny Building, Sheffield University
+1272 Arts Tower, Sheffield University
+1273 Bartolomé House, Sheffield University
+1274 Drama Studio, University of Sheffield, Sheffield University
+1275 Ella Armitage Building, Sheffield University
+1276 Firth Court, Sheffield University
+1277 Goodwin Sports Centre, Sheffield University
+1278 Hicks Building, Sheffield University
+1279 Information Commons, Sheffield, Sheffield University
+1280 Kroto Innovation Centre, Sheffield University
+1281 Octagon Centre, Sheffield University
+1282 St George's Church, Portobello, Sheffield University
+1283 Sir Frederick Mappin Building, Sheffield University
+1284 Doheny Library, University of Southern California
+1285 LAC+USC Medical Center, University of Southern California
+1286 Samuel Freeman House, University of Southern California
+1287 Thomas and Dorothy Leavey Library, University of Southern California
+1288 USC Michelson Center for Convergent Bioscience, University of Southern California
+1289 Villa Aurora, University of Southern California
+1290 Wallis Annenberg Hall, University of Southern California
+1291 Widney Alumni House, University of Southern California
+1292 Zumberge Hall of Science, University of Southern California
+1293 John Mitchell Center, the University of Southern Maine
+1294 Robie-Andrews Hall[2]
+1295 Philippi Hall, the University of Southern Maine
+1296 Upperclass Hall, the University of Southern Maine
+1297 Payson Smith Hall, the University of Southern Maine
+1298 Albert Brenner Glickman Family Library, the University of Southern Maine
+1299 Abromson Community Education Center, the University of Southern Maine
+1300 Wishcamper Center, the University of Southern Maine
+1301 School of Law Building, the University of Southern Maine
+1302 Luther Bonney Hall, the University of Southern Maine
+1303 James V. Sullivan Recreation and Fitness Complex, the University of Southern Maine
+1304 High Street, the University of Southern Maine
+1305 Gorham Campus Historic District, the University of Southern Maine
+1306 McLellan House, the University of Southern Maine
+1307 Arrillaga Center for Sports and Recreation, Stanford University
+1308 Avery Aquatic Center, Stanford University
+1309 Braun Music Center, Stanford University
+1310 Burnham Pavilion (Stanford University), Stanford University
+1311 James H. Clark Center, Stanford University
+1312 Stanford Clock Tower, Stanford University
+1313 Stanford Fire Truck House, Stanford University
+1314 Florence Moore Hall, Stanford University
+1315 Frost Amphitheater, Stanford University
+1316 Gates Computer Science Building, Stanford, Stanford University
+1317 Gay Liberation Monument, Stanford University
+1318 Green Earth Sciences, Stanford University
+1319 Hanna–Honeycomb House, Stanford University
+1320 Hewlett Teaching Center, Stanford University
+1321 Hoover Tower, Stanford University
+1322 Lou Henry Hoover House, Stanford University
+1323 Lathrop Library, Stanford University
+1324 Main Quad (Stanford University), Stanford University
+1325 Maloney Field at Laird Q. Cagan Stadium, Stanford University
+1326 Maples Pavilion, Stanford University
+1327 McMurtry Building, Stanford University
+1328 Stanford Memorial Auditorium, Stanford University
+1329 Stanford Memorial Church, Stanford University
+1330 J. Henry Meyer Memorial Library, Stanford University
+1331 Old Union Fountain, Stanford University
+1332 Red Barn (Stanford University), Stanford University
+1333 Roble Hall, Stanford University
+1334 Sequoia Hall, Stanford University
+1335 Smith Family Stadium, Stanford University
+1336 Stanford Stadium, Stanford University
+1337 Stanford University student housing, Stanford University
+1338 Stanford Sweet Hall, Stanford University
+1339 Taube Tennis Center, Stanford University
+1340 Toyon Hall, Stanford University
+1341 Varsity Field Hockey Turf, Stanford University
+1342 White Memorial Fountain, Stanford University
+1343 Administration Building (Texas Tech University), Texas Tech University
+1344 Agricultural Pavilion, Texas Tech University
+1345 Texas Technological College Dairy Barn, Texas Tech University
+1346 Spadina Crescent, University of Toronto
+1347 Sussex Avenue, University of Toronto
+1348 Wellesley Street West, University of Toronto
+1349 College Street, University of Toronto
+1350 St. George Street, University of Toronto
+1351 St. George Street, University of Toronto
+1352 Bloor Street West, University of Toronto
+1353 254-McCaul Street, University of Toronto
+1354 Huron Street, University of Toronto
+1355 Spadina Avenue, University of Toronto
+1356 Spadina Avenue, University of Toronto
+1357 Spadina Avenue, University of Toronto
+1358 Spadina Avenue, University of Toronto
+1359 Annesley Hall, University of Toronto
+1360 Anthropology Building, University of Toronto
+1361 Astronomy & Astrophysics Building, University of Toronto
+1362 Bahen Centre for Information Technology, University of Toronto
+1363 Bancroft Building, University of Toronto
+1364 The Banting and Best Department of Medical Research
+1365 Birge-Carnegie Library, University of Toronto
+1366 Borden Building, University of Toronto
+1367 Brennan Hall, University of Toronto
+1368 Burwash Hall, University of Toronto
+1369 Canadiana Gallery, University of Toronto
+1370 Cardinal Flahiff Building, University of Toronto
+1371 Carr Hall, University of Toronto
+1372 Central Steam Plant, University of Toronto
+1373 Chestnut Residence, University of Toronto
+1374 CIUT Radio Building, University of Toronto
+1375 Clara Benson Building, University of Toronto
+1376 Claude T. Bissell Building, University of Toronto
+1377 Convocation Hall, University of Toronto
+1378 Cumberland House, University of Toronto
+1379 D.L. Pratt Building, University of Toronto
+1380 Dentistry Building, University of Toronto
+1381 Donnelly Centre for Cellular and Biomolecular Research, University of Toronto
+1382 E.J. Pratt Library, University of Toronto
+1383 Early Learning Centre, University of Toronto
+1384 Earth Sciences Centre, University of Toronto
+1385 Edward Johnson Building, University of Toronto
+1386 Elmsley Hall, University of Toronto
+1387 Emmanuel College, University of Toronto
+1388 Exam Centre, University of Toronto
+1389 Faculty Club, University of Toronto
+1390 Falconer Hall, University of Toronto
+1391 Fasken Martineau Building, University of Toronto
+1392 Fields Institute, University of Toronto
+1393 FitzGerald Building, University of Toronto
+1394 Flavelle House, University of Toronto
+1395 Gage Building, University of Toronto
+1396 Galbraith Building, University of Toronto
+1397 George Ignatieff Theatre, University of Toronto
+1398 Gerald Larkin Building, University of Toronto
+1399 Gerstein Science Information Centre, University of Toronto
+1400 Graduate House, University of Toronto
+1401 Graduate Students' Union, University of Toronto
+1402 Hart House, University of Toronto
+1403 Haultain Building, University of Toronto
+1404 Innis College, University of Toronto
+1405 Innis College Student Residence, University of Toronto
+1406 Isabel Bader Theatre, University of Toronto
+1407 J. M. Kelly Library, University of Toronto
+1408 J. Robert S. Prichard Alumni House, University of Toronto
+1409 Jackman Humanities Building, University of Toronto
+1410 Knox College, University of Toronto
+1411 Koffler House, University of Toronto
+1412 Koffler Student Services Centre, University of Toronto
+1413 Lash Miller Chemical Laboratories, University of Toronto
+1414 Lillian Massey Building, University of Toronto
+1415 University College Union, University of Toronto
+1416 Macdonald-Mowat House, University of Toronto
+1417 Margaret Addison Hall, University of Toronto
+1418 Massey College, University of Toronto
+1419 Max Gluskin House, University of Toronto
+1420 McLennan Physical, University of Toronto
+1421 McMurrich Building, University of Toronto
+1422 Mechanical Engineering Building, University of Toronto
+1423 MacLeod Auditorium - Medical Science Building University of Toront
+1424 Mining Building, University of Toronto
+1425 Morrison Hall, University of Toronto
+1426 Munk Centre for International Studies, University of Toronto
+1427 New College (III) Residence, University of Toronto
+1428 Northrop Frye Hall, University of Toronto
+1429 Odette (Louis) Hall, University of Toronto
+1430 Old Admin Building, University of Toronto
+1431 Ontario Institute for Studies in Education, University of Toronto
+1432 Physical Geography Building, University of Toronto
+1433 Pontifical Institute of Mediaeval Studies, University of Toronto
+1434 Ramsay Wright Laboratories, University of Toronto
+1435 Regis College (New), University of Toronto
+1436 Robarts Library, University of Toronto
+1437 Rosebrugh Building, University of Toronto
+1438 Rotman School of Management, University of Toronto
+1439 Rowell Jackman Hall, University of Toronto
+1440 Sam Sorbara Hall, University of Toronto
+1441 Sir Sandford Fleming Building, University of Toronto
+1442 Sidney Smith Hall, University of Toronto
+1443 Simcoe Hall, University of Toronto
+1444 Sir Daniel Wilson Residence, University of Toronto
+1445 Soldiers' Tower, University of Toronto
+1446 St. Basil's Church, University of Toronto
+1447 St. Hilda's College, University of Toronto
+1448 Stewart Building, University of Toronto
+1449 Studio Theatre, University of Toronto
+1450 Sussex Ave, University of Toronto
+1451 C. David Naylor Building (Formerly Tanz Neuroscience Building), University of Toronto
+1452 Teefy Hall, University of Toronto
+1453 Thomas Fisher Rare Book Library, University of Toronto
+1454 Toronto School of Theology, University of Toronto
+1455 Trinity College, University of Toronto
+1456 University College, University of Toronto
+1457 Varsity Arena, University of Toronto
+1458 Muzzo Family Alumni Hall
+1459 Victoria College, University of Toronto
+1460 Wallberg Building, University of Toronto
+1461 Warren Stevens Building, University of Toronto
+1462 Wetmore Hall, University of Toronto
+1463 Whitney Hall, University of Toronto
+1464 Woodsworth College, University of Toronto
+1465 Woodsworth College Residence, University of Toronto
+1466 Wycliffe College, University of Toronto
+1467 Back Campus Fields, University of Toronto
+1468 Goldring Centre for High Performance Sport, University of Toronto
+1469 Leslie Dan Faculty of Pharmacy, University of Toronto
+1470 Newman Centre, Toronto, University of Toronto
+1471 Rochdale College, University of Toronto
+1472 St. Thomas Aquinas Church, Toronto, University of Toronto
+1473 Terrence Donnelly Health Sciences Complex, University of Toronto
+1474 Toronto Pan Am Sports Centre, University of Toronto
+1475 College Park, Dublin, Trinity College Dublin
+1476 Douglas Hyde Gallery, Trinity College Dublin
+1477 Graduates Memorial Building, Trinity College Dublin
+1478 Museum Building (Trinity College Dublin), Trinity College Dublin
+1479 Provost's House, Trinity College Dublin, Trinity College Dublin
+1480 Trinity Business School, Trinity College Dublin, Trinity College Dublin
+1481 Science Gallery, Trinity College Dublin
+1482 The Rubrics, Trinity College Dublin
+1483 Trinity Hall, Dublin, Trinity College Dublin
+1484 Ballou Hall, Tufts University
+1485 East Hall (Tufts University), Tufts University
+1486 Eaton Hall (Tufts University), Tufts University
+1487 Goddard Chapel (Tufts University)
+1488 Packard Hall, Tufts University
+1489 Tisch Library, Tufts University
+1490 Canal, Tulane University
+1491 Devlin Fieldhouse, Tulane University
+1492 Gibson Hall (Tulane University), Tulane University
+1493 Greer Field at Turchin Stadium, Tulane University
+1494 Howard-Tilton Memorial Library, Tulane University
+1495 McAlister Auditorium, Tulane University
+1496 Reily Student-Recreation Center, Tulane University
+1497 Yulman Stadium, Tulane University
+1498 Entomology Research Museum, UC Riverside
+1499 University of California, Riverside Insectary and Quarantine Facilities, UC Riverside
+1500 UC Riverside Student Recreation Center, UC Riverside
+1501 Angell Hall, University of Michigan campus
+1502 Mason Hall, University of Michigan campus
+1503 Bentley Historical Library, University of Michigan campus
+1504 Betsy Barbour House, University of Michigan campus
+1505 Bursley Hall, University of Michigan campus
+1506 Burton Memorial Tower, University of Michigan campus
+1507 C.S. Mott Children's Hospital, University of Michigan campus
+1508 Crisler Center, University of Michigan campus
+1509 Weiser Hall, University of Michigan campus
+1510 Detroit Observatory, University of Michigan campus
+1511 The Diag, University of Michigan campus
+1512 Escher Cooperative House, University of Michigan campus
+1513 Ferry Field, University of Michigan campus
+1514 Gerald R. Ford Presidential Library, University of Michigan campus
+1515 Gerald R. Ford School of Public Policy, University of Michigan campus
+1516 Hill Auditorium, University of Michigan campus
+1517 Kelsey Museum of Archaeology, University of Michigan campus
+1518 Life Sciences Institute, University of Michigan campus
+1519 Lurie Biomedical Engineering Center, University of Michigan campus
+1520 Lurie Ann & Robert H. Tower
+1521 Martha Cook Building, University of Michigan campus
+1522 Mary Markley Hall, University of Michigan campus
+1523 University of Michigan Automated and Connected Car Test Site - M City
+1524 Michigan Alpha Chapter House of Phi Delta Theta, University of Michigan campus
+1525 Michigan Stadium, University of Michigan campus
+1526 Michigan Union, University of Michigan campus
+1527 Neutron Science Laboratory, University of Michigan campus
+1528 Penny W. Stamps School of Art & Design, University of Michigan campus
+1529 Ray Fisher Stadium, University of Michigan campus
+1530 Ross School of Business, University of Michigan campus
+1531 Sindecuse Museum of Dentistry, University of Michigan campus
+1532 Stockwell Hall, University of Michigan campus
+1533 Taubman College of Architecture and Urban Planning, University of Michigan campus
+1534 University of Michigan Biological Station, University of Michigan campus
+1535 University of Michigan Coliseum, University of Michigan campus
+1536 University of Michigan College of Engineering, University of Michigan campus
+1537 University of Michigan College of Literature, Science, and the Arts, University of Michigan campus
+1538 Michigan Medicine, University of Michigan campus
+1539 University of Michigan Herbarium, University of Michigan campus
+1540 University of Michigan Institute for Social Research, University of Michigan campus
+1541 University of Michigan Law School, University of Michigan campus
+1542 Hatcher Graduate Library
+1543 University of Michigan Museum of Art
+1544 University of Michigan Museum of Natural History
+1545 University of Michigan Press
+1546 University of Michigan School of Dentistry
+1547 University of Michigan School of Education
+1548 University of Michigan School of Information
+1549 University of Michigan School of Kinesiology
+1550 University of Michigan School of Music, Theatre & Dance
+1551 University of Michigan School of Natural Resources and Environment,
+1552 University of Michigan School of Public Health
+1553 University of Michigan School of Social Work
+1554 University Towers, University of Michigan campus
+1555 William L. Clements Library, University of Michigan campus
+1556 Yost Ice Arena, University of Michigan campus
+1557 Bridge for Laboratory Sciences, Vassar College
+1558 Class of Observatory, Vassar College
+1559 Cushing House, Vassar College
+1560 Davison House, Vassar College
+1561 Ely Hall, Vassar College
+1562 Frances Lehman Loeb Art Center, Vassar College
+1563 Jewett House, Vassar College
+1564 Lathrop House (Vassar College), Vassar College
+1565 Main Building (Vassar College), Vassar College
+1566 Seeley G. Mudd Chemistry Building
+1567 Powerhouse Theater, Vassar College
+1568 Raymond House (Vassar College), Vassar College
+1569 Rombout House, Vassar College
+1570 Strong House (Vassar College), Vassar College
+1571 Students' Building (Vassar College), Vassar College
+1572 Thompson Memorial Library, Vassar College
+1573 Vassar Chapel, Vassar College
+1574 Vassar College Observatory, Vassar College
+1575 Vogelstein Center for Drama and Film, Vassar College
+1576 Billings Memorial Library, the University of Vermont
+1577 Dudley H. Davis Center, the University of Vermont
+1578 Fleming Museum of Art, the University of Vermont
+1579 Grasse Mount, the University of Vermont
+1580 Ira Allen Chapel, the University of Vermont
+1581 Morrill Hall (University of Vermont), the University of Vermont
+1582 Old Mill (University of Vermont), the University of Vermont
+1583 Patrick Gym, the University of Vermont
+1584 Daniel Webster Robinson House, the University of Vermont
+1585 Edward Wells House, the University of Vermont
+1586 Albert and Shirley Small Special Collections Library, the University of Virginia
+1587 Alderman Road Dormitories, the University of Virginia
+1588 Brown College at Monroe Hill, the University of Virginia
+1589 Clark Hall (University of Virginia), the University of Virginia
+1590 Davenport Field at Disharoon Park, the University of Virginia
+1591 Fralin Museum of Art, the University of Virginia
+1592 Hereford College, the University of Virginia
+1593 International Residential College, the University of Virginia
+1594 Jefferson Hall, the University of Virginia
+1595 John Paul Jones Arena, the University of Virginia
+1596 Klöckner Stadium, the University of Virginia
+1597 The Lawn, the University of Virginia
+1598 McCue Center, the University of Virginia
+1599 McIntire Amphitheatre, the University of Virginia
+1600 Memorial Gymnasium (Virginia), the University of Virginia
+1601 The Range, the University of Virginia
+1602 The Rotunda (University of Virginia), the University of Virginia
+1603 Scott Stadium, the University of Virginia
+1604 Sheridan Snyder Tennis Center, the University of Virginia
+1605 University Hall (University of Virginia), the University of Virginia
+1606 Art Building (Willamette University), Willamette University
+1607 Eaton Hall (Oregon), Willamette University
+1608 Ford Hall (Willamette University), Willamette University
+1609 Gatke Hall, Willamette University
+1610 Hallie Ford Museum of Art, Willamette University
+1611 Lausanne Hall, Willamette University
+1612 Mark O. Hatfield Library, Willamette University
+1613 Oregon Civic Justice Center, Willamette University
+1614 Truman Wesley Collins Legal Center, Willamette University
+1615 Waller Hall, Willamette University
+1616 Rudolph Hall, Yale University
+1617 Bass Library, Yale University
+1618 Battell Chapel, Yale University
+1619 Beinecke Rare Book & Manuscript Library, Yale University
+1620 Betts House (Yale University), Yale University
+1621 Connecticut Hall, Yale University
+1622 Durfee Hall, Yale University
+1623 Edward P. Evans Hall, Yale University
+1624 Gilder Boathouse, Yale University
+1625 Harkness Tower, Yale University
+1626 Harvey Cushing/John Hay Whitney Medical Library, Yale University
+1627 Horchow Hall, Yale University
+1628 Ingalls Rink, Yale University
+1629 James Dwight Dana House, Yale University
+1630 Kline Biology Tower, Yale University
+1631 Marsh Hall (Yale University), Yale University
+1632 Osborn Memorial Laboratories, Yale University
+1633 Payne Whitney Gymnasium, Yale University
+1634 Peabody Museum of Natural History, Yale University
+1635 Reese Stadium, Yale University
+1636 Steinbach Hall, Yale University
+1637 Sterling Law Building, Yale University
+1638 Sterling Memorial Library, Yale University
+1639 Street Hall, Yale University
+1640 Welch Hall (Yale University), Yale University
+1641 Woolsey Hall, Yale University
+1642 Yale Bowl, Yale University
+1643 Yale Field, Yale University
+1644 Yale University Art Gallery, Yale University
+1645 Alumni Field (York University), York University
+1646 Canlan Ice Sports – York, York University
+1647 Tait McKenzie Centre, York University
+1648 Toronto Track and Field Centre, York University
+1649 Vanier College at York University, York University
+1650 York University Observatory, York University
+1651 York Lions Stadium, York University
