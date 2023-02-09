@@ -33,6 +33,7 @@ Drone <-> Satellite
 |Instance Loss + Weighted Soft Margin Triplet Loss + LPN | 76.29 | 79.46 | 81.74 | 73.58 |
 |Instance Loss + Verification Loss + LPN | 77.08 | 80.18 | 85.02 | 73.80 |
 |Instance Loss + USAM + LPN | 77.60 | 80.55 | 86.59 | 75.96 | Lin J, Zheng Z, Zhong Z, Luo Z, Li S, Yang Y, Sebe N. Joint Representation Learning and Keypoint Detection for Cross-view Geo-localization. TIP 2022. [[Paper]](https://zhunzhong.site/paper/RK_Net.pdf)  [[Code]](https://github.com/AggMan96/RK-Net) |
+|SAIG-D| 78.85 | 81.62 | 86.45 | 78.48 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
 |LDRVSD| 78.66 | 81.55 | 89.30 | 79.17 | Qian Hu, Wansi Li, Xing Xu, Ning Liu, Lei Wang. Learning discriminative representations via variational self-distillation for cross-view geo-localization. Computers and Electrical Engineering 2022 [[Paper]](https://www.sciencedirect.com/science/article/pii/S0045790622005559) |
 |PCL | 79.47 | 83.63 | 87.69 | 78.51 | Xiaoyang Tian, Jie Shao, Deqiang Ouyang, and Heng Tao Shen. UAV-Satellite View Synthesis for Cross-view Geo-Localization. TCSVT 2021. [[Paper]](https://ieeexplore.ieee.org/document/9583266) |
 |LPN + DWDR | 81.51 | 84.11 | 88.30 | 79.38 | Tingyu W, Zhedong Z, Zunjie Z, Yuhan G, Yi Y, and Chenggang Y. "Learning Cross-view Geo-localization Embeddings via Dynamic Weighted Decorrelation Regularization" arXiv 2022. [[Paper]](https://arxiv.org/pdf/2211.05296.pdf) |
