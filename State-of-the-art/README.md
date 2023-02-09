@@ -87,6 +87,7 @@ Ground <-> Satellite
 |LPN* + DWDR | 94.33 | 98.54 | 99.09 | 99.80 | Tingyu W, Zhedong Z, Zunjie Z, Yuhan G, Yi Y, and Chenggang Y. "Learning Cross-view Geo-localization Embeddings via Dynamic Weighted Decorrelation Regularization" arXiv 2022. [[Paper]](https://arxiv.org/pdf/2211.05296.pdf) |
 | GeoDTR* | 95.43 | 98.86 | 99.34 | 99.86 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | FI* | 95.50 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
+|SAIG-D*| 96.34 | 99.10 | 99.50 | 99.86 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
  |** : The method utilizes the polar prior hint. |
 
@@ -117,5 +118,6 @@ Ground <-> Satellite
 | GeoDTR | 85.43 | 94.81 | 96.11 | 98.26 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | GeoDTR* | 86.21 | 95.44 | 96.72 | 98.77 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | FI* | 86.79 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
+|SAIG-D*| 89.06 | 96.11 | 97.08 | 98.89 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
  |** : The method utilizes the polar prior hint. |
