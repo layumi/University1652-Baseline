@@ -1,6 +1,6 @@
 <h1 align="center"> University1652-Baseline </h1>
 
-![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
+![Python 3.6+](https://img.shields.io/badge/python-3.6+-green.svg)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/context:python)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/alerts/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -111,7 +111,7 @@ Now we have supported:
 
 ## Prerequisites
 
-- Python 3.6
+- Python 3.6+
 - GPU Memory >= 8G
 - Numpy > 1.12.1
 - Pytorch 0.3+ 
@@ -120,7 +120,7 @@ Now we have supported:
 ## Getting started
 ### Installation
 - Install Pytorch from http://pytorch.org/
-- Install Torchvision from the source
+- Install Torchvision from the source (Please check the README. Or directly install by anaconda. It will be Okay.)
 ```
 git clone https://github.com/pytorch/vision
 cd vision
