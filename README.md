@@ -18,7 +18,9 @@
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
 
-### Recently, we raise a special issue on Remote Sensing (IF=5.3) from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+### 1. We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by May 15, 2023 and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
+
+### 2. We raise a special issue on Remote Sensing (IF=5.3) from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
 ### Download [University-1652] upon request. You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
 
