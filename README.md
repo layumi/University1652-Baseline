@@ -18,9 +18,7 @@
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
 
-### 1. We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by May 15, 2023 and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
 
-### 2. We raise a special issue on Remote Sensing (IF=5.3) from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
 ### Download [University-1652] upon request. You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
 
@@ -29,6 +27,14 @@ This repository contains the dataset link and the code for our paper [University
 **Task 1: Drone-view target localization.** (Drone -> Satellite) Given one drone-view image or video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
 
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
+
+
+### 1.  Conference Special Session
+We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by **May 15, 2023** and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
+
+### 2. Journal Special Issue
+We raise a special issue on Remote Sensing (IF=5.3) from now to **16 June 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+
 
 ## Table of contents
 * [About Dataset](#about-dataset)
@@ -79,6 +85,7 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+
 **26 Jan 2023** 1652 Building Name List is at [Here](https://github.com/layumi/University1652-Baseline/blob/master/new_name_list.txt).
 
 **10 Jul 2022** Rainy？Night？Foggy？ Snow？ You may check our new paper "Multiple-environment Self-adaptive Network for Aerial-view Geo-localization" at https://arxiv.org/pdf/2204.08381 
