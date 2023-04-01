@@ -20,7 +20,7 @@
 
 
 
-### Download [University-1652] upon request. You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
+### Download [University-1652] upon request (Usually I will reply you in 5 minutes). You may use the request [template](https://github.com/layumi/University1652-Baseline/blob/master/Request.md).
 
 This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186), ACM Multimedia 2020. The offical paper link is at https://dl.acm.org/doi/10.1145/3394171.3413896. We collect 1652 buildings of 72 universities around the world. Thank you for your kindly attention.
 
