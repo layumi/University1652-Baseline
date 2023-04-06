@@ -36,7 +36,7 @@ We host a special session on IEEE Intelligent Transportation Systems Conference 
 We raise a special issue on Remote Sensing (IF=5.3) from now to **16 June 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
 ### 3. ACM Multimedia Workshop
-We are holding the workshop at ACM Multimedia 2022 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/)
+We are holding the workshop at ACM Multimedia 2023 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/)
 
 ## Table of contents
 * [About Dataset](#about-dataset)
