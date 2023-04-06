@@ -29,12 +29,14 @@ This repository contains the dataset link and the code for our paper [University
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 
-### 1.  Conference Special Session
+### 1.  IEEE ITSC Special Session
 We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by **May 15, 2023** and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
 
-### 2. Journal Special Issue
+### 2. Remote Sensing Special Issue
 We raise a special issue on Remote Sensing (IF=5.3) from now to **16 June 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
+### 3. ACM Multimedia Workshop
+We are holding the workshop at ACM Multimedia 2022 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/)
 
 ## Table of contents
 * [About Dataset](#about-dataset)
