@@ -38,6 +38,10 @@ We raise a special issue on Remote Sensing (IF=5.3) from now to **16 June 2023**
 ### 3. ACM Multimedia Workshop
 We are holding the workshop at ACM Multimedia 2023 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/) [中文介绍](https://zhuanlan.zhihu.com/p/620180604)
 
+### 4. Coda Lab Challenge
+We also provide a challenging cross-view geo-localization dataset, called University160k, and the workshop audience may consider to participate the competition. The motivation is to simulate the real- world geo-localization scenario that we usually face an extremely large satellite-view pool. In particular, University160k extends the current University-1652 dataset with extra 167,486 satellite- view gallery distractors. We have release University160k on the challenge page, and made a public leader board.
+(More details are at https://codalab.lisn.upsaclay.fr/competitions/12672)
+
 ## Table of contents
 * [About Dataset](#about-dataset)
 * [News](#news)
