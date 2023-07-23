@@ -42,7 +42,7 @@ Drone <-> Satellite
 |PAAN | 84.51 | 86.78 | 91.01 | 82.28 | Duc Viet Bui, Masao Kubo, Hiroshi Sato. A Part-aware Attention Neural Network for Cross-view Geo-localization between UAV and Satellite.  Journal of Robotics Networking and Artificial Life 2022 [[Paper]](https://www.researchgate.net/profile/Viet-Bui-9/publication/366091845_A_Part-aware_Attention_Neural_Network_for_Cross-view_Geo-localization_between_UAV_and_Satellite/links/63914181e42faa7e75a6122e/A-Part-aware-Attention-Neural-Network-for-Cross-view-Geo-localization-between-UAV-and-Satellite.pdf) |
 |Swin-B + DWDR | 86.41 | 88.41 | 91.30 | 86.02 | Tingyu W, Zhedong Z, Zunjie Z, Yuhan G, Yi Y, and Chenggang Y. "Learning Cross-view Geo-localization Embeddings via Dynamic Weighted Decorrelation Regularization" arXiv 2022. [[Paper]](https://arxiv.org/pdf/2211.05296.pdf) |
 |MBF | 89.05 | 90.61 | 93.15| 88.17 | Runzhe Zhu , Mingze Yang , Ling Yin * , Fei Wu and Yuncheng Yang. "UAV’s Status Is Worth Considering: A Fusion Representations Matching Method for Geo-Localization" Sensors |
-|MCCG| 89.64 | 91.32 | 94.30 | 89.39 | MCCG: A ConvNeXt-based Multiple-Classifier Method for Cross-view Geo-localization. TCSVT 2023 [[Code]](https://github.com/mode-str/crossview) |
+|MCCG| 89.64 | 91.32 | 94.30 | 89.39 | Tianrui Shen, Yingmei Wei, Lai Kang, Shanshan Wan and Yee-Hong Yang. MCCG: A ConvNeXt-based Multiple-Classifier Method for Cross-view Geo-localization. TCSVT 2023 [[Code]](https://github.com/mode-str/crossview) |
 
 Ground <-> Satellite
 
