@@ -33,7 +33,7 @@ This repository contains the dataset link and the code for our paper [University
 We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by **May 15, 2023** and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
 
 ### 2. Remote Sensing Special Issue
-We raise a special issue on Remote Sensing (IF=5.3) from now to **16 June 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+We raise a special issue on Remote Sensing (IF=5.3) from now to ~~**16 June 2023**~~ **16 Dec 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
 ### 3. ACM Multimedia Workshop
 We are holding the workshop at ACM Multimedia 2023 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/) [中文介绍](https://zhuanlan.zhihu.com/p/620180604)
