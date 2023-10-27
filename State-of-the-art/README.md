@@ -6,7 +6,7 @@
 
 ### News 
 
-Recently, we raise a special issue on Remote Sensing (IF=5.349) from now to 16 June 2023. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
+Recently, we raise a special issue on Remote Sensing (IF=5.349) from now to ~~**16 June 2023**~~ **16 Dec 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
 ### University-1652 Dataset
 
