@@ -199,6 +199,13 @@ The following paper uses and reports the result of the baseline model. You may c
   journal={ACM Multimedia},
   year={2020}
 }
+@inproceedings{zheng2023uavm,
+  title={UAVM'23: 2023 Workshop on UAVs in Multimedia: Capturing the World from a New Perspective},
+  author={Zheng, Zhedong and Shi, Yujiao and Wang, Tingyu and Liu, Jun and Fang, Jianwu and Wei, Yunchao and Chua, Tat-seng},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={9715--9717},
+  year={2023}
+}
 ```
 Instance loss is defined in 
 ```bibtex
