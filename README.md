@@ -29,6 +29,15 @@ This repository contains the dataset link and the code for our paper [University
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 
+### 1. ACM ICMR Workshop
+
+**12 Jan 2024** We are holding a workshop at ACM ICMR 2024 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Phuket, Thailand!😃 The workshop link is https://www.zdzheng.xyz/MORE2024/ . Submission DDL is **15 April 2024**.
+
+<details>
+ <summary><b>
+  2023 Workshop and Sepcial Session
+</b></summary>
+
 ### 1.  IEEE ITSC Special Session
 We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by **May 15, 2023** and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
 
@@ -41,6 +50,8 @@ We are holding the workshop at ACM Multimedia 2023 on Aerial-view Imaging. [Call
 ### 4. Coda Lab Challenge
 We also provide a challenging cross-view geo-localization dataset, called University160k, and the workshop audience may consider to participate the competition. The motivation is to simulate the real- world geo-localization scenario that we usually face an extremely large satellite-view pool. In particular, University160k extends the current University-1652 dataset with extra 167,486 satellite- view gallery distractors. We have release University160k on the challenge page, and made a public leader board.
 (More details are at https://codalab.lisn.upsaclay.fr/competitions/12672)
+
+</details>
 
 ## Table of contents
 * [About Dataset](#about-dataset)
