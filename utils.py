@@ -58,7 +58,7 @@ def load_network(name, opt):
        epoch = int(epoch)
     config_path = os.path.join(dirname,'opts.yaml')
     with open(config_path, 'r') as stream:
-        config = yaml.load(stream)
+        config = yaml.load(stream, Loader=yaml.FullLoader)
 
     opt.name = config['name']
     opt.data_dir = config['data_dir']
