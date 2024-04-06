@@ -105,7 +105,7 @@ We note that there are no overlaps between 33 univeristies of training set and 3
 
 **26 Jan 2023** 1652 Building Name List is at [Here](https://github.com/layumi/University1652-Baseline/blob/master/new_name_list.txt).
 
-**10 Jul 2022** Rainy？Night？Foggy？ Snow？ You may check our new paper "Multiple-environment Self-adaptive Network for Aerial-view Geo-localization" at https://arxiv.org/pdf/2204.08381 
+**10 Jul 2022** Rainy？Night？Foggy？ Snow？ You may check our new paper "Multiple-environment Self-adaptive Network for Aerial-view Geo-localization" at https://github.com/wtyhub/MuseNet (accepted by Pattern Recognition'24)  
 
 **1 Dec 2021** Fix the issue due to the latest torchvision, which do not allow the empty subfolder. Note that some buildings do not have google images.  
 
