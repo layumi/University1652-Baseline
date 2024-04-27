@@ -30,7 +30,7 @@ This repository contains the dataset link and the code for our paper [University
 
 
 ### 1. ACM MM UAVM Workshop
-**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/ for reference.
+**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
 
 ### 2. ACM ICMR Workshop
 
