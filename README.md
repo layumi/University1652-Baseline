@@ -106,6 +106,8 @@ We note that there are no overlaps between 33 univeristies of training set and 3
 
 ## News
 
+**2 Jul 2024** Text-guided Geo-localization is accepted by ECCV 2024 (https://arxiv.org/pdf/2311.12751).
+
 **26 Jan 2023** 1652 Building Name List is at [Here](https://github.com/layumi/University1652-Baseline/blob/master/new_name_list.txt).
 
 **10 Jul 2022** Rainy？Night？Foggy？ Snow？ You may check our new paper "Multiple-environment Self-adaptive Network for Aerial-view Geo-localization" at https://github.com/wtyhub/MuseNet (accepted by Pattern Recognition'24)  
