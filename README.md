@@ -151,17 +151,21 @@ Now we have supported:
 ## Getting started
 ### Installation
 - Install Pytorch from http://pytorch.org/
-- Install Torchvision from the source (Please check the README. Or directly install by anaconda. It will be Okay.)
-```
-git clone https://github.com/pytorch/vision
-cd vision
-python setup.py install
+- Install required packages
+```bash
+pip install -r requirement.txt
 ```
 - [Optinal] You may skip it. Install apex from the source
-```
+```bash
 git clone https://github.com/NVIDIA/apex.git
 cd apex
 python setup.py install --cuda_ext --cpp_ext
+```
+- [Optinal] Install Torchvision from the source (Please check the README. Or directly install by anaconda. It will be Okay.)
+```bash
+git clone https://github.com/pytorch/vision # Please check the version to match Pytorch.
+cd vision
+python setup.py install
 ```
 
 ## Dataset & Preparation
