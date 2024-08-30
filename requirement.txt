@@ -1,0 +1,4 @@
+matplotlib
+yaml
+pytorch_metric_learning
+autoaugment
