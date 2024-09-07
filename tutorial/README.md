@@ -323,8 +323,63 @@ In this function, we will ignore the junk_index.
 CMC_tmp = compute_mAP(index, good_index, junk_index)
 ```
 
+## Part 3: A simple visualization (`python demo.py`)
+To visualize the result, 
+```
+python demo.py --query_index 777
+```
+`--query_index ` which query you want to test. You may select a number in the range of `0 ~ `.
+
+It is similar to the `evaluate.py`. We add the visualization part.
+```python
+try: # Visualize Ranking Result 
+    # Graphical User Interface is needed
+    fig = plt.figure(figsize=(16,4))
+    ax = plt.subplot(1,11,1)
+    ax.axis('off')
+    imshow(query_path,'query')
+    for i in range(10): #Show top-10 images
+        ax = plt.subplot(1,11,i+2)
+        ax.axis('off')
+        img_path, _ = image_datasets['gallery'].imgs[index[i]]
+        label = gallery_label[index[i]]
+        imshow(img_path)
+        if label == query_label:
+            ax.set_title('%d'%(i+1), color='green') # true matching
+        else:
+            ax.set_title('%d'%(i+1), color='red') # false matching
+        print(img_path)
+except RuntimeError:
+    for i in range(10):
+        img_path = image_datasets.imgs[index[i]]
+        print(img_path[0])
+    print('If you want to see the visualization of the ranking result, graphical user interface is needed.')
+```
+
+## Part 4: Your Turn. 
+
+- University-1652 is a dataset collected in normal weather.
+
+Let's try another dataset called University-WX, which simulates different weathers.
+
+![](https://github.com/wtyhub/MuseNet/raw/master/docs/visual.png)
+
+## Part5: Other Related Works
+- The building has some specific attributes, e.g., keypoints. They can help the feature learning. You could check [this code](https://github.com/AggMan96/RK-Net).
+![]()
+
+- Could we use natural language as query? Check [this paper](https://multimodalgeo.github.io/GeoText/).
+![](https://multimodalgeo.github.io/GeoText/static/images/images/Fig2_1.jpg)
+
+
 ## Star History
 
 If you like this repo, please star it. Thanks a lot!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=layumi/University1652-Baseline&type=Date)](https://star-history.com/#layumi/University1652-Baseline&Date)
+
+## Reference
+[1]
+[2]
+[3]
+[4]
