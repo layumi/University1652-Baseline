@@ -379,7 +379,18 @@ If you like this repo, please star it. Thanks a lot!
 [![Star History Chart](https://api.star-history.com/svg?repos=layumi/University1652-Baseline&type=Date)](https://star-history.com/#layumi/University1652-Baseline&Date)
 
 ## Reference
-[1]
-[2]
-[3]
-[4]
+[1]University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization.
+ACM Multimedia (ACM MM), 2020.
+Zhedong Zheng, Yunchao Wei, Yi Yang
+
+[2]Multiple-environment Self-adaptive Network for Aerial-view Geo-localization
+Pattern Recognition (PR) 2024.
+Tingyu Wang, Zhedong Zheng, Yaoqi Sun, Chenggang Yan, Yi Yang, Tat-Seng Chua
+
+[3]Joint Representation Learning and Keypoint Detection for Cross-view Geo-localization.
+IEEE Transactions on Image Processing (TIP), 2022.
+Jinliang Lin, Zhedong Zheng, Zhun Zhong, Zhiming Luo, Shaozi Li, Yi Yang, Nicu Sebe
+
+[4]Towards Natural Language-Guided Drones: GeoText-1652 Benchmark with Spatial Relation Matching.
+European Conference on Computer Vision (ECCV), 2024.
+Meng Chu, Zhedong Zheng, Wei Ji, Tingyu Wang, Tat-Seng Chua
