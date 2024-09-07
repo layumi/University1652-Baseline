@@ -326,9 +326,9 @@ CMC_tmp = compute_mAP(index, good_index, junk_index)
 ## Part 3: A simple visualization (`python demo.py`)
 To visualize the result, 
 ```
-python demo.py --query_index 777
+python demo.py --query_index 233
 ```
-`--query_index ` which query you want to test. You may select a number in the range of `0 ~ `.
+`--query_index ` which query you want to test. You may select a number in the range of `0 ~ 700`. (query number)
 
 It is similar to the `evaluate.py`. We add the visualization part.
 ```python
