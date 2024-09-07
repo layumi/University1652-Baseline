@@ -360,13 +360,13 @@ except RuntimeError:
 
 - University-1652 is a dataset collected in normal weather.
 
-Let's try another dataset called University-WX, which simulates different weathers.
+Let's try another dataset called [University1652-WX](https://github.com/wtyhub/MuseNet), which simulates different weathers.
 
 ![](https://github.com/wtyhub/MuseNet/raw/master/docs/visual.png)
 
 ## Part5: Other Related Works
 - The building has some specific attributes, e.g., keypoints. They can help the feature learning. You could check [this code](https://github.com/AggMan96/RK-Net).
-![]()
+![](https://github.com/layumi/University1652-Baseline/blob/master/tutorial/RKNet.png?raw=true)
 
 - Could we use natural language as query? Check [this paper](https://multimodalgeo.github.io/GeoText/).
 ![](https://multimodalgeo.github.io/GeoText/static/images/images/Fig2_1.jpg)
