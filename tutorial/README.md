@@ -17,7 +17,7 @@ We hope this tutorial could help the drone-related tasks, such as drone delivery
 
 
 ## Keywords
-Geo-Localization, University-1652, CVUSA
+Geo-Localization, University-1652, CVUSA, CVACT, Vigor
 
 ## Prerequisites
 - Python 3.6
