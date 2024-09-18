@@ -11,6 +11,7 @@
 ### University-1652 Dataset
 
 Drone <-> Satellite 
+
 |Methods | R@1 | AP | R@1 | AP | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 || Drone -> Satellite | | Satellite -> Drone |  |
@@ -61,6 +62,7 @@ Ground <-> Satellite
 |PCLD| Satellite + Drone + Ground | 9.15 | 14.16 | - | - | Zeng, Z., Wang, Z., Yang, F., & Satoh, S. I. (2022). Geo-Localization via Ground-to-Satellite Cross-View Image Retrieval. IEEE Transactions on Multimedia. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9684950/)
 
 ### cvusa Dataset
+
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 |Workman | - | - | - | 34.40 | Scott Workman, Richard Souvenir, and Nathan Jacobs. ICCV 2015. Wide-area image geolocalization with aerial reference imagery [[Paper]](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Workman_Wide-Area_Image_Geolocalization_ICCV_2015_paper.pdf) |
@@ -101,6 +103,7 @@ Ground <-> Satellite
  |** : The method utilizes the polar prior hint. |
 
 ### cvact val Dataset
+
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
 |CVM-Net | 20.15 | 45.00 | 56.87 | 87.57 | Sixing Hu, Mengdan Feng, Rang MH Nguyen, and Gim Hee Lee. CVPR 2018. CVM-net:Cross-view matching network for image-based ground-to-aerial geo-localization. [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Hu_CVM-Net_Cross-View_Matching_CVPR_2018_paper.html)| 
