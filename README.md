@@ -1,8 +1,6 @@
 <h1 align="center"> University1652-Baseline </h1>
 
 ![Python 3.6+](https://img.shields.io/badge/python-3.6+-green.svg)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/context:python)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/layumi/University1652-Baseline.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/layumi/University1652-Baseline/alerts/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 [![VideoDemo](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/youtube1.png)](https://www.youtube.com/embed/dzxXPp8tVn4?vq=hd1080)
