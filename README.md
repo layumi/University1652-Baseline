@@ -14,6 +14,9 @@
 [[Explore Street-view Data]](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/sample_street.jpg?raw=true)
 [[Video Sample]](https://www.youtube.com/embed/dzxXPp8tVn4?vq=hd1080)
 [[中文介绍]](https://zhuanlan.zhihu.com/p/110987552)
+[[Building Name List]](https://github.com/layumi/University1652-Baseline/blob/master/new_name_list.txt)
+[[Latitude and longitude]](https://drive.google.com/file/d/1PL8fVky9KZg7XESsuS5NCsYRyYAwui3S/view?usp=sharing)
+[[Flight path]](https://drive.google.com/file/d/1EW5Esi72tPcfL3zmoHYpufKj_SXrY-xE/view?usp=sharing)
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
