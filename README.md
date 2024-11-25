@@ -108,7 +108,7 @@ We note that there are no overlaps between 33 univeristies of training set and 3
 ## News
 **26 Nov 2024** Drone to BEV? You may check our new paper "Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization" at https://arxiv.org/abs/2411.13610.
 
-**2 Jul 2024** Text-guided Geo-localization is accepted by ECCV 2024 (https://arxiv.org/pdf/2311.12751).
+**2 Jul 2024** Text-guided Geo-localization is accepted by [ECCV 2024](https://arxiv.org/pdf/2311.12751). [Code](https://github.com/MultimodalGeo/GeoText-1652) is available.
 
 **26 Jan 2023** 1652 Building Name List is at [Here](https://github.com/layumi/University1652-Baseline/blob/master/new_name_list.txt).
 
