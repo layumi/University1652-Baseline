@@ -106,6 +106,7 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+**26 Nov 2024** Drone to BEV? You may check our new paper "Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization" at https://arxiv.org/abs/2411.13610.
 
 **2 Jul 2024** Text-guided Geo-localization is accepted by ECCV 2024 (https://arxiv.org/pdf/2311.12751).
 
