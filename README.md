@@ -30,12 +30,24 @@ This repository contains the dataset link and the code for our paper [University
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 
+### ACM WWW Workshop
+
+**27 Dec 2024** We are holding a workshop at ACM WWW 2025 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Sydney!😃 The workshop link is https://www.zdzheng.xyz/MORE2025/ . Submission DDL is **1 Jan 2025**.
+
+<details>
+ <summary><b>
+  2024 Workshop and Sepcial Session
+</b></summary>
+ 
 ### 1. ACM MM UAVM Workshop
+
 **23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
 
 ### 2. ACM ICMR Workshop
 
 **12 Jan 2024** We are holding a workshop at ACM ICMR 2024 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Phuket, Thailand!😃 The workshop link is https://www.zdzheng.xyz/MORE2024/ . Submission DDL is **15 April 2024**.
+
+</details>
 
 <details>
  <summary><b>
