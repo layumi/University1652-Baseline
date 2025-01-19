@@ -98,6 +98,7 @@ Ground <-> Satellite
 | FI* | 95.50 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
 |SAIG-D*| 96.34 | 99.10 | 99.50 | 99.86 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
 |Sample4Geo| 98.68 | 99.68 | 99.78 | 99.87 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
+| MFRGN | 98.67 | 99.57 | 99.71 | 99.85 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Code]](https://github.com/ytao-wang/MFRGN) | 
 | BEV | 98.71 | 99.70 | 99.78 | 99.86 | Ye, J., Lv, Z., Li, W., Yu, J., Yang, H., Zhong, H., & He, C. (2024). Cross-view image geo-localization with Panorama-BEV Co-Retrieval Network. ECCV2024.|
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
  |** : The method utilizes the polar prior hint. |
