@@ -1,8 +1,10 @@
 ## Awesome Geo-localization
 
  * [University-1652 Dataset](#university-1652-dataset)
- * [cvusa Dataset](#cvusa-dataset)
- * [cvact Dataset](#cvact-val-dataset)
+ * [CVUSA Dataset](#cvusa-dataset) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
+The dataset can be accessed from https://github.com/viibridges/crossnet
+ * [CVACT Dataset](#cvact-val-dataset) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
+The dataset can be accessed from https://github.com/Liumouliu/OriCNN
 
 ### News 
 
