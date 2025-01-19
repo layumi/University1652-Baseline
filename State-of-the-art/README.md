@@ -64,7 +64,7 @@ Ground <-> Satellite
 |LPN | Satellite + Drone + Ground | 0.81 | 2.21 | 1.85 | 1.66 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
 |PCLD| Satellite + Drone + Ground | 9.15 | 14.16 | - | - | Zeng, Z., Wang, Z., Yang, F., & Satoh, S. I. (2022). Geo-Localization via Ground-to-Satellite Cross-View Image Retrieval. IEEE Transactions on Multimedia. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9684950/)
 
-### cvusa Dataset
+### CVUSA
 
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
@@ -96,17 +96,18 @@ Ground <-> Satellite
 | MGTL* | 94.11 | 98.30 | 99.03 | 99.74 | Jianwei Zhao, Qiang Zhai, Rui Huang, Hong Cheng. Mutual Generative Transformer Learning for Cross-view Geo-localization [[Paper]](https://arxiv.org/abs/2203.09135)|
 | GeoDTR | 93.76 | 98.47 | 99.22 | 99.85 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | TransGeo + 4SCIG | 94.10 | 98.74 | 99.22| 99.81 | Li, J., Yang, C., Qi, B., Zhu, M., & Wu, N. (2024). 4SCIG: A four-branch framework to reduce the interference of sky area in cross-view image geo-localization. IEEE Transactions on Geoscience and Remote Sensing. |
-|LPN* + DWDR | 94.33 | 98.54 | 99.09 | 99.80 | Tingyu W, Zhedong Z, Zunjie Z, Yuhan G, Yi Y, and Chenggang Y. "Learning Cross-view Geo-localization Embeddings via Dynamic Weighted Decorrelation Regularization" arXiv 2022. [[Paper]](https://arxiv.org/pdf/2211.05296.pdf) |
+| LPN* + DWDR | 94.33 | 98.54 | 99.09 | 99.80 | Tingyu W, Zhedong Z, Zunjie Z, Yuhan G, Yi Y, and Chenggang Y. "Learning Cross-view Geo-localization Embeddings via Dynamic Weighted Decorrelation Regularization" arXiv 2022. [[Paper]](https://arxiv.org/pdf/2211.05296.pdf) |
 | GeoDTR* | 95.43 | 98.86 | 99.34 | 99.86 | Xiaohan Zhang, Xingyu Li, Waqas Sultani, Yi Zhou, Safwan Wshah.  Cross-view Geo-localization via Learning Disentangled Geometric Layout Correspondence [[Paper]](https://arxiv.org/pdf/2212.04074.pdf) [[Code]](https://gitlab.com/vail-uvm/geodtr)|
 | FI* | 95.50 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
-|SAIG-D*| 96.34 | 99.10 | 99.50 | 99.86 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
+| SAIG-D*| 96.34 | 99.10 | 99.50 | 99.86 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
+| ArcGeo* | 98.33 | 97.47 | 99.48 | 99.67| Shugaev, M., Semenov, I., Ashley, K., Klaczynski, M., Cuntoor, N., Lee, M. W., & Jacobs, N. (2024). ArcGeo: Localizing Limited Field-of-View Images using Cross-view Matching. WACV 2024 |
 | MFRGN | 98.67 | 99.57 | 99.71 | 99.85 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3681431) [[Code]](https://github.com/ytao-wang/MFRGN) | 
-|Sample4Geo| 98.68 | 99.68 | 99.78 | 99.87 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
+| Sample4Geo| 98.68 | 99.68 | 99.78 | 99.87 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
 | BEV | 98.71 | 99.70 | 99.78 | 99.86 | Ye, J., Lv, Z., Li, W., Yu, J., Yang, H., Zhong, H., & He, C. (2024). Cross-view image geo-localization with Panorama-BEV Co-Retrieval Network. ECCV2024.|
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
  |** : The method utilizes the polar prior hint. |
 
-### cvact val Dataset
+### CVACT val 
 
 |Methods | R@1 | R@5 | R@10 | R@Top1 | Reference |
 | -------- | ----- | ---- | ---- |  ---- |  ---- |
@@ -138,6 +139,7 @@ Ground <-> Satellite
 | FI* | 86.79 | - | - | - | Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Anderi Georgecu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann. Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery. ACM MM 2022 [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3503161.3548102) |
 |SAIG-D*| 89.06 | 96.11 | 97.08 | 98.89 | Yingying Zhu, Hongji Yang, Yuxin Lu and Qiang Huang. Simple, Effective and General: A New Backbone for Cross-view Image Geo-localization. ArXiv 2023|
 |Sample4Geo| 90.81 | 96.74 | 97.48 | 98.77 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
+| ArcGeo* | 90.90 | 95.84 | 96.77 | Shugaev, M., Semenov, I., Ashley, K., Klaczynski, M., Cuntoor, N., Lee, M. W., & Jacobs, N. (2024). ArcGeo: Localizing Limited Field-of-View Images using Cross-view Matching. WACV 2024 | 
 | MFRGN | 91.09 | 96.34 | 97.14 | 98.44 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3681431) [[Code]](https://github.com/ytao-wang/MFRGN) |
 | BEV| 91.90 | 97.23 | 97.84 | 98.84 | Ye, J., Lv, Z., Li, W., Yu, J., Yang, H., Zhong, H., & He, C. (2024). Cross-view image geo-localization with Panorama-BEV Co-Retrieval Network. ECCV2024.|
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
