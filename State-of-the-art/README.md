@@ -1,6 +1,6 @@
 ## Awesome Geo-localization
 
- * [University-1652 Dataset](#university-1652-dataset)
+ * [University-1652 Dataset](#university-1652-dataset) : a dataset containing 1652 locations of global universities, with images captured from ground, drone, and satellite perspectives.
  * [CVUSA Dataset](#cvusa-dataset) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/viibridges/crossnet
  * [CVACT Dataset](#cvact-val-dataset) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
