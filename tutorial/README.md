@@ -24,7 +24,7 @@ Geo-Localization, University-1652, CVUSA, CVACT, Vigor
 - GPU Memory >= 4G
 - Numpy
 - Pytorch 0.3+ (http://pytorch.org/)
-- Torchvision from the source
+- (Optional) Torchvision, which is usually installed with pytorch.
 ```
 git clone https://github.com/pytorch/vision
 cd vision
