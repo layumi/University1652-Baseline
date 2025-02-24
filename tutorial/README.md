@@ -24,12 +24,21 @@ Geo-Localization, University-1652, CVUSA, CVACT, Vigor
 - GPU Memory >= 4G
 - Numpy
 - Pytorch 0.3+ (http://pytorch.org/)
-- (Optional) Torchvision, which is usually installed with pytorch.
+- (Optional) Torchvision, which is usually already installed with pytorch.
 ```
 git clone https://github.com/pytorch/vision
 cd vision
 python setup.py install
 ```
+
+## Troubleshooting
+We do not suggest using Windows considering lower GPU usage and unexpected errors.
+
+- Path: Ubuntu path is `\home\zzd\` but Windows path is `D://Downloads/` using `/` instead of `\` 
+- Multi-thread: Pytorch does not support multiple thread on Windows to read the data. Please set `num_workers=0` during trainning and test.
+- No Triton or other error: Please remove the `torch.compile` in training and test code.
+
+Please also refer to https://github.com/layumi/Person_reID_baseline_pytorch/issues/34 
 
 ## Getting started
 Check the Prerequisites. The download links for this practice are:
