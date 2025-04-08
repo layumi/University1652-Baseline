@@ -31,8 +31,19 @@ This repository contains the dataset link and the code for our paper [University
 
 ### 1. ACM MM UAVM Workshop
 
-**13 Mar 2025** We will hold the 3rd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/) for reference.
+**13 Mar 2025** We will hold the 3rd workshop on ACM MM 2025! Please see [https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/) for reference.
 
+If you woudl like to participate the challeng, here is a brief workflow. 
+
+1. Train your model on the University-1652 training set with 3 views (Drone+Satellite+Street).  
+
+2. Download the name-masked test set from the competition page (Onedrive link). 
+
+3. Extract feature of  the downloaded name-masked test set via your trained model in the  first step.
+
+4. Modify the demo.py or eveluate_gpu.py to compare features and save the top10 image names in the gallery one by one. The test order should be same as the given query name text (at the bottom of the competition page).
+
+   
 <details>
  <summary><b>
   2024 Workshop and Sepcial Session
@@ -40,12 +51,7 @@ This repository contains the dataset link and the code for our paper [University
  
 ### 1. ACM MM UAVM Workshop
 
-**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2025! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
-If you want to participate in challenge, there is a brief workflow. 
-1. Train your model on the University-1652 training set with 3 views (Drone+Satellite+Street).  
-2. Download the name-masked test set from the competition page (Onedrive link). 
-3. Extract feature of  the downloaded name-masked test set via your trained model in the  first step.
-4. Modify the demo.py or eveluate_gpu.py to compare features and save the top10 image names in the gallery one by one. The test order should be same as the given query name text (at the bottom of the competition page). 
+**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
 
 ### 2. ACM ICMR Workshop
 
