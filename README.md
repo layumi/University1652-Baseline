@@ -40,7 +40,12 @@ This repository contains the dataset link and the code for our paper [University
  
 ### 1. ACM MM UAVM Workshop
 
-**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
+**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2025! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
+If you want to participate in challenge, there is a brief workflow. 
+1. Train your model on the University-1652 training set with 3 views (Drone+Satellite+Street).  
+2. Download the name-masked test set from the competition page (Onedrive link). 
+3. Extract feature of  the downloaded name-masked test set via your trained model in the  first step.
+4. Modify the demo.py or eveluate_gpu.py to compare features and save the top10 image names in the gallery one by one. The test order should be same as the given query name text (at the bottom of the competition page). 
 
 ### 2. ACM ICMR Workshop
 
