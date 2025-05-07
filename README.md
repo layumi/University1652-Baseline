@@ -132,6 +132,7 @@ More detailed file structure:
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
 
 ## News
+** 2 May 2025** I replace the apex with the merged supports in Pytorch for `fp16` and `bf16`.
 **26 Nov 2024** Drone to BEV? You may check our new paper "Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization" at https://arxiv.org/abs/2411.13610.
 
 **2 Jul 2024** Text-guided Geo-localization is accepted by [ECCV 2024](https://arxiv.org/pdf/2311.12751). [Code](https://github.com/MultimodalGeo/GeoText-1652) is available.
@@ -159,7 +160,7 @@ We also provide the spiral flight tour file at [Google Driver](https://drive.goo
 
 ## Code Features
 Now we have supported:
-- Float16 to save GPU memory based on [apex](https://github.com/NVIDIA/apex)
+- Float16 and BFloat16 with native pytorch support (replace apex)
 - Multiple Query Evaluation
 - Re-Ranking
 - Random Erasing
@@ -174,7 +175,6 @@ Now we have supported:
 - GPU Memory >= 8G
 - Numpy > 1.12.1
 - Pytorch 0.3+ 
-- [Optional] apex (for float16) 
 
 ## Getting started
 ### Installation
@@ -182,12 +182,6 @@ Now we have supported:
 - Install required packages
 ```bash
 pip install -r requirement.txt
-```
-- [Optinal] You may skip it. Install apex from the source
-```bash
-git clone https://github.com/NVIDIA/apex.git
-cd apex
-python setup.py install --cuda_ext --cpp_ext
 ```
 - [Optinal] Usually it comes with pytorch. Install Torchvision from the source (Please check the README. Or directly install by anaconda. It will be Okay.)
 ```bash
