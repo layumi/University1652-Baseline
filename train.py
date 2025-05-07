@@ -31,13 +31,6 @@ from pytorch_metric_learning import losses, miners  # pip install pytorch-metric
 from circle_loss import CircleLoss, convert_label_to_similarity
 
 version = torch.__version__
-# fp16
-try:
-    from apex.fp16_utils import *
-    from apex import amp, optimizers
-except ImportError:  # will be 3.x series
-    print(
-        'This is not an error. If you want to use low precision, i.e., fp16, please install the apex with cuda support (https://github.com/NVIDIA/apex) and update pytorch to 1.0')
 ######################################################################
 # Options
 # --------
@@ -68,8 +61,8 @@ parser.add_argument('--use_NAS', action='store_true', help='use NAS')
 parser.add_argument('--warm_epoch', default=0, type=int, help='the first K epoch that needs warm up')
 parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
 parser.add_argument('--moving_avg', default=1.0, type=float, help='moving average')
-parser.add_argument('--fp16', action='store_true',
-                    help='use float16 instead of float32, which will save about 50% memory')
+parser.add_argument('--fp16', action='store_true',help='use float16 instead of float32, which will save about 50% memory')
+parser.add_argument('--bf16', action='store_true',help='use bfloat16 instead of float32, which will save about 50% memory')
 # extra losses (default is cross-entropy loss. You can fuse different losses for further performance boost.)
 parser.add_argument('--arcface', action='store_true', help='use ArcFace loss')
 parser.add_argument('--circle', action='store_true', help='use Circle loss')
@@ -87,6 +80,12 @@ else:
     start_epoch = 0
 
 fp16 = opt.fp16
+bf16 = opt.bf16
+if fp16:
+    dtype16 = torch.float16
+elif bf16:
+    dtype16 = torch.bfloat16
+
 data_dir = opt.data_dir
 name = opt.name
 str_ids = opt.gpu_ids.split(',')
@@ -193,7 +192,7 @@ y_err['train'] = []
 y_err['val'] = []
 
 
-def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=25):
+def train_model(model, model_test, criterion, optimizer, scheduler, scaler, num_epochs=25):
     since = time.time()
 
     # best_model_wts = model.state_dict()
@@ -264,6 +263,15 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                 if phase == 'val':
                     with torch.no_grad():
                         outputs, outputs2 = model(inputs, inputs2)
+                elif bf16 or fp16:
+                    with torch.amp.autocast(device_type='cuda',dtype=dtype16):
+                        if opt.views == 2:
+                            outputs, outputs2 = model(inputs, inputs2)
+                        elif opt.views == 3:
+                            if opt.extra_Google:
+                                outputs, outputs2, outputs3, outputs4 = model(inputs, inputs2, inputs3, inputs4)
+                            else:
+                                outputs, outputs2, outputs3 = model(inputs, inputs2, inputs3)
                 else:
                     if opt.views == 2:
                         outputs, outputs2 = model(inputs, inputs2)
@@ -383,12 +391,13 @@ def train_model(model, model_test, criterion, optimizer, scheduler, num_epochs=2
                     loss *= warm_up
 
                 if phase == 'train':
-                    if fp16:  # we use optimier to backward loss
-                        with amp.scale_loss(loss, optimizer) as scaled_loss:
-                            scaled_loss.backward()
+                    if bf16 or fp16:
+                        scaler.scale(loss).backward()
+                        scaler.step(optimizer) # a safety optimizer.step()
+                        scaler.update()
                     else:
                         loss.backward()
-                    optimizer.step()
+                        optimizer.step()
                     ##########
                     if opt.moving_avg < 1.0:
                         update_average(model_test, model, opt.moving_avg)
@@ -515,8 +524,7 @@ if not opt.resume:
 
 # model to gpu
 model = model.cuda()
-if fp16:
-    model, optimizer_ft = amp.initialize(model, optimizer_ft, opt_level="O1")
+scaler = torch.cuda.amp.GradScaler()
 
 criterion = nn.CrossEntropyLoss()
 if opt.moving_avg < 1.0:
@@ -527,5 +535,5 @@ else:
     num_epochs = 120
 
 model = train_model(model, model_test, criterion, optimizer_ft, exp_lr_scheduler,
-                    num_epochs=num_epochs)
+                    scaler, num_epochs=num_epochs)
 
