@@ -4,7 +4,7 @@
 
 By [Zhedong Zheng](http://zdzheng.xyz/)
  
-[30-minute Talk in Chinese](https://www.bilibili.com/video/BV138TszsEW9)
+[[30-minute Talk in Chinese]](https://www.bilibili.com/video/BV138TszsEW9)
 
 This is a [University of Macau](https://www.cis.um.edu.mo/) computer vision practical, authored by Zhedong Zheng.
 The practical explores the basis of learning shared features for different platforms. In this practical, we will learn to build a simple geo-localization system step by step.  :+1: **Any suggestion is welcomed.**
