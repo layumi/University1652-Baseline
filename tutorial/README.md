@@ -6,6 +6,7 @@ By [Zhedong Zheng](http://zdzheng.xyz/)
 
 
 [[30-minute Talk in English (The talk wasn't fully recorded)]](https://www.youtube.com/watch?v=eG_UgzWRFqM&ab_channel=XiaohanZhang)
+
 [[30-minute Talk in Chinese]](https://www.bilibili.com/video/BV138TszsEW9)
 
 This is a [University of Macau](https://www.cis.um.edu.mo/) computer vision practical, authored by Zhedong Zheng.
