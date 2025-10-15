@@ -51,6 +51,7 @@ Drone <-> Satellite
 | MFJR | 91.87 | 93.15 | 95.29 | 91.51 | Ge, F., Zhang, Y., Wang, L., Liu, W., Liu, Y., Coleman, S., & Kerr, D. (2024). Multi-level Feedback Joint Representation Learning Network Based on Adaptive Area Elimination for Cross-view Geo-localization. IEEE Transactions on Geoscience and Remote Sensing. |
 |Sample4Geo| 92.65 | 93.81 | 95.14 | 91.39 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
 | MFRGN | 94.33 | 95.24	| 96.15 | 93.94 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3681431) [[Code]](https://github.com/ytao-wang/MFRGN) |
+| CGSI (DinoV2+BERT) | 96.72 | 96.44 | 95.90 | 96.48 | Sun, J., Huang, J., Jiang, X., Zhou, Y., & VONG, C. M. (2025). CGSI: Context-Guided and UAV’s Status Informed Multimodal Framework for Generalizable Cross-View Geo-Localization. IEEE Transactions on Circuits and Systems for Video Technology. |
 
 Ground <-> Satellite
 
