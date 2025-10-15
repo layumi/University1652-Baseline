@@ -53,7 +53,9 @@ Drone <-> Satellite
 | MEAN | 93.55 | 94.53 | 96.01 | 92.08 | Chen, Zhongwei, Zhao-Xu Yang, and Hai-Jun Rong. "Multi-level embedding and alignment network with consistency and invariance learning for cross-view geo-localization." TGRS 2025. |
 | MFRGN | 94.33 | 95.24	| 96.15 | 93.94 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3681431) [[Code]](https://github.com/ytao-wang/MFRGN) |
 | CDM-Net | 95.13 | 96.04 | 96.68 | 94.05 | Zhou, Xin, Xuerong Yang, and Yanchun Zhang. "CDM-Net: A Framework for Cross-View Geo-Localization With Multimodal Data." TGRS 2025. |
+| JRN-Geo | 95.13 | 95.85 | 96.72 | 94.93 | Zhou, H., Zhang, Y., Huang, T., Ge, F., Qi, M., Zhang, X., & Zhang, Y. (2025, May). JRN-Geo: A Joint Perception Network based on RGB and Normal images for Cross-view Geo-localization. ICRA 2025 | 
 | CGSI (DinoV2+BERT) | 95.45 | 96.10 | 96.58 | 95.38 | Sun, J., Huang, J., Jiang, X., Zhou, Y., & VONG, C. M. CGSI: Context-Guided and UAV’s Status Informed Multimodal Framework for Generalizable Cross-View Geo-Localization. TCSVT 2025 |
+
 
 Ground <-> Satellite
 
