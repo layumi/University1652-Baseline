@@ -52,7 +52,7 @@ Drone <-> Satellite
 |Sample4Geo| 92.65 | 93.81 | 95.14 | 91.39 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023 [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
 | MEAN | 93.55 | 94.53 | 96.01 | 92.08 | Chen, Zhongwei, Zhao-Xu Yang, and Hai-Jun Rong. "Multi-level embedding and alignment network with consistency and invariance learning for cross-view geo-localization." TGRS 2025. |
 | MFRGN | 94.33 | 95.24	| 96.15 | 93.94 | Wang, Y., Zhang, J., Wei, R., Gao, W., & Wang, Y. MFRGN: Multi-scale Feature Representation Generalization Network for Ground-to-Aerial Geo-localization. ACM MM2024. [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3664647.3681431) [[Code]](https://github.com/ytao-wang/MFRGN) |
-| CGSI (DinoV2+BERT) | 96.72 | 96.44 | 95.90 | 96.48 | Sun, J., Huang, J., Jiang, X., Zhou, Y., & VONG, C. M. CGSI: Context-Guided and UAV’s Status Informed Multimodal Framework for Generalizable Cross-View Geo-Localization. TCSVT 2025 |
+| CGSI (DinoV2+BERT) | 95.45 | 96.10 | 96.58 | 95.38 | Sun, J., Huang, J., Jiang, X., Zhou, Y., & VONG, C. M. CGSI: Context-Guided and UAV’s Status Informed Multimodal Framework for Generalizable Cross-View Geo-Localization. TCSVT 2025 |
 
 Ground <-> Satellite
 
