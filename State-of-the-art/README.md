@@ -70,6 +70,7 @@ Ground <-> Satellite
 |Instance Loss | Satellite + Drone + Ground + Google Image | 1.20 | 2.52 | 1.14 | 1.41| 
 |LPN | Satellite + Ground | 0.74 | 1.83 | 1.43 | 1.31 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
 |LPN | Satellite + Drone + Ground | 0.81 | 2.21 | 1.85 | 1.66 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
+|CVGS| Unpaired Satellite + Drone + Ground | 0.89 | 2.80| - | - | Xie, K., Zhou, W., Huang, X., Guan, H., & Yulong, F. (2025). Self-supervised Cross-view Graph Search Framework for Ground-to-Satellite Geo-localization. TGRS 2025. | 
 |PCLD| Satellite + Drone + Ground | 9.15 | 14.16 | - | - | Zeng, Z., Wang, Z., Yang, F., & Satoh, S. I. (2022). Geo-Localization via Ground-to-Satellite Cross-View Image Retrieval. IEEE Transactions on Multimedia. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9684950/)
 
 ### CVUSA
