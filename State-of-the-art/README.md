@@ -6,6 +6,8 @@ The dataset can be accessed from https://github.com/viibridges/crossnet
  * [CVACT Dataset](#cvact-val) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/Liumouliu/OriCNN
 
+Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
+
 ### News 
 
 - Recently, we raise a special issue on Remote Sensing (IF=5.349) from now to ~~**16 June 2023**~~ **16 Dec 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
