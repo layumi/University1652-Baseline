@@ -2,7 +2,7 @@
 
 ![Python 3.6+](https://img.shields.io/badge/python-3.6+-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Citations](https://img.shields.io/badge/Citations-300%2B-brightgreen)](https://scholar.google.com/scholar?cites=1046859850085069139)
+[![Citations](https://img.shields.io/badge/Citations-300%2B-brightgreen)](https://scholar.google.com/scholar?cites=16355841926251595902)
 [![Stars](https://img.shields.io/github/stars/layumi/University1652-Baseline)](https://github.com/layumi/University1652-Baseline/stargazers)
 
 [![VideoDemo](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/youtube1.png)](https://www.youtube.com/embed/dzxXPp8tVn4?vq=hd1080)
