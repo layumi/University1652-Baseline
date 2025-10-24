@@ -2,6 +2,8 @@
 
 ![Python 3.6+](https://img.shields.io/badge/python-3.6+-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Citations](https://img.shields.io/badge/Citations-300%2B-brightgreen)](https://scholar.google.com/scholar?cites=1046859850085069139)
+[![Stars](https://img.shields.io/github/stars/layumi/University1652-Baseline)](https://github.com/layumi/University1652-Baseline/stargazers)
 
 [![VideoDemo](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/youtube1.png)](https://www.youtube.com/embed/dzxXPp8tVn4?vq=hd1080)
 
@@ -16,6 +18,8 @@
 [[Latitude and Longitude]](https://drive.google.com/file/d/1PL8fVky9KZg7XESsuS5NCsYRyYAwui3S/view?usp=sharing)
 [[Flight Path]](https://drive.google.com/file/d/1EW5Esi72tPcfL3zmoHYpufKj_SXrY-xE/view?usp=sharing)
 
+⭐ **Found this useful? Give us a star!** Help us reach more researchers in drone-based geo-localization. 🚀
+
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Data.jpg)
 
 ![](https://github.com/layumi/University1652-Baseline/blob/master/docs/index_files/Motivation.png)
@@ -29,37 +33,25 @@ This repository contains the dataset link and the code for our paper [University
 
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
-### 1. ACM MM UAVM Workshop
+## Workshops & Challenges 
 
-**13 Mar 2025** We will hold the 3rd workshop on ACM MM 2025! Please see [https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/) for reference.
-
-If you woudl like to participate the challeng, here is a brief workflow. 
-
-1. Train your model on the University-1652 training set with 3 views (Drone+Satellite+Street).  
-
-2. Download the name-masked test set from the competition page (Onedrive link). 
-
-3. Extract feature of  the downloaded name-masked test set via your trained model in the  first step.
-
-4. Modify the demo.py or eveluate_gpu.py to compare features and save the top10 image names in the gallery one by one. The test order should be same as the given query name text (at the bottom of the competition page).
-
+- **ACM MM UAVM 2025**: Join our 3rd workshop! [Details](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/).
+  - **Challenge Workflow**:
+    1. Train on University-1652 (Drone+Satellite+Street).
+    2. Download name-masked test set from [OneDrive](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/).
+    3. Extract features using your model.
+    4. Modify `demo.py` or `evaluate_gpu.py` to save top-10 gallery image names (follow query order).
    
 <details>
  <summary><b>
   2024 Workshop and Sepcial Session
 </b></summary>
  
-### 1. ACM MM UAVM Workshop
+- **ACM MM UAVM Workshop 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
 
-**23 Apr 2024** We will hold the 2nd workshop on ACM MM 2024! Please see [https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/](https://www.zdzheng.xyz/ACMMM2024Workshop-UAV/) for reference.
+- **ACM ICMR Workshop 2024** We are holding a workshop at ACM ICMR 2024 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Phuket, Thailand!😃 The workshop link is https://www.zdzheng.xyz/MORE2024/ . Submission DDL is **15 April 2024**.
 
-### 2. ACM ICMR Workshop
-
-**12 Jan 2024** We are holding a workshop at ACM ICMR 2024 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Phuket, Thailand!😃 The workshop link is https://www.zdzheng.xyz/MORE2024/ . Submission DDL is **15 April 2024**.
-
-### 3 ACM WWW Workshop
-
-**27 Dec 2024** We are holding a workshop at ACM WWW 2025 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Sydney!😃 The workshop link is https://www.zdzheng.xyz/MORE2025/ . Submission DDL is **1 Jan 2025**.
+- **ACM WWW Workshop 2024** We are holding a workshop at ACM WWW 2025 on  Multimedia Object Re-ID. You are welcome to show your insights. See you at Sydney!😃 The workshop link is https://www.zdzheng.xyz/MORE2025/ . Submission DDL is **1 Jan 2025**.
 
 </details>
 
@@ -68,18 +60,14 @@ If you woudl like to participate the challeng, here is a brief workflow.
   2023 Workshop and Sepcial Session
 </b></summary>
 
-### 1.  IEEE ITSC Special Session
+- **IEEE ITSC Special Session 2023** 
 We host a special session on IEEE Intelligent Transportation Systems Conference (ITSC), covering the object re-identification & point cloud topic. The paper ddl is by **May 15, 2023** and the paper notification is at June 30, 2023. Please select the session code ``w7r4a'' during submission. More details can be found at [Special Session Website](https://2023.ieee-itsc.org/wp-content/uploads/2023/03/IEEE-ITSC-2023-Special-Session-Proposal-Safe-Critical-Scenario-Understanding-in-Intelligent-Transportation-Systems-SCSU-ITS.pdf).  
 
-### 2. Remote Sensing Special Issue
+- **Remote Sensing Special Issue 2023**
 We raise a special issue on Remote Sensing (IF=5.3) from now to ~~**16 June 2023**~~ **16 Dec 2023**. You are welcomed to submit your manuscript at (https://www.mdpi.com/journal/remotesensing/special_issues/EMPK490239), but you need to keep open-source fee in mind.
 
-### 3. ACM Multimedia Workshop
+- **ACM Multimedia Workshop 2023**
 We are holding the workshop at ACM Multimedia 2023 on Aerial-view Imaging. [Call for papers](https://www.zdzheng.xyz/ACMMM2023Workshop/) [中文介绍](https://zhuanlan.zhihu.com/p/620180604)
-
-### 4. Coda Lab Challenge
-We also provide a challenging cross-view geo-localization dataset, called University160k, and the workshop audience may consider to participate the competition. The motivation is to simulate the real- world geo-localization scenario that we usually face an extremely large satellite-view pool. In particular, University160k extends the current University-1652 dataset with extra 167,486 satellite- view gallery distractors. We have release University160k on the challenge page, and made a public leader board.
-(More details are at https://codalab.lisn.upsaclay.fr/competitions/12672)
 
 </details>
 
@@ -92,7 +80,8 @@ We also provide a challenging cross-view geo-localization dataset, called Univer
     * [Installation](#installation)
     * [Dataset Preparation](#dataset--preparation)
     * [Train Evaluation ](#train--evaluation)
-    * [Trained Model](#trained--model)
+    * [Trained Model](#trained-model)
+    * [University-16k](#university-16k)
 * [Citation](#citation)
 
 ## About Dataset
@@ -233,6 +222,10 @@ It will save an image named `show.png' containig top-10 retrieval results in the
 ## Trained Model
 
 You could download the trained model at [GoogleDrive](https://drive.google.com/open?id=1iES210erZWXptIttY5EBouqgcF5JOBYO) or [OneDrive](https://studentutsedu-my.sharepoint.com/:u:/g/personal/12639605_student_uts_edu_au/EW19pLps66RCuJcMAOtWg5kB6Ux_O-9YKjyg5hP24-yWVQ?e=BZXcdM). After download, please put model folders under `./model/`.
+
+## University-16k
+We also provide a challenging cross-view geo-localization dataset, called University160k, and the workshop audience may consider to participate the competition. The motivation is to simulate the real- world geo-localization scenario that we usually face an extremely large satellite-view pool. In particular, University160k extends the current University-1652 dataset with extra 167,486 satellite- view gallery distractors. We have release University160k on the challenge page, and made a public leader board.
+(More details are at https://codalab.lisn.upsaclay.fr/competitions/12672)
 
 ## Citation
 The following paper uses and reports the result of the baseline model. You may cite it in your paper.
