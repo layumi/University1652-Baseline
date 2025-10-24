@@ -119,6 +119,7 @@ More detailed file structure:
 ```
 
 We note that there are no overlaps between 33 univeristies of training set and 39 univeristies of test set.
+**Download**: Request the dataset [here](https://github.com/layumi/University1652-Baseline/blob/master/Request.md) (response within 5 minutes).
 
 ## News
 
