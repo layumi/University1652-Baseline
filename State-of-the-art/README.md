@@ -73,7 +73,7 @@ Ground <-> Satellite
 |LPN | Satellite + Drone + Ground | 0.81 | 2.21 | 1.85 | 1.66 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
 |CVGS| Unpaired Satellite + Drone + Ground | 0.89 | 2.80| - | - | Xie, K., Zhou, W., Huang, X., Guan, H., & Yulong, F. (2025). Self-supervised Cross-view Graph Search Framework for Ground-to-Satellite Geo-localization. TGRS 2025. | 
 |PCLD| Satellite + Drone + Ground | 9.15 | 14.16 | - | - | Zeng, Z., Wang, Z., Yang, F., & Satoh, S. I. (2022). Geo-Localization via Ground-to-Satellite Cross-View Image Retrieval. IEEE Transactions on Multimedia. [[Paper]](https://ieeexplore.ieee.org/abstract/document/9684950/) |
-|VICI| Satellite + Ground | 24.66 | -  | - | - | Zhang, X., Shore, T., Chen, C., Mendez, O., Hadfield, S., & Wshah, S. (2025). VICI: VLM-Instructed Cross-view Image-localisation. ACM MM UAVM Workshop 2025. [[Code]](https://github.com/tavisshore/VICI) |
+|VICI| Satellite + Ground | 24.66 | -  | - | - | Zhang, X., Shore, T., Chen, C., Mendez, O., Hadfield, S., & Wshah, S. (2025). VICI: VLM-Instructed Cross-view Image-localisation. ACM MM UAVM Workshop 2025. [[Paper]](https://arxiv.org/pdf/2507.04107)[[Code]](https://github.com/tavisshore/VICI) |
 |VICI| Satellite + Drone + Ground | 27.49 | -  | - | - | |
 |VICI + VLM| Satellite + Drone + Ground | 30.21 | -  | - | - | |
 
