@@ -382,7 +382,7 @@ Let's try another dataset called [University1652-WX](https://github.com/wtyhub/M
 
 ## Part5: Other Related Works
 - The building has some specific attributes, e.g., keypoints. They can help the feature learning. You could check [this code](https://github.com/AggMan96/RK-Net).
-![](https://github.com/layumi/University1652-Baseline/blob/master/tutorial/RKNet.png?raw=true)
+![](https://github.com/layumi/University1652-Baseline/blob/master/tutorial/RKNet.webp?raw=true)
 
 - Could we use natural language as query? Check [this paper](https://multimodalgeo.github.io/GeoText/).
 ![](https://multimodalgeo.github.io/GeoText/static/images/images/Fig2_1.jpg)
