@@ -2,10 +2,12 @@
 
  * [University-1652 Dataset](#university-1652-dataset) : a dataset containing 1652 locations of global universities, with images captured from ground, drone, and satellite perspectives.
  * [University160k](https://codalab.lisn.upsaclay.fr/competitions/12672): Large-scale extension of University-1652 with +167,486 distractors for realistic geo-localization testing. Always-open eval server & leaderboard: https://codalab.lisn.upsaclay.fr/competitions/12672
+ * [GeoText-1652](https://github.com/MultimodalGeo/GeoText-1652): Dense text extension of University-1652.
  * [CVUSA Dataset](#cvusa) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/viibridges/crossnet
  * [CVACT Dataset](#cvact-val) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/Liumouliu/OriCNN
+ 
 
 Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
 
