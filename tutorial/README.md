@@ -42,7 +42,7 @@ We do not suggest using Windows considering lower GPU usage and unexpected error
 If you still want to use Windows, you should keep two points in mind. 
 
 - Path: Ubuntu path is `\home\zzd\` but Windows path is `D://Downloads/` using `/` instead of `\` 
-- Multi-thread: Pytorch does not support multiple thread on Windows to read the data. Please set `num_workers=0` during trainning and test.
+- Multi-thread: Pytorch (Windows version) does not support multiple thread on Windows to read the data. Please set `num_workers=0` during trainning and test.
 - No Triton or other error: Please remove the `torch.compile` in training and test code.
 
 Please also refer to https://github.com/layumi/Person_reID_baseline_pytorch/issues/34 
