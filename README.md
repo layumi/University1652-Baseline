@@ -35,14 +35,24 @@ This repository contains the dataset link and the code for our paper [University
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 ## Workshops & Challenges 
-
+ <summary><b>
+  2026 Workshop and Sepcial Session
+</b></summary>
+- **ACM MM UAVM 2026**: Join our 3rd workshop! [Details](https://www.zdzheng.xyz/ACMMM2026Workshop-UAV/).
+- **Challenge**: https://www.codabench.org/competitions/15251/
+  
+<details>
+ <summary><b>
+  2025 Workshop and Sepcial Session
+</b></summary>
 - **ACM MM UAVM 2025**: Join our 3rd workshop! [Details](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/).
   - **Challenge Workflow**:
     1. Train on University-1652 (Drone+Satellite+Street).
     2. Download name-masked test set from [OneDrive](https://www.zdzheng.xyz/ACMMM2025Workshop-UAV/).
     3. Extract features using your model.
     4. Modify `demo.py` or `evaluate_gpu.py` to save top-10 gallery image names (follow query order).
-   
+</details>
+ 
 <details>
  <summary><b>
   2024 Workshop and Sepcial Session
