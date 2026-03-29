@@ -38,7 +38,9 @@ This repository contains the dataset link and the code for our paper [University
  <summary><b>
   2026 Workshop and Sepcial Session
 </b></summary>
-- **ACM MM UAVM 2026**: Join our 3rd workshop! [Details](https://www.zdzheng.xyz/ACMMM2026Workshop-UAV/).
+
+- **ACM MM UAVM 2026**: Join our 4th workshop! [Details](https://www.zdzheng.xyz/ACMMM2026Workshop-UAV/).
+
 - **Challenge**: https://www.codabench.org/competitions/15251/
   
 <details>
