@@ -5,7 +5,7 @@
      - [University160k](https://codalab.lisn.upsaclay.fr/competitions/12672): ***(Larger Gallery)*** Large-scale extension of University-1652 with +167,486 distractors for realistic geo-localization testing. Always-open eval server & leaderboard: https://codalab.lisn.upsaclay.fr/competitions/12672
      - [GeoText-1652](https://github.com/MultimodalGeo/GeoText-1652): ***(Text)*** Dense text extension of University-1652.
      - [UniV](https://github.com/HaoDot/Video2BEV-Open): ***(Video)*** Video extension of Unviersity-1652 with 30 and 45 degree. 
-     - [RoadMap](https://www.zdzheng.xyz/publication/Road-Map2026): ***(RoadMap)*** Driving Roadmap extension of University-1652 (comming soon).
+     - [RoadMap](https://www.zdzheng.xyz/publication/Road-Map2026): ***(RoadMap)*** Driving Roadmap extension of University-1652 (data is released).
  - [CVUSA Dataset](#cvusa) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/viibridges/crossnet
  - [CVACT Dataset](#cvact-val) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
