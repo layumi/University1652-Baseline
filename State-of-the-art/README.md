@@ -1,10 +1,10 @@
 # Awesome Geo-localization
 
- - [University-1652 Dataset](#university-1652-dataset) : a dataset containing 1652 locations of global universities, with images captured from ground, drone, and satellite perspectives.
-     - [University-WX](https://github.com/wtyhub/MuseNet): ***(Weather)*** Extension of University-1652 with multiple weathers on the fly. 
+ - [University-1652 Dataset](#university-1652-dataset) : a dataset containing 1652 locations of global universities, with images captured from ground, drone, and satellite perspectives. `ACM MM 2020`
+     - [University-WX](https://github.com/wtyhub/MuseNet): ***(Weather)*** Extension of University-1652 with multiple weathers on the fly. `Pattern Recognition 2024`
      - [University160k](https://codalab.lisn.upsaclay.fr/competitions/12672): ***(Larger Gallery)*** Large-scale extension of University-1652 with +167,486 distractors for realistic geo-localization testing. Always-open eval server & leaderboard: https://codalab.lisn.upsaclay.fr/competitions/12672
-     - [GeoText-1652](https://github.com/MultimodalGeo/GeoText-1652): ***(Text)*** Dense text extension of University-1652.
-     - [UniV](https://github.com/HaoDot/Video2BEV-Open): ***(Video)*** Video extension with 30° and 45° viewing angles.
+     - [GeoText-1652](https://github.com/MultimodalGeo/GeoText-1652): ***(Text)*** Dense text extension of University-1652. `ECCV2024`
+     - [UniV](https://github.com/HaoDot/Video2BEV-Open): ***(Video)*** Video extension with 30° and 45° viewing angles. `ICCV2025`
      - [RoadMap](https://www.zdzheng.xyz/publication/Road-Map2026): ***(RoadMap)*** Driving Roadmap extension of University-1652 (data is released).
  - [CVUSA Dataset](#cvusa) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/viibridges/crossnet
