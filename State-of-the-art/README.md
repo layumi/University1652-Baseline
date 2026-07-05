@@ -10,6 +10,8 @@
 The dataset can be accessed from https://github.com/viibridges/crossnet
  - [CVACT Dataset](#cvact-val) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/Liumouliu/OriCNN
+- [UAVReason Dataset](https://github.com/JT-Sun/UAVReason) : a unified, large-scale benchmark for multimodal aerial scene reasoning and generation on UAV-view images. Built on UAVScenes RGB images, it provides VQA / caption annotations, image-to-image generation JSONL files, and additional depth data, supporting UAV visual question answering, scene captioning, spatial / temporal / heading reasoning, depth-aware perception, and cross-modal generation. The repository provides the data usage guide and BAGEL data adaptation scripts.
+The dataset can be accessed from https://github.com/JT-Sun/UAVReason
  
 
 Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
