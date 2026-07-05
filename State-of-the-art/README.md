@@ -6,6 +6,7 @@
      - [GeoText-1652](https://github.com/MultimodalGeo/GeoText-1652): ***(Text)*** Dense text extension of University-1652. `ECCV2024`
      - [UniV](https://github.com/HaoDot/Video2BEV-Open): ***(Video)*** Video extension with 30° and 45° viewing angles. `ICCV2025`
      - [RoadMap](https://www.zdzheng.xyz/publication/Road-Map2026): ***(RoadMap)*** Driving Roadmap extension of University-1652 (data is released).
+     - [PairUAV](https://github.com/YaxuanLi-cn/PairUAV): ***(Pose Estimation)** Visual servoing extension of University-1652. 
  - [CVUSA Dataset](#cvusa) : a dataset in America, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
 The dataset can be accessed from https://github.com/viibridges/crossnet
  - [CVACT Dataset](#cvact-val) : a dataset in Australia, with pairs of ground-level images and satellite images. All ground-level images are panoramic images.
