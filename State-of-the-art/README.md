@@ -76,7 +76,7 @@ Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
 | CDM-Net | 95.13 | 96.04 | 96.68 | 94.05 | Zhou, Xin, Xuerong Yang, and Yanchun Zhang. "CDM-Net: A Framework for Cross-View Geo-Localization With Multimodal Data." TGRS 2025. |
 | JRN-Geo | 95.13 | 95.85 | 96.72 | 94.93 | Zhou, H., Zhang, Y., Huang, T., Ge, F., Qi, M., Zhang, X., & Zhang, Y. (2025, May). JRN-Geo: A Joint Perception Network based on RGB and Normal images for Cross-view Geo-localization. ICRA 2025 | 
 | CGSI (DinoV2+BERT) | 95.45 | 96.10 | 96.58 | 95.38 | Sun, J., Huang, J., Jiang, X., Zhou, Y., & VONG, C. M. CGSI: Context-Guided and UAV’s Status Informed Multimodal Framework for Generalizable Cross-View Geo-Localization. TCSVT 2025 |
-| ONLoc* | 95.65 | 96.45 | - | - | | Qiao, Q., Liu, W., Liu, T., Shu, J., & Wang, P. (2026). OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views. CVPR Findings 2026. | 
+| ONLoc* | 95.65 | 96.45 | - | - | Qiao, Q., Liu, W., Liu, T., Shu, J., & Wang, P. (2026). OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views. CVPR Findings 2026. | 
 | GeoBridge* | 95.82 | 97.77 | 97.14 | 95.05 | Z Song, J Zhang, D Wang, Z Zhou, W Liu, H Guo, E Wang, B Du (2026). Geobridge: A semantic-anchored multi-view foundation model bridging images and text for geo-localization. CVPR 2026| 
 
 * Extra dataset is used. 
