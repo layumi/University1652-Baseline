@@ -34,6 +34,10 @@ This repository contains the dataset link and the code for our paper [University
 
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
+## Open Positions
+We are hiring PhD students / Postdocs / strong RAs on **Spatial Intelligence (UAV)**, **Person Analysis**, and **Video Diffusion / World Models**. Candidates with solid research experience and publications are preferred. Details: [https://www.zdzheng.xyz/recruitment/](https://www.zdzheng.xyz/recruitment/)
+
+
 ## Workshops & Challenges 
  <summary><b>
   2026 Workshop and Sepcial Session
