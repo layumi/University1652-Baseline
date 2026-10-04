@@ -13,6 +13,9 @@ The dataset can be accessed from https://github.com/viibridges/crossnet
 The dataset can be accessed from https://github.com/Liumouliu/OriCNN
 - [UAVReason Dataset](https://github.com/JT-Sun/UAVReason) : a unified, large-scale benchmark for multimodal aerial scene reasoning and generation on UAV-view images. Built on UAVScenes RGB images, it provides VQA / caption annotations, image-to-image generation JSONL files, and additional depth data, supporting UAV visual question answering, scene captioning, spatial / temporal / heading reasoning, depth-aware perception, and cross-modal generation. The repository provides the data usage guide and BAGEL data adaptation scripts.
 The dataset can be accessed from https://github.com/JT-Sun/UAVReason
+
+ - [DenseUAV Dataset](#denseuav-dataset) : a large-scale benchmark for UAV self-positioning in low-altitude urban environments, densely sampled over 14 university campuses. ***(Retrieval)*** `TIP 2023`
+ - [SUES-200 Dataset](#sues-200-dataset-150-m) : a multi-height (150 / 200 / 250 / 300 m) multi-scene benchmark for cross-view matching between UAV and satellite imagery. ***(Retrieval)*** `TCSVT 2023`
  
 
 Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
@@ -108,6 +111,93 @@ Keywords: Cross-view Geo-localization, Spatial Intelligence, Aerial Agents.
 |VICI| Satellite + Drone + Ground | 27.49 | -  | - | - | |
 |VICI + VLM| Satellite + Drone + Ground | 30.21 | -  | - | - | |
 
+
+
+## DenseUAV Dataset
+
+[DenseUAV](https://github.com/Dmmm1997/DenseUAV) is a large-scale benchmark for UAV self-positioning in low-altitude urban environments, with dense sampling over 14 university campuses in Zhejiang, China. Only the **retrieval** results are listed below.
+
+**Note:** The literature reports two evaluation protocols. Their numbers are **not comparable** and are therefore kept in separate tables.
+
+### (a) Standard Protocol
+
+Official split, clear weather. Sorted by Drone -> Satellite R@1.
+
+|Methods | R@1 | R@5 | Reference |
+| -------- | ----- | ---- |  ---- |
+|MSBA | 46.13 | 64.22 | Zhuang, J., Dai, M., Chen, X., & Zheng, E. (2021). A Faster and More Effective Cross-View Matching Method of UAV and Satellite Images for UAV Geolocalization. Remote Sensing, 13(19): 3979. |
+|FSRA (block=2)† | 82.58 | 94.94 | Ming Dai, Jianhong Hu, Jiedong Zhuang, Enhui Zheng. A Transformer-Based Feature Segmentation and Region Alignment Method For UAV-View Geo-Localization. TCSVT 2022. [[Paper]](https://arxiv.org/pdf/2201.09206.pdf)  [[Code]](https://github.com/dmmm1997/fsra) |
+|DenseUAV Baseline (ViT-S) | 83.01 | 95.58 | Dai, M., Zheng, E., Feng, Z., Qi, L., Zhuang, J., & Yang, W. (2023). Vision-Based UAV Self-Positioning in Low-Altitude Urban Environments. IEEE TIP, 33: 493-508. [[Paper]](https://arxiv.org/abs/2201.09201) [[Code]](https://github.com/Dmmm1997/DenseUAV) |
+|LPN (block=2)† | 83.05 | 94.89 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646)  [[Code]](https://github.com/wtyhub/LPN) |
+|DINOv2-based | 86.27 | 96.83 | Yang, J., Qin, D., Tang, H., Tao, S., Bie, H., & Ma, L. (2025). DINOv2-Based UAV Visual Self-Localization in Low-Altitude Urban Environments. IEEE RA-L. |
+|MCCG | 89.19 | 96.87 | Tianrui Shen, Yingmei Wei, Lai Kang, Shanshan Wan and Yee-Hong Yang. MCCG: A ConvNeXt-based Multiple-Classifier Method for Cross-view Geo-localization. TCSVT 2023. [[Code]](https://github.com/mode-str/crossview) |
+|SHAA | 93.69 | 98.76 | Nanhua Chen, Dongshuo Zhang, Kai Jiang, Meng Yu, Yeqing Zhu, and Tai-shan Lou. SHAA: Spatial Hybrid Attention Network With Adaptive Cross-Entropy Loss Function for UAV-View Geo-Localization. TCSVT 2025. |
+|DINO-GFSA | 97.17 | 99.57 | Hu, B., Guo, Y., Cai, J., Li, C., Wang, Y., Wu, S., & Wu, Z. (2026). DINO-GFSA: Geo-Localization via Semantic Gated Fusion and Mamba-based Sequential Aggregation. [[Paper]](https://arxiv.org/abs/2606.00784) [[Code]](https://github.com/Bear611/DINO-GFSA) |
+
+†: evaluated with a ViT-S backbone at 512-d in the head ablation of the DenseUAV paper.
+
+### (b) Multi-weather Protocol
+
+Mean R@1 / AP over ten weather conditions (normal, fog, rain, snow, fog+rain, fog+snow, rain+snow, dark, overexposure, wind), following the [multi-weather leaderboard](https://github.com/wtyhub/MuseNet/blob/master/State-of-the-art.md).
+
+|Methods | R@1 | AP | R@1 | AP | Reference |
+| -------- | ----- | ---- | ---- |  ---- |  ---- |
+|| Drone -> Satellite | | Satellite -> Drone |  |
+|Safe-Net | 13.03 | 16.84 | 14.74 | 19.03 | Jinliang Lin, Zhiming Luo, Dazhen Lin, Shaozi Li, Zhun Zhong. A Self-Adaptive Feature Extraction Method for Aerial-View Geo-Localization. TIP 2025. |
+|WeatherPrompt | 29.25 | 35.19 | 27.78 | 33.91 | Jiahao Wen, Hang Yu, and Zhedong Zheng. WeatherPrompt: Multi-modality Representation Learning for All-Weather Drone Visual Geo-Localization. NeurIPS 2025. [[Paper]](https://arxiv.org/abs/2508.09560) [[Code]](https://github.com/Jahawn-Wen/WeatherPrompt) |
+|MuSe-Net | 37.28 | 43.17 | 33.55 | 39.79 | Wang T, Zheng Z, Sun Y, et al. Multiple-environment Self-adaptive Network for Aerial-view Geo-localization[J]. Pattern Recognition, 2024. [[Code]](https://github.com/wtyhub/MuseNet) |
+|LRFR | 41.53 | 48.86 | 41.89 | 49.81 | Gan, W., Zhou, Y., Hu, X., Zhao, L., Huang, G., & Hou, M. (2025). Learning Robust Feature Representation for Cross-View Image Geo-Localization. IEEE GRSL. |
+|LPN | 44.67 | 45.77 | 43.39 | 49.31 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646) [[Code]](https://github.com/wtyhub/LPN) |
+|GeoFuse | 52.43 | 58.39 | 49.03 | 54.96 | Yunsong Fang, Tingyu Wang, and Zhedong Zheng. Road Maps as Free Geometric Priors: Weather-Invariant Drone Geo-Localization with GeoFuse. arXiv 2026. [[Paper]](https://arxiv.org/abs/2605.14925) [[Code]](https://github.com/YsongF/GeoFuse) |
+
+
+## SUES-200 Dataset (150 m)
+
+[SUES-200](https://github.com/Reza-Zhu/SUES-200-Benchmark) is a multi-height (150 / 200 / 250 / 300 m) multi-scene benchmark for cross-view matching between UAV and satellite imagery. Only the **retrieval** results at the 150 m height are listed below.
+
+### (a) Standard Protocol (150 m)
+
+Clear weather. Sorted by Drone -> Satellite R@1.
+
+|Methods | R@1 | AP | R@1 | AP | Reference |
+| -------- | ----- | ---- | ---- |  ---- |  ---- |
+|| Drone -> Satellite | | Satellite -> Drone |  |
+|LCM (ResNet-50) | 43.42 | 49.65 | 57.50 | 38.11 | Ding L, Zhou J, Meng L, Meng L, and Long Z. A Practical Cross-View Image Matching Method between UAV and Satellite for UAV-Based Geo-Localization. Remote Sensing, 13(1): 47, 2021. [[Paper]](https://www.mdpi.com/2072-4292/13/1/47/pdf) |
+|SUES-200 Baseline | 59.32 | 64.93 | 82.50 | 58.95 | Zhu, R., Yin, L., Yang, M., Wu, F., Yang, Y., & Hu, W. (2023). SUES-200: A Multi-Height Multi-Scene Cross-View Image Benchmark Across Drone and Satellite. IEEE TCSVT. [[Paper]](https://arxiv.org/abs/2204.10704) [[Code]](https://github.com/Reza-Zhu/SUES-200-Benchmark) |
+|LPN (block=4) | 61.58 | 67.23 | 83.75 | 66.78 | Tingyu W, Zhedong Z, Chenggang Y, and Yi Y. Each Part Matters: Local Patterns Facilitate Cross-view Geo-localization. TCSVT 2021. [[Paper]](https://arxiv.org/abs/2008.11646) [[Code]](https://github.com/wtyhub/LPN) |
+|FSRA | 68.25 | 73.45 | 83.75 | 76.67 | Ming Dai, Jianhong Hu, Jiedong Zhuang, Enhui Zheng. A Transformer-Based Feature Segmentation and Region Alignment Method For UAV-View Geo-Localization. TCSVT 2022. [[Paper]](https://arxiv.org/pdf/2201.09206.pdf) [[Code]](https://github.com/dmmm1997/fsra) |
+|IFSs | 77.57 | 81.30 | 93.75 | 89.49 | Ge, F., Zhang, Y., Liu, Y., Wang, G., Coleman, S., Kerr, D., & Wang, L. (2024). Multibranch Joint Representation Learning Based on Information Fusion Strategy for Cross-View Geo-Localization. IEEE TGRS, 62: 1-16. |
+|Safe-Net | 81.05 | 84.76 | 97.50 | 86.36 | Lin, J., Luo, Z., Lin, D., Li, S., & Zhong, Z. (2024). A Self-Adaptive Feature Extraction Method for Aerial-View Geo-Localization. IEEE TIP, 34: 126-139. |
+|MCCG | 82.22 | 85.47 | 93.75 | 89.72 | Tianrui Shen, Yingmei Wei, Lai Kang, Shanshan Wan and Yee-Hong Yang. MCCG: A ConvNeXt-based Multiple-Classifier Method for Cross-view Geo-localization. TCSVT 2023. [[Code]](https://github.com/mode-str/crossview) |
+|SDPL | 82.95 | 85.82 | 93.75 | 83.75 | Quan Chen, Tingyu Wang, Zihao Yang, Haoran Li, Rongfeng Lu and Yaoqi Sun. SDPL: Shifting-dense partition learning for UAV-view geo-localization. TCSVT 2024. [[Paper]](https://ieeexplore.ieee.org/document/10587023) [[Code]](https://github.com/C-water/SDPL_release) |
+|CCR | 87.08 | 89.55 | 92.50 | 88.54 | Du, H., He, J., & Zhao, Y. (2024). CCR: A Counterfactual Causal Reasoning-Based Method for Cross-View Geo-Localization. IEEE TCSVT, 34(11): 11630-11643. |
+|MFJR | 88.95 | 91.05 | 95.00 | 89.31 | Ge, F., Zhang, Y., Wang, L., Liu, W., Liu, Y., Coleman, S., & Kerr, D. (2024). Multi-level Feedback Joint Representation Learning Network Based on Adaptive Area Elimination for Cross-view Geo-localization. IEEE Transactions on Geoscience and Remote Sensing. |
+|SRLN | 89.90 | 91.90 | 93.75 | 93.01 | Lv, H., Zhu, H., Zhu, R., Wu, F., Wang, C., Cai, M., & Zhang, K. (2024). Direction-Guided Multiscale Feature Fusion Network for Geo-Localization. IEEE TGRS, 62: 1-13. |
+|SCOF | 90.75 | 92.32 | 95.00 | 89.72 | Fang, C., Gao, J., Han, P., Zhao, C., & Gao, B. (2025). SCOF: Supervised Contrastive Orthogonal Fusion for Robust Cross-View Geolocalization. IEEE TGRS, 63: 1-15. |
+|UniABG (Unsupervised) | 92.40 | 93.95 | 98.75 | 91.54 | Chen, C., Chen, Q., Yang, B., & Zhang, X. (2026). UniABG: Unified Adversarial View Bridging and Graph Correspondence for Unsupervised Cross-View Geo-Localization. AAAI 2026 (Oral). [[Paper]](https://arxiv.org/abs/2511.12054) [[Code]](https://github.com/chenqi142/UniABG) |
+|Sample4Geo | 92.60 | 94.00 | 97.50 | 93.63 | Fabian Deuser, Konrad Habel, Norbert Oswald. Sample4Geo: Hard Negative Sampling For Cross-View Geo-Localisation. ICCV 2023. [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html) [[Code]](https://github.com/Skyy93/Sample4Geo) |
+|CDM-Net | 93.78 | 95.16 | 95.25 | 92.24 | Zhou, Xin, Xuerong Yang, and Yanchun Zhang. "CDM-Net: A Framework for Cross-View Geo-Localization With Multimodal Data." TGRS 2025. |
+|QDFL | 93.97 | 95.42 | 98.75 | 95.10 | Hu, S., Shi, Z., Jin, T., & Liu, Y. Query-Driven Feature Learning for Cross-View Geo-Localization. TGRS 2025. |
+|Game4Loc | 94.62 | 95.59 | 93.75 | 93.06 | Ji, Y., He, B., Tan, Z., & Wu, L. (2025). Game4Loc: A UAV Geo-Localization Benchmark from Game Data. AAAI 2025: 3913-3921. |
+|CAMP | 95.40 | 96.38 | 96.25 | 93.69 | Wu, Q., Wan, Y., Zheng, Z., Zhang, Y., Wang, G., & Zhao, Z. (2024). CAMP: A Cross-view Geo-localization Method Using Contrastive Attributes Mining and Position-aware Partitioning. TGRS 2024. [[Paper]](https://ieeexplore.ieee.org/abstract/document/10644040) [[Code]](https://github.com/Mabel0403/CAMP) |
+|MEAN | 95.50 | 96.46 | 97.50 | 94.75 | Chen, Zhongwei, Zhao-Xu Yang, and Hai-Jun Rong. "Multi-level embedding and alignment network with consistency and invariance learning for cross-view geo-localization." TGRS 2025. |
+|DAC | 96.80 | 97.54 | 97.50 | 94.06 | Xia, P., Wan, Y., Zheng, Z., Zhang, Y., & Deng, J. (2024). Enhancing cross-view geo-localization with domain alignment and scene consistency. TCSVT 2024. [[Paper]](https://ieeexplore.ieee.org/document/10636268) [[Code]](https://github.com/SummerpanKing/DAC) |
+|(MGS)²-Net | 98.45 | 98.78 | 98.75 | 96.50 | Li, M., He, M., Li, C., Chen, C., Shao, X., & Meng, Z. (2026). (MGS)²-Net: Unifying Micro-Geometric Scale and Macro-Geometric Structure for Cross-View Geo-Localization. [[Paper]](https://arxiv.org/abs/2602.10704) [[Code]](https://github.com/GabrielLi1473/MGS-Net) |
+|BGG | 99.30 | 99.46 | 98.75 | 98.22 | Wang, W., Quan, D., Huyan, N., Wang, S., Li, Y., He, P., & Jiao, L. (2026). BGG: Bridging the Geometric Gap between Cross-View Images by Vision Foundation Model Adaptation for Geo-Localization. [[Paper]](https://arxiv.org/abs/2605.10345) [[Code]](https://github.com/Miraitowa515/BGG) |
+
+
+### (b) Multi-weather Protocol (150 m)
+
+Mean R@1 / AP over ten weather conditions, following the [multi-weather leaderboard](https://github.com/wtyhub/MuseNet/blob/master/State-of-the-art.md).
+
+|Methods | R@1 | AP | R@1 | AP | Reference |
+| -------- | ----- | ---- | ---- |  ---- |  ---- |
+|| Drone -> Satellite | | Satellite -> Drone |  |
+|Zheng et al. | 33.40 | 39.63 | 45.75 | 30.58 | Zhedong Zheng, Yunchao Wei, Yi Yang. University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization. ACM MM 2020. [[Paper]](https://dl.acm.org/doi/abs/10.1145/3394171.3413896) [[Code]](https://github.com/layumi/University1652-Baseline) |
+|IBN-Net | 39.58 | 46.23 | 52.25 | 37.78 | Xingang Pan, Ping Luo, Jianping Shi, Xiaoou Tang. Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net. ECCV 2018. [[Paper]](https://arxiv.org/abs/1807.09441) |
+|MuSe-Net | 41.59 | 48.53 | 53.38 | 39.20 | Wang T, Zheng Z, Sun Y, et al. Multiple-environment Self-adaptive Network for Aerial-view Geo-localization[J]. Pattern Recognition, 2024. [[Code]](https://github.com/wtyhub/MuseNet) |
+|WeatherPrompt | 62.52 | 63.26 | 80.73 | 66.12 | Jiahao Wen, Hang Yu, and Zhedong Zheng. WeatherPrompt: Multi-modality Representation Learning for All-Weather Drone Visual Geo-Localization. NeurIPS 2025. [[Paper]](https://arxiv.org/abs/2508.09560) [[Code]](https://github.com/Jahawn-Wen/WeatherPrompt) |
+|P2FCN | 78.64 | 82.44 | 91.50 | 82.49 | Zhao, Q., Zhou, J., Wang, T., Chen, Q., Lu, R., & Yan, C. (2025). P2FCN: Environment-Independent UAV-View Geo-Localization via Pixel-to-Feature Co-Enhancement. IEEE TGRS. |
 
 ## CVUSA
 
