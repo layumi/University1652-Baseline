@@ -154,21 +154,22 @@ def extract_feature(model,dataloaders, view_index = 1):
                 img = fliplr(img)
             input_img = Variable(img.cuda())
             for scale in ms:
+                scaled_img = input_img
                 if scale != 1:
                     # bicubic is only  available in pytorch>= 1.1
-                    input_img = nn.functional.interpolate(input_img, scale_factor=scale, mode='bilinear', align_corners=False)
+                    scaled_img = nn.functional.interpolate(input_img, scale_factor=scale, mode='bilinear', align_corners=False)
                 if opt.views ==2:
                     if view_index == 1:
-                        outputs, _ = model(input_img, None) 
+                        outputs, _ = model(scaled_img, None) 
                     elif view_index ==2:
-                        _, outputs = model(None, input_img) 
+                        _, outputs = model(None, scaled_img) 
                 elif opt.views ==3:
                     if view_index == 1:
-                        outputs, _, _ = model(input_img, None, None)
+                        outputs, _, _ = model(scaled_img, None, None)
                     elif view_index ==2:
-                        _, outputs, _ = model(None, input_img, None)
+                        _, outputs, _ = model(None, scaled_img, None)
                     elif view_index ==3:
-                        _, _, outputs = model(None, None, input_img)
+                        _, _, outputs = model(None, None, scaled_img)
                 ff += outputs
         # norm feature
         if opt.PCB:
