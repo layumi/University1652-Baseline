@@ -87,7 +87,7 @@ def load_network(name, opt):
 
     if opt.use_dense:
         model = ft_net_dense(opt.nclasses, opt.droprate, opt.stride, None, opt.pool)
-    if opt.PCB:
+    if getattr(opt, 'PCB', False):
         model = PCB(opt.nclasses)
 
     if opt.views == 2:
