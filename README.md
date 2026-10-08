@@ -209,7 +209,7 @@ For CVUSA, I follow the training/test split in (https://github.com/Liumouliu/Ori
 ## Train & Evaluation 
 ### Train & Evaluation University-1652
 ```
-python train.py --name three_view_long_share_d0.75_256_s1_google  --extra --views 3  --droprate 0.75  --share  --stride 1 --h 256  --w 256 --fp16; 
+python train.py --name three_view_long_share_d0.75_256_s1_google  --extra_Google --views 3  --droprate 0.75  --share  --stride 1 --h 256  --w 256 --fp16; 
 python test.py --name three_view_long_share_d0.75_256_s1_google
 ```
 
@@ -226,7 +226,7 @@ Set three views but set the weight of loss on street images to zero.
 ### Train & Evaluation CVUSA
 ```
 python prepare_cvusa.py
-python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm 5 --lr 0.02 --use_vgg16 --h 256 --w 256  --fp16 --batchsize 16;
+python train_cvusa.py --name usa_vgg_noshare_warm5_lr2 --warm_epoch 5 --lr 0.02 --use_vgg16 --h 256 --w 256  --fp16 --batchsize 16;
 python test_cvusa.py  --name usa_vgg_noshare_warm5_lr2 
 ```
 
