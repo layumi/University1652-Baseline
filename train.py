@@ -284,9 +284,63 @@ def train_model(model, model_test, criterion, optimizer, scheduler, scaler, num_
                 return_feature = opt.arcface or opt.cosface or opt.circle or opt.triplet or opt.contrast or opt.lifted or opt.sphere
 
                 if opt.views == 2:
-                    _, preds = torch.max(outputs.data, 1)
-                    _, preds2 = torch.max(outputs2.data, 1)
-                    loss = criterion(outputs, labels) + criterion(outputs2, labels2)
+                    if return_feature:
+                        logits, ff = outputs
+                        logits2, ff2 = outputs2
+                        fnorm = torch.norm(ff, p=2, dim=1, keepdim=True)
+                        fnorm2 = torch.norm(ff2, p=2, dim=1, keepdim=True)
+                        ff = ff.div(fnorm.expand_as(ff))
+                        ff2 = ff2.div(fnorm2.expand_as(ff2))
+                        _, preds = torch.max(logits.data, 1)
+                        _, preds2 = torch.max(logits2.data, 1)
+                        loss = criterion(logits, labels) + criterion(logits2, labels2)
+                        if opt.loss_merge:
+                            ff_all = torch.cat((ff, ff2), dim=0)
+                            labels_all = torch.cat((labels, labels2), dim=0)
+                        if opt.arcface:
+                            if opt.loss_merge:
+                                loss += criterion_arcface(ff_all, labels_all)
+                            else:
+                                loss += criterion_arcface(ff, labels) + criterion_arcface(ff2, labels2)
+                        if opt.cosface:
+                            if opt.loss_merge:
+                                loss += criterion_cosface(ff_all, labels_all)
+                            else:
+                                loss += criterion_cosface(ff, labels) + criterion_cosface(ff2, labels2)
+                        if opt.circle:
+                            if opt.loss_merge:
+                                loss += criterion_circle(*convert_label_to_similarity(ff_all, labels_all)) / now_batch_size
+                            else:
+                                loss += criterion_circle(*convert_label_to_similarity(ff, labels)) / now_batch_size
+                                loss += criterion_circle(*convert_label_to_similarity(ff2, labels2)) / now_batch_size
+                        if opt.triplet:
+                            if opt.loss_merge:
+                                hard_pairs_all = miner(ff_all, labels_all)
+                                loss += criterion_triplet(ff_all, labels_all, hard_pairs_all)
+                            else:
+                                hard_pairs = miner(ff, labels)
+                                hard_pairs2 = miner(ff2, labels2)
+                                loss += criterion_triplet(ff, labels, hard_pairs) + criterion_triplet(ff2, labels2, hard_pairs2)
+                        if opt.lifted:
+                            if opt.loss_merge:
+                                loss += criterion_lifted(ff_all, labels_all)
+                            else:
+                                loss += criterion_lifted(ff, labels) + criterion_lifted(ff2, labels2)
+                        if opt.contrast:
+                            if opt.loss_merge:
+                                loss += criterion_contrast(ff_all, labels_all)
+                            else:
+                                loss += criterion_contrast(ff, labels) + criterion_contrast(ff2, labels2)
+                        if opt.sphere:
+                            if opt.loss_merge:
+                                loss += criterion_sphere(ff_all, labels_all) / now_batch_size
+                            else:
+                                loss += criterion_sphere(ff, labels) / now_batch_size
+                                loss += criterion_sphere(ff2, labels2) / now_batch_size
+                    else:
+                        _, preds = torch.max(outputs.data, 1)
+                        _, preds2 = torch.max(outputs2.data, 1)
+                        loss = criterion(outputs, labels) + criterion(outputs2, labels2)
                 elif opt.views == 3:
                     if return_feature:
                         logits, ff = outputs
