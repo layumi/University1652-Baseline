@@ -61,7 +61,7 @@ def cosine_similarity(x, y):
     return score
 
 def evaluate_ranking_list(indices, query_label, query_cam, gallery_label, gallery_cam):   
-    CMC = np.zeros((len(gallery_label)), dtype=np.int)
+    CMC = np.zeros((len(gallery_label)), dtype=int)
     ap = 0.0
 
     for i in range(len(query_label)):
@@ -90,7 +90,7 @@ def evaluate(index, ql,qc,gl,gc):
 
 def compute_mAP(index, good_index, junk_index):
     ap = 0
-    cmc = np.zeros((len(index)), dtype=np.int)
+    cmc = np.zeros((len(index)), dtype=int)
     if good_index.size==0:   # if empty
         cmc[0] = -1
         return ap,cmc
