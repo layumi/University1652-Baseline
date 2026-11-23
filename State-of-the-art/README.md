@@ -1,5 +1,7 @@
 # Awesome Geo-localization
 
+Maintained by [Zhedong Zheng (郑哲东)](https://www.zdzheng.xyz), AIGC-DL Lab, University of Macau. This list covers methods and benchmarks for cross-view geo-localization, including the [University-1652](#university-1652-dataset) family released by our group. Missing entries and corrections are welcome via issues or pull requests.
+
  - [University-1652 Dataset](#university-1652-dataset) : a dataset containing 1652 locations of global universities, with images captured from ground, drone, and satellite perspectives. `ACM MM 2020`
      - [University-WX](https://github.com/wtyhub/MuseNet): ***(Weather)*** Extension of University-1652 with multiple weathers on the fly. `Pattern Recognition 2024`
      - [University160k](https://codalab.lisn.upsaclay.fr/competitions/12672): ***(Larger Gallery)*** Large-scale extension of University-1652 with +167,486 distractors for realistic geo-localization testing. Always-open eval server & leaderboard: https://codalab.lisn.upsaclay.fr/competitions/12672
@@ -303,3 +305,24 @@ Mean R@1 / AP over ten weather conditions, following the [multi-weather leaderbo
 |Warp-free (GeoCoM) | 92.23 | 97.24 | 97.87 | 98.87 | Zhuo Song, Lian Xu, Runqing Jiang, Yongjian Zhang, Kunhong Li, Ye Zhang, Yulan Guo. Warp-free Cross-view Geo-Localization via Feature-space Consensus Mining. ECCV 2026. [[Paper]](https://arxiv.org/abs/2608.09321) |
 |*: The method utilizes the polar transformation (assuming that all satellite images face north) as input. | |
  |** : The method utilizes the polar prior hint. |
+
+## Citation
+
+If you use University-1652 or report numbers on these tables, please cite:
+
+```bibtex
+@article{zheng2020university,
+  title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
+  author={Zheng, Zhedong and Wei, Yunchao and Yang, Yi},
+  journal={ACM Multimedia},
+  year={2020}
+}
+```
+
+## Maintainer
+
+This leaderboard is maintained by [Zhedong Zheng (郑哲东)](https://www.zdzheng.xyz), AIGC-DL Lab, University of Macau. To add or correct an entry, please open an [issue](https://github.com/layumi/University1652-Baseline/issues) or a pull request.
+
+## Open Positions
+
+The AIGC-DL Lab at the University of Macau is hiring PhD students and postdocs on spatial intelligence and aerial geo-localization. Details: [https://www.zdzheng.xyz/recruitment/](https://www.zdzheng.xyz/recruitment/)
