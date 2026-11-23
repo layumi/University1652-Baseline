@@ -30,12 +30,14 @@
 
 This repository contains the dataset link and the code for our paper [University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization](https://arxiv.org/abs/2002.12186), ACM Multimedia 2020. The offical paper link is at https://dl.acm.org/doi/10.1145/3394171.3413896. We collect 1652 buildings of 72 universities around the world. Thank you for your kindly attention.
 
+The dataset and this baseline are maintained by [Zhedong Zheng (郑哲东)](https://www.zdzheng.xyz), AIGC-DL Lab, University of Macau.
+
 **Task 1: Drone-view target localization.** (Drone -> Satellite) Given one drone-view image or video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
 
 **Task 2: Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place (drone-view images) that it has passed by. According to its flight history, the drone could be navigated back to the target place.
 
 ## Open Positions
-We are hiring PhD students / Postdocs / strong RAs on **Spatial Intelligence (UAV)**, **Person Analysis**, and **Video Diffusion / World Models**. Candidates with solid research experience and publications are preferred. Details: [https://www.zdzheng.xyz/recruitment/](https://www.zdzheng.xyz/recruitment/)
+The AIGC-DL Lab at the University of Macau is hiring PhD students / Postdocs / strong RAs on **Spatial Intelligence (UAV)**, **Person Analysis**, and **Video Diffusion / World Models**. Candidates with solid research experience and publications are preferred. Details: [https://www.zdzheng.xyz/recruitment/](https://www.zdzheng.xyz/recruitment/)
 
 
 ## Workshops & Challenges 
